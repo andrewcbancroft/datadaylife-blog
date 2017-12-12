@@ -9,7 +9,7 @@ minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "n
 
 # Site Settings
 locale                   : "en"
-title                    : "Data Day Life"
+title                    : "Data-Day Life"
 subtitle                 : "Describing Data Discoveries from Day to Day"
 title_separator          : "-"
 name                     : "Andrew Bancroft"
@@ -89,7 +89,9 @@ author:
   bio              : 
   location         : 
   email            :
-  uri              :
+  uri              : 
+  andrewcbancroft  : "https://www.andrewcbancroft.com"
+  pluralsight      : "https://www.pluralsight.com/authors/andrew-bancroft"
   home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :
   codepen          :
@@ -97,23 +99,23 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "https://www.github.com/andrewcbancroft"
+  github           : "andrewcbancroft"
   gitlab           :
   google_plus      :
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         : # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
+  linkedin         : "andrewcbancroft" # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
   pinterest        :
   soundcloud       :
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
   steam            : # "steamId" (the last part of your profile url, e.g. https://steamcommunity.com/id/steamId/)
   tumblr           :
-  twitter          : "https://www.twitter.com/dataday_life"
+  twitter          : "dataday_life"
   vine             :
   weibo            :
   xing             :
-  youtube          : # "https://youtube.com/c/MichaelRoseDesign"
+  youtube          : "https://https://www.youtube.com/channel/UCIn_DpRp2ZZ2wqOX2mxdkig?view_as=subscriber" # "https://youtube.com/c/MichaelRoseDesign"
 
 
 # Reading Files
