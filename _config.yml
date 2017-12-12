@@ -10,6 +10,7 @@ minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "n
 # Site Settings
 locale                   : "en"
 title                    : "Data Day Life"
+subtitle                 : "Describing Data Discoveries from Day to Day"
 title_separator          : "-"
 name                     : "Andrew Bancroft"
 description              : "Describing Data Discoveries from Day to Day"
