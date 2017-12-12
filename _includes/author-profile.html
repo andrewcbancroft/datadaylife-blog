@@ -59,6 +59,22 @@
         </li>
       {% endif %}
 
+      {% if author.pluralsight %}
+        <li>
+          <a href="{{ author.uri }}" itemprop="url">
+            <i class="fa fa-fw fa-chain" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].website_label | default: "Pluralsight Courses" }}
+          </a>
+        </li>
+      {% endif %}
+      
+      {% if author.andrewcbancroft %}
+        <li>
+          <a href="{{ author.uri }}" itemprop="url">
+            <i class="fa fa-fw fa-chain" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].website_label | default: "Software Development Blog" }}
+          </a>
+        </li>
+      {% endif %}
+      
       {% if author.email %}
         <li>
           <a href="mailto:{{ author.email }}">
