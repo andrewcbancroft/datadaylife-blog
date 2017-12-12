@@ -62,7 +62,7 @@
       {% if author.pluralsight %}
         <li>
           <a href="{{ author.uri }}" itemprop="url">
-            <i class="fa fa-fw fa-chain" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].website_label | default: "Pluralsight Courses" }}
+            <i class="fa fa-fw fa-chain" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].pluralsight | default: "Pluralsight Courses" }}
           </a>
         </li>
       {% endif %}
@@ -70,7 +70,7 @@
       {% if author.andrewcbancroft %}
         <li>
           <a href="{{ author.uri }}" itemprop="url">
-            <i class="fa fa-fw fa-chain" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].website_label | default: "Software Development Blog" }}
+            <i class="fa fa-fw fa-chain" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].andrewcbancroft | default: "Software Development Blog" }}
           </a>
         </li>
       {% endif %}
