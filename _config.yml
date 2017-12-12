@@ -10,6 +10,7 @@ minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "n
 # Site Settings
 locale                   : "en"
 title                    : "Data Day Life"
+subtitle                 : "Describing Data Discoveries from Day to Day"
 title_separator          : "-"
 name                     : "Andrew Bancroft"
 description              : "Describing Data Discoveries from Day to Day"
@@ -85,8 +86,8 @@ analytics:
 author:
   name             : "Andrew Bancroft"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Describing Data Discoveries from Day to Day"
-  location         : "Somewhere"
+  bio              : 
+  location         : 
   email            :
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
@@ -96,7 +97,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           :
+  github           : "https://www.github.com/andrewcbancroft"
   gitlab           :
   google_plus      :
   keybase          :
@@ -108,7 +109,7 @@ author:
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
   steam            : # "steamId" (the last part of your profile url, e.g. https://steamcommunity.com/id/steamId/)
   tumblr           :
-  twitter          :
+  twitter          : "https://www.twitter.com/dataday_life"
   vine             :
   weibo            :
   xing             :
