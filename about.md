@@ -1,5 +1,6 @@
 ---
-layout: single
+layout: home
+author_profile: true
 ---
 
 Hey - I'm Andrew Bancroft.
