@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 Hey - I'm Andrew Bancroft.
 
 I'm a born learner, passionate about discovery and about sharing new insights that come my way. 
