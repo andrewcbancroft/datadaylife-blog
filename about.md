@@ -16,4 +16,4 @@ Teaching is also one of my passions. As an [Author for Pluralsight](https://www.
 * ["Core Data Fundamentals with Swift"](http://bit.ly/ps-core-data-swift)
 * ["Managing Xcode Project Dependencies with CocoaPods"](https://www.pluralsight.com/courses/cocoapods-xcode-project-dependencies)
 
-Feel free to connect with me on <a title="twitter.com/andrewcbancroft" href="https://twitter.com/andrewcbancroft">Twitter</a>, or on <a title="GitHub - andrewcbancroft" href="https://github.com/andrewcbancroft" target="_blank">GitHub</a>!
+I'd love it if you connect with me on <a title="twitter.com/andrewcbancroft" href="https://twitter.com/andrewcbancroft">Twitter</a>, or on <a title="GitHub - andrewcbancroft" href="https://github.com/andrewcbancroft" target="_blank">GitHub</a>!
