@@ -1,3 +1,6 @@
+---
+excerpt: "Deciding what you want to be when you grow up is hard, isn't it? I've teetered between two realms in my career:  Data, and software development.  But you know what?  Data's captured me..."
+---
 # Decisions, Decisions
 
 My [decision journal](https://www.farnamstreetblog.com/2014/02/decision-journal/) entry from August 31, 2017 reads as follows:
