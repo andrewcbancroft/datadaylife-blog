@@ -3,15 +3,17 @@ layout: single
 author_profile: true
 ---
 
-Hey - I'm Andrew Bancroft.
+Hey - I'm Andrew Bancroft (👉🏻data geek👈🏻).
 
 I'm a born learner, passionate about discovery and about sharing new insights that come my way. 
 
-I write here about data-related topics, and at [andrewcbancroft.com](https://www.andrewcbancroft.com) about iOS App development in Swift.
+Serving as the <a title="The Noble Research Institute, Inc." href="http://www.noble.org" target="_blank">Noble Research Institute's</a> Data Architect is one of my life's greatest joys. 
 
-I serve as the <a title="The Noble Research Institute, Inc." href="http://www.noble.org" target="_blank">Noble Research Institute's</a> Data Architect. <strong>This website, its content, and opinions are my own</strong>.
+I write here about databases, data modeling, and data science-y topics like machine learning. you name it, and at [andrewcbancroft.com](https://www.andrewcbancroft.com) about iOS App development in Swift.
 
-I'm also a [Pluralsight Author](https://www.pluralsight.com/authors/andrew-bancroft).  I've got two courses in the library now:
+<strong>This website, its content, and opinions are my own</strong>.
+
+Teaching is also one of my passions. As an [Author for Pluralsight](https://www.pluralsight.com/authors/andrew-bancroft), I've published a few courses to their library:
 
 * ["Core Data Fundamentals with Swift"](http://bit.ly/ps-core-data-swift)
 * ["Managing Xcode Project Dependencies with CocoaPods"](https://www.pluralsight.com/courses/cocoapods-xcode-project-dependencies)
