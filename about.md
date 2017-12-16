@@ -9,9 +9,7 @@ I'm a born learner, passionate about discovery and about sharing new insights th
 
 Serving as the <a title="The Noble Research Institute, Inc." href="http://www.noble.org" target="_blank">Noble Research Institute's</a> Data Architect is one of my life's greatest joys. 
 
-I write here about databases, data modeling, and data science-y topics like machine learning. you name it, and at [andrewcbancroft.com](https://www.andrewcbancroft.com) about iOS App development in Swift.
-
-<strong>This website, its content, and opinions are my own</strong>.
+Dataday.life is my outlet for writing about databases, data modeling, and data science-y topics like machine learning. At [andrewcbancroft.com](https://www.andrewcbancroft.com) I nerd-out about iOS App development in Swift. Please keep in mind that <strong>this website, its content, and opinions are my own</strong>.
 
 Teaching is also one of my passions. As an [Author for Pluralsight](https://www.pluralsight.com/authors/andrew-bancroft), I've published a few courses to their library:
 
