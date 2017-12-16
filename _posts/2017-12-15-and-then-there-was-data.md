@@ -35,4 +35,4 @@ Most software exists to acquire...*data*.
 # Data:  Still a means, but closer to the end
 I believe data is one stage closer to the final goal.  Data allows gives us the ability to decide with some confidence what we should do *next*, based on what we (or machines) have learned from it.
 
-And ss *I* learn, I intend to chronicle my thoughts and discoveries from day to day, and time to time, right here on dataday.life.
+And ss *I* learn, I intend to chronicle my thoughts and discoveries from day to day, and time to time, right here on [dataday.life](https://www.dataday.life).
