@@ -18,12 +18,12 @@ Spending four years in each camp has given me two perspectives on the world that
 # Software Development Takeaways
 Two things stick out to me as I transition from a career in building apps to a career in to orchestrating optimal data utilization for our Institute:
 
-1. Programming skills are vital to data science
+1) Programming skills are vital to data science
 Had I never become a software developer, I'd have an even steeper mountain before me to climb. Being in software development has exposed me to numerous programming languages, including C#, Objective-C, Swift, JavaScript, and Python, to name the most-frequently used.  I've explored multiple programming paradigms:  object-oriented, of course, but I've also dabbled in functional languages like Haskell and Scala.
 
 While I definitely expect to be a pragmatic *practicioner* of data science (as opposed to being, say, a developer of new machine learning algorithms), having exposure to ways in which to think about and assemble programming logic should ground me.
 
-2. Software is a means to an end (not an end in itself)
+2) Software is a means to an end (not an end in itself)
 What do I mean by "a means to an end"?
 
 In my observation, most software exists to support critical functions of a business.  That's certainly the case for the kind of software I was involved in developing.
