@@ -1,5 +1,5 @@
 ---
-excerpt: "Deciding what you want to be when you grow up is hard, isn't it? I've teetered between two realms in my career:  Data, and software development.  But you know what?  Data's captured me..."
+excerpt: "Deciding what you want to be when you grow up is hard, isn't it? I've shuffled interests a couple of times in my IT career, but you know what? Data's winning..."
 ---
 # Decisions, Decisions
 
