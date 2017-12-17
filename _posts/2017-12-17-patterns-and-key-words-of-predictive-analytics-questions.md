@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Patterns and Key Words of Predictive Analytics Questions"
 date:   2017-12-17
 categories: "Predictive Analytics"
