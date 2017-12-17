@@ -3,7 +3,6 @@ title:  "Patterns and Key Words of Predictive Analytics Questions"
 date:   2017-12-17
 categories: ['Predictive Analytics']
 excerpt: "How do you know if someone is asking a question that's a good fit for using predictive analytics to provide the answer?"
-comments: true
 ---
 
 Not all questions are "predictive analytics questions".  That is to say, not every question you receive as a data science practitioner is a good fit for predictive analytics to answer.
