@@ -4,7 +4,6 @@ date:   2017-12-17
 categories: ['Predictive Analytics']
 excerpt: "How do you know if someone is asking a question that's a good fit for using predictive analytics to provide the answer?"
 ---
-{% site.comments.disqus.shortname %}
 
 Not all questions are "predictive analytics questions".  That is to say, not every question asked by a decision maker is a good fit for predictive analytics to answer.
 
