@@ -20,9 +20,9 @@ First, let's take a look at a few examples of predictive questions.  Then let's 
 When you hear people asking questions like, "Which [customer/ad/employees] will [respond/click/quit]", it should trigger "predictive analytics" in your mind as a reasonable way to approach getting the answer to the question.
 
 **Key words to listen for are:**
-* Which [noun] -- The questioner is wanting to narrow things down to a particular set... "nounds of interest", if you will.
+* Which [noun] -- The questioner is wanting to narrow things down to a particular set... "nouns of interest", if you will.
 * <em>Will</em> -- There's a future-focus to the question.
-* Likely -- When probability enters the vocabulary of the question, there's a chance that predictive analytics can help with the answer
+* Likely -- When probability enters the vocabulary of the question, there's a chance that predictive analytics can help with the answer.
 * [Take action] -- Fill in [take action] with just about any verb of importance.  When you hear someone asking whether someone/something will respond, or click, or quit, or [you name it], predictive analytics could be a tool that helps shed some light on the answer.
 
 Here are a few more:
@@ -31,4 +31,4 @@ Here are a few more:
 * "Will the player win or lose?"
 
 **Key words to listen for are:**
-* "___ or ___" -- in each of the questions, the question's answer is in one of two *categories*:  [is/is not], [up/down], [win/lose]
+* "___ or ___" -- in each of the questions, the answer is in one of a few *categories*:  [is/is not], [up/down], [win/lose].  There need not be only two categories. The point is that any time the questioner is attempting ot figure out whether [something] fits in one category or another, predictive analytics could lend a hand in sorting things out.
