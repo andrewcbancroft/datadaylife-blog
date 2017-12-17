@@ -32,3 +32,4 @@ Here are a few more:
 
 ## Key words to listen for are:
 * **"___ or ___"** -- in each of the questions, the answer is in one of a few *categories*:  [is/is not], [up/down], [win/lose].  There need not be only two categories. The point is that any time the questioner is attempting ot figure out whether [something] fits in one category or another, predictive analytics could lend a hand in sorting things out.
+* **[final outcome]** -- Many times, questioners are wanting to know the probable final outcome of some event that hasn't occurred yet.  When that's the case, let predictive analytics be a tool you use for giving insight into the answer.
