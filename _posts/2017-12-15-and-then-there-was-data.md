@@ -1,5 +1,6 @@
 ---
 excerpt: "Deciding what you want to be when you grow up is hard, isn't it? I've shuffled interests a couple of times in my IT career, but you know what? Data's winning..."
+comments: true
 ---
 # Decisions, Decisions
 
