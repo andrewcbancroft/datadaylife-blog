@@ -13,14 +13,13 @@ From a recent read through [Predictive Analytics](https://www.amazon.com/Predict
 
 First, let's take a look at a few examples of predictive questions.  Then let's see if we can find the pattern or identify some key words.
 
-## Action Pattern Set
 * "Which customers will respond to marketing contact?"
 * "Which ad is a customer most likely to click?"
 * "Which employees will quit?"
 
 When you hear people asking questions like, "Which [customer/ad/employees] will [respond/click/quit]", it should trigger "predictive analytics" in your mind as a reasonable way to approach getting the answer to the question.
 
-Key words to listen for are:
+**Key words to listen for are:**
 * Which [noun] -- The questioner is wanting to narrow things down to a particular set... "nounds of interest", if you will.
 * <em>Will</em> -- There's a future-focus to the question.
 * Likely -- When probability enters the vocabulary of the question, there's a chance that predictive analytics can help with the answer
@@ -31,5 +30,5 @@ Here are a few more:
 * "Will the stock go up or down?"
 * "Will the player win or lose?"
 
-Key words to listn for are:
+**Key words to listen for are:**
 * "___ or ___" -- in each of the questions, the question's answer is in one of two *categories*:  [is/is not], [up/down], [win/lose]
