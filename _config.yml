@@ -101,7 +101,7 @@ author:
   foursquare       :
   github           : "andrewcbancroft"
   gitlab           :
-  google_plus      :
+  google_plus      : "https://plus.google.com/u/0/110731696140120282470"
   keybase          :
   instagram        :
   lastfm           :
@@ -111,11 +111,11 @@ author:
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
   steam            : # "steamId" (the last part of your profile url, e.g. https://steamcommunity.com/id/steamId/)
   tumblr           :
-  twitter          : "dataday_life"
+  twitter          : "andrewcbancroft"
   vine             :
   weibo            :
   xing             :
-  youtube          : # "https://youtube.com/c/MichaelRoseDesign"
+  youtube          : "https://www.youtube.com/channel/UCDPV9kMhP-b5EFRI7d812pg" # "https://youtube.com/c/MichaelRoseDesign"
 
 
 # Reading Files
