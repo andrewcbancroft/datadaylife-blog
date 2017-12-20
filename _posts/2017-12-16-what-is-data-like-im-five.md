@@ -27,7 +27,7 @@ Better yet, could that explanation be valuable to someone *older* than a 5 year 
 
 ---
 
-# Data
+## Data
 
 Data.  Where do I start?
 
@@ -93,7 +93,7 @@ I think we're making some progress!
 
 ---
 
-# Two Kinds of Data
+## Two Kinds of Data
 I wonder if you noticed the way I grouped a few of the observations we made about the bugs.
 
 Sometimes we used *words* to describe what we saw: "Black", "Red", "Has Antennas", "Slow".
@@ -104,7 +104,7 @@ Let's use some words split up the two kinds:
 * Quantitative (Numerical)
 * Qualitative (Categorical)
 
-## Quantitative (Numerical)
+### Quantitative (Numerical)
 <a name="quantitative-data"></a>Quantitative/numerical data describe things we see about the world in terms of **numbers**.
 
 "Numerical" and "number" go together pretty well. It's that "Q" word, "quantitative", that gives people trouble sometimes.
@@ -116,7 +116,7 @@ In general, quantitative/numerical data describes "how much-ness" or "how many-n
 If you can measure it, count it, weigh it... if you can **add up** the things you wrote down, or **do other "math-y" things** to the data, then you've got quantitative/numerical data.
 
 
-## Qualitative (Categorical)
+### Qualitative (Categorical)
 <a name="qualitative-data"></a>Qualitative and categorical mean the same thing, but it might not be clear *what* they mean right away.
 
 One way to look at it is that it's *anything that's not quantitative/numerical*, since there are only two overall kinds of data.  That's not so helpful for understanding the term though.
@@ -146,7 +146,7 @@ So here's the rule of thumb:  If you can do math with the data, it's **quant**it
 
 *Word*-y data is the kind of data that ends up being **quali**tative/categorical in nature.
 
-### Numbers can be qualitative/categorical
+#### Numbers can be qualitative/categorical
 
 Notice what I said in that "rule of thumb" statement:  If you can **do math** with the data, it's quantitative/numerical.
 
