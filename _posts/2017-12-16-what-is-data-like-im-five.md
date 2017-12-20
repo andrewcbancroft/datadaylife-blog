@@ -140,13 +140,13 @@ Here's one for you though: What about "black" + "red"?  Now, I mean... if you sa
 
 "Has antennas" divided by "slow" equals ...well... nonsense, right?
 
-**Rule of Thumb:  Quantitative? or Qualitative? | Numerical? or Categorical?**
+### Rule of Thumb:  Quantitative? or Qualitative? | Numerical? or Categorical?
 
 So here's the rule of thumb:  If you can do math with the data, it's **quant**itative/numerical, rather than **qual**itative/categorical.
 
 *Word*-y data is the kind of data that ends up being **quali**tative/categorical in nature.
 
-#### Numbers can be qualitative/categorical
+### Numbers Can Be Qualitative/categorical
 
 Notice what I said in that "rule of thumb" statement:  If you can **do math** with the data, it's quantitative/numerical.
 
