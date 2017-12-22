@@ -85,7 +85,7 @@ analytics:
 # Site Author
 author:
   name             : "Andrew Bancroft"
-  avatar           : "http://0.gravatar.com/avatar/693d6ce36672340c22f55dd4f44f9f69" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "https://0.gravatar.com/avatar/693d6ce36672340c22f55dd4f44f9f69" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : 
   location         : 
   email            :
