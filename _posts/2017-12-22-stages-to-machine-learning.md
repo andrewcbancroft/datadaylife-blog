@@ -1,5 +1,5 @@
 ---
-title: "Stages to Predictive Analytics and Machine Learning"
+title: "Stages to Machine Learning"
 toc: true
 ---
 
