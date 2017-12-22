@@ -3,7 +3,6 @@ title: "Stages to Predictive Analytics and Machine Learning"
 toc: true
 ---
 
-![My helpful screenshot]()
 ![One does not simply... do predictive analytics]("{{ "/assets/one-does-not-simply-do-predictive-analytics.png" | absolute_url }}")
 
 ## Blend
