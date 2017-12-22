@@ -1,5 +1,6 @@
 ---
 title: "Stages to Predictive Analytics and Machine Learning"
+toc: true
 ---
 
 ![My helpful screenshot]()
