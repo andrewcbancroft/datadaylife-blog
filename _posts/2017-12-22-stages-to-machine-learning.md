@@ -14,3 +14,4 @@ toc: true
 ## Train Model
 ## Evaluate
 ## Deploy
+## Verify
