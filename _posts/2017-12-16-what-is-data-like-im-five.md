@@ -127,7 +127,7 @@ Do you hear "**qual**ity" in "**qual**itative" or "**categor**y" in "**categor**
 
 When we describe the qualities of something, what we're noticing are its features. The bugs can be red or black or gray. They can be fast or slow. They can have wings (or not)... have antennas (or not).
 
-It's as if you can split them up into *categories*, or groups, based on how similar they are to one another.... winged bugs in this box, black winged ones in this compartment, and red winged ones in this other. Slow black winged bugs in this sub-compartment; fast black winged bugs in this other.  It's easy to group categorical data like this.
+It's as if you can split them up into groups, or *categories*, based on how similar they are to one another.... winged bugs in this box... black winged ones in this compartment, and red winged ones in this other. Slow black winged bugs in this sub-compartment; fast black winged bugs in this other.  It's easy to group qualitative/categorical data like this.
 
 That's one way to think about what makes qualitative/categorical data qualitative (or categorical).
 
@@ -160,3 +160,10 @@ Because there are examples of data that happen to be numbers, but you'd never do
 * Rankings (numbers used to label something like who came in 1st, 2nd, or 3rd in a race.  It doesn't make sense to say "What's 1st place divided by 3rd place?", for example)
 * Sequences (numbers used to tell which order things are in, like assigning numbers to steps in a process, or assigning numbers to spots where someone should stand in line.)
 * Identifiers (numbers that are used once and only once to label something or someone...maybe something like a driver's license number.)
+
+## In Review
+* We've looked at data in simple terms, and defined it as the *words* or *numbers* that we notice or measure about the world around us and just so happen to bother to save, either on paper, or digitally in a computer (preferably the latter, because then we can do cool things later on with it *much* more easily).
+* There are two types of data:  Quantitative/Numerical and Qualitative/Categorical
+* Deciding what kind a particular piece of data is doesn't have to be hard.  The general rule of thumb is: If you can do math with the data, it's quantitative/numerical.  Otherwise it's qualitative/categorical.
+
+
