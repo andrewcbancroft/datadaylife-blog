@@ -1,7 +1,7 @@
 ---
 title: "Stages to Machine Learning"
 toc: true
-description: "What does it take to really do machine learning? Explore these 10 stages to an effective machine learning process."
+excerpt: "What does it take to really do machine learning? Explore these 10 stages to an effective machine learning process."
 categories:
   - Machine Learning
 ---
