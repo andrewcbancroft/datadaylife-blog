@@ -3,7 +3,7 @@ title: "Stages to Machine Learning"
 toc: true
 ---
 
-![One does not simply... do predictive analytics]({{ "/assets/one-does-not-simply-do-machine-learning.png" | relative_url }})
+![One does not simply... do predictive analytics]({{ "/assets/one-does-not-simply-machine-learn.png" | relative_url }})
 
 ## Blend
 ## Explore
