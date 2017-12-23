@@ -2,6 +2,7 @@
 title: "Stages to Machine Learning"
 toc: true
 description: "What does it take to really do machine learning? Explore these 10 stages to an effective machine learning process."
+categories: ['Machine Learning', 'Predictive Analytics']
 ---
 ![One does not simply... machine learn]({{ "/assets/one-does-not-simply-machine-learn.png" | relative_url }})
 
