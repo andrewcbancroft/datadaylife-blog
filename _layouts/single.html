@@ -54,10 +54,12 @@ layout: default
       </section>
 
       <footer class="page__meta">
+        <hr>
+        <p>I'm always open to suggestions for improvement, and since <a href="https://github.com/andrewcbancroft/datadaylife-blog">this site is hosted on GitHub</a>, you're welcome to send pull requests (I'd love that)! Fix my spelling; give a better illustration; set me straight (kindly, please 😀). I appreciate you for reading and contributing!</p>
+        <hr>
         {% if site.data.ui-text[site.locale].meta_label %}
           <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
         {% endif %}
-        I'm always open to suggestions for improvement, and [since this site is hosted on GitHub](https://github.com/andrewcbancroft/datadaylife-blog) (check out the [posts](https://github.com/andrewcbancroft/datadaylife-blog/tree/master/_posts) directory), you're welcome to send pull requests (I'd love that)! Fix my spelling; give a better illustration; set me straight (kindly, please 😀). I appreciate you for reading and contributing!
         {% include page__taxonomy.html %}
         {% if page.last_modified_at %}
           <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Updated:" }}</strong> <time datetime="{{ page.last_modified_at | date: "%Y-%m-%d" }}">{{ page.last_modified_at | date: "%B %d, %Y" }}</time></p>
