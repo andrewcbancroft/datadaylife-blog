@@ -10,4 +10,5 @@ When you boil [data](https://www.dataday.life/what-is-data-like-im-five/) down t
 1. Measurement(s)
 2. Descriptions of the measurement(s)
 
-It doesn't matter what industry you're in. It doesn't matter the process that captured the data you're looking at. At the end of the day, you've got *numbers and classifications* as measurements, and you've got the *context describing the who, what, when, and where* of those measurements.
+It doesn't matter what industry you're in. It doesn't matter the process that captured the data you're looking at. At the end of the day, you've got *[numbers](https://www.dataday.life/what-is-data-like-im-five/#quantitative-numerical) and [classifications](https://www.dataday.life/what-is-data-like-im-five/#qualitative-categorical)* as measurements, and you've got the *context describing the who, what, when, and where* of those measurements.
+
