@@ -4,14 +4,10 @@ excerpt: ""
 layout: work-in-progress
 ---
 There are endless ways to measure and describe the world around us.
-* We can write it down by hand
-* It can be typed into a spreadsheet
-* An app can collect it for us
-* We can put a sensor on or near what we're monitoring and save the sensor readings for inspection
 
-The [data](https://www.dataday.life/what-is-data-like-im-five/) that we generate always has a structure to it.  Yes, even the "[unstructured](https://en.wikipedia.org/wiki/Unstructured_data)" kind (it just means the structure of it may not have been defined before it got to us).
-
-When you boil down the structure of any kind of data, what you get are two fundamental components to it:
+When you boil [data](https://www.dataday.life/what-is-data-like-im-five/) down to the essentials, what you get are...
 
 1. Measurement(s)
 2. Descriptions of the measurement(s)
+
+It doesn't matter what industry you're in. It doesn't matter the process that captured the data you're looking at. At the end of the day, you've got *numbers and classifications* as measurements, and you've got the *context describing the who, what, when, and where* of those measurements.
