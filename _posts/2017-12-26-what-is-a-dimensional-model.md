@@ -4,7 +4,7 @@ excerpt: ""
 layout: work-in-progress
 toc: true
 ---
-## Measures and Descriptions
+## Measurements and Descriptions
 There are endless ways to measure and describe the world around us.
 
 When you boil [data](https://www.dataday.life/what-is-data-like-im-five/) down to the essentials, what you get are...
