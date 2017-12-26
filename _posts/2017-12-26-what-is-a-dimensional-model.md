@@ -20,4 +20,4 @@ It doesn't matter what industry you're in. It doesn't matter the process that ca
 
 ## Shapes of Data
 
-## Dimensional Models
+## "Dimensional Model" - Breaking it Down
