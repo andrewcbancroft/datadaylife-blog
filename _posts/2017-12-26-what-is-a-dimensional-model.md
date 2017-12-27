@@ -16,8 +16,32 @@ It doesn't matter what industry you're in. It doesn't matter the process that ca
 
 <hr>
 
-[story example]
-
-## Shapes of Data
-
 ## "Dimensional Model" - Breaking it Down
+Let's unpack the term "dimensional model" to see if we can make heads of tails of what the words mean when they're put together in this term.
+
+I'll start with the noun (model) and then look at the adjective (dimensional).
+
+### Model
+What's a *model*?
+
+The first images that come to mind for me involve cars, trains, and rocket ships.  When you think about the hobby of model-making, what you have is an activity where you take [something] (like a car, train, or rocket) and create [something else] that *represents* the original (the model).
+
+Let's keep that word:  **represent**
+
+Another image that comes to mind is a *person* who is a model. You think about the man or woman walking down the runway, showing off what a particular designer's outfit should look like on an "ideal" person.
+
+Let's keep that word too:  **ideal**
+
+The world is complicated. Sometimes, in order to shut out the noise, we create something that portrays the *general concept* of something that would otherwise be difficult to understand.
+
+**General concept** is the last word we'll keep for now.
+
+So what do we have?
+
+> A model is a **representation** of data that portrays its **general concept(s)**, in a way that is **ideal** for understanding the patterns and information the data contains.
+
+That last part, "ideal for understanding the patterns and information the data contains" leaves the door open to the possibility that there might be different *kinds* of models that are more or less ideal for different analyses.
+
+The first half remains true to all models.  Models are representations of data.  And models boil things down to the general concept(s) that exist within the data.
+
+### Dimensional
