@@ -40,8 +40,20 @@ So what do we have?
 
 > A model is a **representation** of data that portrays its **general concept(s)**, in a way that is **ideal** for understanding the patterns and information the data contains.
 
+<a name="kind-of-model"></a>
 That last part, "ideal for understanding the patterns and information the data contains" leaves the door open to the possibility that there might be different *kinds* of models that are more or less ideal for different analyses.
 
 The first half remains true to all models.  Models are representations of data.  And models boil things down to the general concept(s) that exist within the data.
 
 ### Dimensional
+What does "dimensional" mean?
+
+What does the word "dimension" being to mind for you?
+
+For me, I immediately thought of shapes (2 *dimensional* or 3 *dimensional* whapes).
+
+In a 2D shape, the "dimensions" are length and width, aren't they?  A square or rectangle has sides that are [x] units long by [y] units wide.  3D shapes add a dimension:  height.
+
+In the case of shapes, a "dimension" is [the thing] that answers the question "how long?" or "how wide?" or "how high?".
+
+Outside the world of geometry, the word "dimension" carries the idea of the characteristic(s) or qualities of something.  
