@@ -176,6 +176,7 @@ kramdown:
 
 # Collections
 collections:
+  collections_dir: collections
   sqlhelperscripts:
     output: true
     permalink: /:collection/:path/
