@@ -54,6 +54,14 @@ In a 2D shape, the "dimensions" are length and width, aren't they?  A square or 
 
 In the case of shapes, a "dimension" is [the thing] that answers the question "how long?" or "how wide?" or "how deep?".
 
-Outside the world of geometry, the word "dimension" carries the idea of the characteristics and qualities of something.
+Outside the world of geometry, the word "dimension" carries the idea of the **characteristics** or **qualities** of something.
+
+If I say, "Wow, when you add jalapeños to the salsa, it adds a whole new **dimension** of flavor!", you see how the word "dimension" gets at an essential **feature** of the salsa's flavor.
+
+Coffee from different regions of the world have distinct flavor **profile**s - different *dimensions* to their taste.
+
+The same goes with wines and cheeses and teas and on and on with just about anything you can think of.
+
+If I say, "When I look at the diamond **from this angle**, it explodes with brilliance!", I'm substituting "from this angle" for a way to describe the diamond's **facets**... its **dimensionality**, if you will.
 
 
