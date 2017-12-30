@@ -46,14 +46,14 @@ That last part, "ideal for understanding the patterns and information the data c
 The first half remains true to all models.  Models are representations of data.  And models boil things down to the general concept(s) that exist within the data.
 
 ### Dimensional
-What does "dimensional" mean?
-
 What does the word "dimension" being to mind for you?
 
-For me, I immediately thought of shapes (2 *dimensional* or 3 *dimensional* whapes).
+I immediately thought of shapes (2 *dimensional* or 3 *dimensional* shapes).
 
-In a 2D shape, the "dimensions" are length and width, aren't they?  A square or rectangle has sides that are [x] units long by [y] units wide.  3D shapes add a dimension:  height.
+In a 2D shape, the "dimensions" are length and width, aren't they?  A square or rectangle has sides that are [x] units long by [y] units wide.  3D shapes add a dimension:  depth.
 
-In the case of shapes, a "dimension" is [the thing] that answers the question "how long?" or "how wide?" or "how high?".
+In the case of shapes, a "dimension" is [the thing] that answers the question "how long?" or "how wide?" or "how deep?".
 
-Outside the world of geometry, the word "dimension" carries the idea of the characteristic(s) or qualities of something.  
+Outside the world of geometry, the word "dimension" carries the idea of the characteristics and qualities of something.
+
+
