@@ -270,4 +270,4 @@ defaults:
       share: true
       related: true
       sidebar:
-        nav: "sqlserverscripts-navigation"
+        nav: "sqlserverscripts"
