@@ -4,7 +4,6 @@ excerpt: ""
 layout: work-in-progress
 toc: true
 ---
-test
 ## Measurements and Descriptions
 There are endless ways to measure and describe the world around us.
 
