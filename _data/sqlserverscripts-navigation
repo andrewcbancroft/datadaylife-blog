@@ -1,4 +1,0 @@
-- title: Administration Scripts
-    children:
-      - title: "Kill all Sessions"
-        url: /sqlserverscripts/kill-all-sessions/
