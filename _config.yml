@@ -260,6 +260,7 @@ defaults:
       comments: true
       share: true
       related: true
+  # _collections
   - scope:
       path: ""
       type: sqlserverscripts
