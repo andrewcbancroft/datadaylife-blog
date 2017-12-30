@@ -7,7 +7,7 @@ main:
   - title: "About"
     url: /about/
     
-sqlserverscripts-navigation:
+sqlserverscripts:
 - title: Administration Scripts
     children:
       - title: "Kill all Sessions"
