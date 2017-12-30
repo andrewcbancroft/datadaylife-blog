@@ -1,3 +1,8 @@
+---
+title: "Kill all Sessions"
+excerpt: "Script to close all sessions/connections to a specified database"
+---
+
 ```sql
 USE master;
 GO
