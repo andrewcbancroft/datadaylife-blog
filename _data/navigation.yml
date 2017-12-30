@@ -8,10 +8,10 @@ main:
     url: /about/
     
 sqlserverscripts:
-- title: Administration Scripts
-    children:
-      - title: "Kill all Sessions"
-        url: /sqlserverscripts/kill-all-sessions/
+  - title: Administration Scripts
+      children:
+        - title: "Kill all Sessions"
+          url: /sqlserverscripts/kill-all-sessions/
         
   # - title: "Sample Posts"
   #   url: /year-archive/
