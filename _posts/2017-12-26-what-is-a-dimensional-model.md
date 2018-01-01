@@ -65,3 +65,9 @@ The same goes with wines and cheeses and teas and on and on with just about anyt
 If I say, "When I look at the diamond **from this angle**, it explodes with brilliance!", I'm substituting "from this angle" for a way to describe the diamond's **facets**... its **dimensionality**, if you will.
 
 
+> The word dimensional tells us that the characteristics, qualities, features, and facets of something are what's important
+
+### Putting it Together:  "Dimensional" + "Model"
+"Model" is the noun; "dimensional" is the adjective.  When you put them together, you might get a definition like this:
+
+> A dimensional model is a **representation of data** that **portrays its measurements** in the context of the **characteristics**, **qualities**, **features**, and **facets** of the event that generated the measurements, and is therefore **ideal for understanding the patterns and information the data contains** in an understandable and accessible way.
