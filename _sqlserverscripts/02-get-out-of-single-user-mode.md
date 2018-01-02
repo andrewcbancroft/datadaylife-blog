@@ -1,3 +1,8 @@
+---
+title: "Get Out of SINGLE_USER Mode"
+exerpt: "Process for getting a SQL Server database out of SINGLE_USER Mode if you're stuck in it."
+---
+
 If you find yourself stuck in `SINGLE_USER` mode in a SQL Server database, do the following:
 
 ## 1 - Find SPIDs connected to your database
