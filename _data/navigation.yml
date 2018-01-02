@@ -20,4 +20,4 @@ sqlserverscripts:
       - title: "Kill all Sessions"
         url: /sqlserverscripts/kill-all-sessions/
       - title: "Get Out of SINGLE_USER Mode"
-        url: /sqlserverscripts/get-out-of-single-user-mode
+        url: /sqlserverscripts/get-out-of-single-user-mode/
