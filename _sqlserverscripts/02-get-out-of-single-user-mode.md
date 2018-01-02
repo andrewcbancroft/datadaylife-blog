@@ -1,5 +1,6 @@
 ---
 title: "Get Out of SINGLE_USER Mode"
+permalink: /sqlserverscripts/get-out-of-single-user-mode/
 exerpt: "Process for getting a SQL Server database out of SINGLE_USER Mode if you're stuck in it."
 ---
 
