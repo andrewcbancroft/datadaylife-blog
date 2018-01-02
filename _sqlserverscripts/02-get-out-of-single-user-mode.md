@@ -41,3 +41,5 @@ KILL [spid] -- do this for each spid returned by the previous query
 USE Master
 ALTER DATABASE YourDatabase SET MULTI_USER
 ```
+
+Source:  [Stack Overflow](https://stackoverflow.com/questions/24608702/sql-server-2008-r2-stuck-in-single-user-mode)
