@@ -1,16 +1,16 @@
 ---
-title: "Search Database Objects for Text"
-permalink: /sqlserverscripts/search-objects-for-text/
-exerpt: "If you need to find some text within a database object like a stored procedure, function, view, trigger, etc. this script can be helpful."
+title: "Search Database Object Definitions for Text"
+permalink: /sqlserverscripts/search-object-definitions-for-text/
+exerpt: "If you need to find some text within a database object definition like a stored procedure, function, view, trigger, etc. this script can be helpful."
 ---
 
-If you need to find some text within a database object, this script can be helpful.
+If you need to find some text within a database object definition, this script can be helpful.
 
-It should allow you to find text within the following types of database objects:
+It should allow you to find text within the definitions of the following types of database objects:
 * Functions (scalar and table-valued)
-* Stored Procedure
-* Trigger
-* View
+* Stored Procedures
+* Triggers
+* Views
 
 ```sql
 DECLARE @SearchString VARCHAR(255)
