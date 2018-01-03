@@ -21,3 +21,5 @@ sqlserverscripts:
         url: /sqlserverscripts/kill-all-sessions/
       - title: "Get Out of SINGLE_USER Mode"
         url: /sqlserverscripts/get-out-of-single-user-mode/
+      - title: "Search Database Objects for Text"
+        url: /sqlserverscripts/search-objects-for-text
