@@ -17,9 +17,9 @@ main:
 sqlserverscripts:
   - title: Administration Scripts
     children:
-      - title: "Kill all Sessions"
-        url: /sqlserverscripts/kill-all-sessions/
       - title: "Get Out of SINGLE_USER Mode"
         url: /sqlserverscripts/get-out-of-single-user-mode/
+      - title: "Kill all Sessions"
+        url: /sqlserverscripts/kill-all-sessions/
       - title: "Search Database Objects for Text"
-        url: /sqlserverscripts/search-objects-for-text
+        url: /sqlserverscripts/search-object-definitions-for-text
