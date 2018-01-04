@@ -38,36 +38,35 @@ The world is complicated. Sometimes, in order to shut out the noise, we create s
 
 So what do we have?
 
-> A model is a **representation** of data that portrays its **general concept(s)**, in a way that is **ideal** for understanding the patterns and information the data contains.
+> A model is a **representation** of data that portrays its **general concept(s)**, in a way that is **ideal** for understanding the patterns and information that the data contains.
 
 <a name="kind-of-model"></a>
-That last part, "ideal for understanding the patterns and information the data contains" leaves the door open to the possibility that there might be different *kinds* of models that are more or less ideal for different analyses.
+That last part, "ideal for understanding the patterns and information that the data contains" leaves the door open to the possibility that there might be different *kinds* of models that are more or less ideal for different analyses.
 
-The first half remains true to all models.  Models are representations of data.  And models boil things down to the general concept(s) that exist within the data.
+The first half remains true to all models.  Models are representations of data.  And models boil things down to the general concept(s) that exist within the data. The goal for models is to help humans see, understand, and interpret the patterns and information within data. 
 
 ### Dimensional
 What does the word "dimension" being to mind for you?
 
 I immediately thought of shapes (2 *dimensional* or 3 *dimensional* shapes).
 
-In a 2D shape, the "dimensions" are length and width, aren't they?  A square or rectangle has sides that are [x] units long by [y] units wide.  3D shapes add a dimension:  depth.
+In a 2D shape, the dimensions are length and width, aren't they?  A square or rectangle has sides that are [x] units long by [y] units wide.  3D shapes add a dimension:  depth.
 
-In the case of shapes, a "dimension" is [the thing] that answers the question "how long?" or "how wide?" or "how deep?".
+In the case of shapes, a dimension is [the thing] that answers the question "how long?" or "how wide?" or "how deep?".
 
 Outside the world of geometry, the word "dimension" carries the idea of the **characteristics** or **qualities** of something.
 
-If I say, "Wow, when you add jalapeños to the salsa, it adds a whole new **dimension** of flavor!", you see how the word "dimension" gets at an essential **feature** of the salsa's flavor.
+If I say, "When I look at the diamond **from this angle**, it explodes with brilliance!", I'm substituting "from this angle" for a way to describe the diamond's **facets**... its **dimensionality**, if you will.
+
+If I say, "Wow, when you add jalapeños to the salsa, it adds a whole new **dimension** of flavor!", you see how the word dimension gets at an essential **feature** of the salsa's flavor.
 
 Coffee from different regions of the world have distinct flavor **profile**s - different *dimensions* to their taste.
 
 The same goes with wines and cheeses and teas and on and on with just about anything you can think of.
 
-If I say, "When I look at the diamond **from this angle**, it explodes with brilliance!", I'm substituting "from this angle" for a way to describe the diamond's **facets**... its **dimensionality**, if you will.
-
-
-> The word dimensional tells us that the characteristics, qualities, features, and facets of something are what's important
+> The word dimensional tells us that the **characteristics**, **qualities**, **features**, and **facets** of something are what's important.
 
 ### Putting it Together:  "Dimensional" + "Model"
 "Model" is the noun; "dimensional" is the adjective.  When you put them together, you might get a definition like this:
 
-> A dimensional model is a **representation of data** that **portrays its measurements** in the context of the **characteristics**, **qualities**, **features**, and **facets** of the event that generated the measurements, and is therefore **ideal for understanding the patterns and information the data contains** in an understandable and accessible way.
+> A dimensional model is a **representation of data** that **portrays its measurements** in the context of the **characteristics**, **qualities**, **features**, and **facets** of the event that generated the measurements, and is therefore **ideal for understanding the patterns and information that the data contains** in a natural way.
