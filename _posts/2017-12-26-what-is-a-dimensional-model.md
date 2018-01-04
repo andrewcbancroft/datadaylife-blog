@@ -24,7 +24,7 @@ I'll start with the noun (model) and then look at the adjective (dimensional).
 ### Model
 What's a *model*?
 
-The first images that come to mind for me involve cars, trains, and rocket ships.  When you think about the hobby of model-making, what you have is an activity where you take [something] (like a car, train, or rocket) and create [something else] that *represents* the original (the model).
+The first images that come to mind for me involve cars, trains, and rocket ships.  When you think about the hobby of model-making, what you have is an activity where you take [something] (like a car, train, or rocket) and create [something else] (the model) that *represents* the original.
 
 Let's keep that word:  **represent**
 
