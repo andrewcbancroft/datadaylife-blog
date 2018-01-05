@@ -67,6 +67,14 @@ The same goes with wines and cheeses and teas and on and on with just about anyt
 > The word dimensional tells us that the **characteristics**, **qualities**, **features**, and **facets** of something are what's important.
 
 ### Putting it Together:  "Dimensional" + "Model"
-"Model" is the noun; "dimensional" is the adjective.  When you put them together, you might get a definition like this:
+"Model" is the noun; "dimensional" is the adjective.  When you put them together, you might get something like this:
 
-> A dimensional model is a **representation of data** that **portrays its measurements** in the context of the **characteristics**, **qualities**, **features**, and **facets** of the event that generated the measurements, and is therefore **ideal for understanding the patterns and information that the data contains** in a natural way.
+A dimensional model is a **representation of data** that...
+* **Portrays its measurements** in a way that highlights the **characteristics**, **qualities**, **features**, and **facets** of the event that generated the measurements
+* Therefore, a dimensional model is **ideal for understanding the patterns and information that the data contains** in a natural way.
+
+### The Defining Characteristic of Dimensional Models
+The defining characteristic of a dimensional model is that they capture and highlight the characteristics, qualities, features, and facets of the *event that generated the measurements*.
+
+[Qualitative data](https://www.dataday.life/what-is-data-like-im-five/#qualitative-categorical), in and of itself, is descriptive by nature. It's the qualitative data about *the situation that caused a measurement to be recorded* that gives dimensional models their "ideal" edge when it comes to understanding the patterns and information that the data contains.
+
