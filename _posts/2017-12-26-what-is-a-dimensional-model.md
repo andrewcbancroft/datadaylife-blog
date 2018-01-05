@@ -70,11 +70,12 @@ The same goes with wines and cheeses and teas and on and on with just about anyt
 "Model" is the noun; "dimensional" is the adjective.  When you put them together, you might get something like this:
 
 A dimensional model is a **representation of data** that...
-* **Portrays its measurements** in a way that highlights the **characteristics**, **qualities**, **features**, and **facets** of the event that generated the measurements
+* **Portrays its measurements** in a way that highlights the **characteristics**, **qualities**, **features**, and **facets** of the event that generated the measurements (the who, what, when, where, how, of the data collection situation)
 * Therefore, a dimensional model is **ideal for understanding the patterns and information that the data contains** in a natural way.
 
 ### The Defining Characteristic of Dimensional Models
-The defining characteristic of a dimensional model is that they capture and highlight the characteristics, qualities, features, and facets of the *event that generated the measurements*.
+The defining characteristic of a dimensional model is that it captures and highlights the characteristics, qualities, features, and facets of the *event that generated the measurements*.
 
-[Qualitative data](https://www.dataday.life/what-is-data-like-im-five/#qualitative-categorical), in and of itself, is descriptive by nature. It's the qualitative data about *the situation that caused a measurement to be recorded* that gives dimensional models their "ideal" edge when it comes to understanding the patterns and information that the data contains.
+Dimensional models make the numbers visible, true... but they also make a point to bring *meaning* to the numbers by making the who, what, when, where, why, and how *behind the generation of those numbers* into the forefront.
 
+[Qualitative data](https://www.dataday.life/what-is-data-like-im-five/#qualitative-categorical), in and of itself, is descriptive by nature. It's the qualitative data *about the situation that caused a measurement to be recorded* that gives dimensional models their "ideal" edge when it comes to understanding the patterns and information that the data contains.
