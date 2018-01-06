@@ -80,9 +80,10 @@ Dimensional models make the numbers visible, true... but they also make a point 
 [Qualitative data](https://www.dataday.life/what-is-data-like-im-five/#qualitative-categorical), in and of itself, is descriptive by nature. It's the qualitative data *about the situation that caused a measurement to be recorded* that gives dimensional models their "ideal" edge when it comes to understanding the patterns and information that the data contains.
 
 There are a few things that have to happen for that to be possible:
-1) You've got to **define a "measurement event"** -- the action or process that causes you to capture and save data in the first place
-2) You've got to **detect when that event has occurred**, either physically or in some automated way (like with a sensor)
-3) You've got to capture and save the measurements that matter, **and** the 5 W's + How + any other qualitative information that you think are important to describing that event
+
+1. You've got to **define a "measurement event"** -- the action or process that causes you to capture and save data in the first place
+2. You've got to **detect when that event has occurred**, either physically or in some automated way (like with a sensor)
+3. You've got to capture and save the measurements that matter, **and** the 5 W's + How + any other qualitative information that you think are important to describing that event
 
 ### Putting it all Together:  "Dimensional" + "Model"
 "Model" is the noun; "dimensional" is the adjective.  When you put them together, you might get something like this:
