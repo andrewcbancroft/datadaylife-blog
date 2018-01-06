@@ -1,7 +1,7 @@
 ---
 title: What is a Dimensional Model?
 excerpt: ""
-layout: work-in-progress
+layout: single
 toc: true
 ---
 ## Measurements and Descriptions
