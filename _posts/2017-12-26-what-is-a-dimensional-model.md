@@ -90,5 +90,5 @@ There are a few things that have to happen for that to be possible:
 
 A dimensional model is a **representation of data** that...
 * **Portrays its measurements** in a way that highlights the **characteristics**, **qualities**, **features**, and **facets** of the event that generated the measurements (the who, what, when, where, how, of the data collection situation)
-* Therefore, a dimensional model is **ideal for understanding the patterns and information that the data contains** in a natural way.
+* Therefore, a dimensional model is **ideal for understanding the patterns and information that the data contains** in a way that is widely approachable by analysts of all kinds
 
