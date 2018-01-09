@@ -2,6 +2,8 @@
 title: "Search Database Object Definitions for Text"
 permalink: /sqlserverscripts/search-object-definitions-for-text/
 exerpt: "If you need to find some text within a database object definition like a stored procedure, function, view, trigger, etc. this script can be helpful."
+last_modified_at: "2018-01-09"
+date: "2018-01-09"
 ---
 
 If you need to find some text within a database object definition, this script can be helpful.
