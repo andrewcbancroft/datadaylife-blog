@@ -2,6 +2,7 @@
 title: "Kill all Sessions"
 permalink: /sqlserverscripts/kill-all-sessions/
 excerpt: "Script to close all sessions/connections to a specified database"
+last_modified_at: "2017-01-09"
 ---
 
 ```sql
