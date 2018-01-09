@@ -2,6 +2,8 @@
 title: "Get Out of SINGLE_USER Mode"
 permalink: /sqlserverscripts/get-out-of-single-user-mode/
 exerpt: "Process for getting a SQL Server database out of SINGLE_USER Mode if you're stuck in it."
+last_modified_at: "2018-01-09"
+date: "2018-01-09"
 ---
 
 If you find yourself stuck in `SINGLE_USER` mode in a SQL Server database, do the following:
