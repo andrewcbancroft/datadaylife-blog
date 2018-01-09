@@ -7,8 +7,7 @@ author_profile: true
 
 {% capture written_label %}'None'{% endcapture %}
 
-{% assign collection = site.collection %}
-{% for item in items %}
+{% for collection in site.collection %}
   {% unless collection.output == false or collection.label == "posts" %}
     {% capture label %}{{ collection.label }}{% endcapture %}
     {% if label != written_label %}
@@ -16,7 +15,8 @@ author_profile: true
       {% capture written_label %}{{ label }}{% endcapture %}
     {% endif %}
   {% endunless %}
-  {% for post in collection.docs %}
+  {% assign posts = collection.docs | sort: 'title' %}
+  {% for post in posts %}
     {% unless collection.output == false or collection.label == "posts" %}
       {% include archive-single.html %}
     {% endunless %}
