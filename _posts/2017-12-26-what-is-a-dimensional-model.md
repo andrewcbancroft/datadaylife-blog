@@ -1,6 +1,6 @@
 ---
 title: What is a Dimensional Model?
-excerpt: "Let's unpack the term "dimensional model" to see if we can make heads of tails of what the words mean when they're put together in this term."
+excerpt: "Let's unpack the term \"dimensional model\" to see if we can make heads of tails of what the words mean when they're put together in this term."
 layout: single
 toc: true
 categories: [Data Modeling]
