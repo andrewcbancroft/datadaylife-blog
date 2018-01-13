@@ -3,6 +3,7 @@ title: What is a Dimensional Model?
 excerpt: "Let's unpack the term "dimensional model" to see if we can make heads of tails of what the words mean when they're put together in this term."
 layout: single
 toc: true
+categories: Data Modeling
 ---
 ## Measurements and Descriptions
 There are endless ways to measure and describe the world around us.
