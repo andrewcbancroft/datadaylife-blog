@@ -44,7 +44,7 @@ In other words, are you looking for some kind of cause-effect relationship?
 If you're satisfied with making predictions in general, without needing to know the underlying *cause* of the relationships found in your analysis, then we're finally at the stage where we can ask one more question:
 
 "**Are you trying to predict measurement(s) for the whole population, or for specific individuals within a population?**"
-If you're making measurement predictions for an entire population, you're doing **inferential data analysis**.  That's what [inferential statistics](https://en.wikipedia.org/wiki/Statistical_inference) is all about -- reasoning from samples to populations.
+If you're making measurement predictions for an entire population, you're doing **inferential data analysis**.  That's what [inferential statistics](https://en.wikipedia.org/wiki/Statistical_inference) is all about -- making estimations about populations based on samples.
 
 If you're making measurement predictions for specific *individuals*, you're doing **predictive analysis**.
 
