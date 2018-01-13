@@ -46,7 +46,7 @@ If you're satisfied with making predictions in general, without needing to know 
 "**Are you trying to predict measurement(s) for the whole population, or for specific individuals within a population?**"
 If you're making measurement predictions for an entire population, you're doing **inferential data analysis**.  That's what [inferential statistics](https://en.wikipedia.org/wiki/Statistical_inference) is all about -- making estimations about populations based on samples.
 
-If you're making measurement predictions for specific *individuals*, you're doing **predictive analysis**.
+If you're making measurement predictions for specific "units" / *individuals*, you're doing **predictive analysis**.
 
 Now then, if you *did* want to go beyond general predictions and dig down into the level of causation, then...
 
