@@ -1,7 +1,7 @@
 ---
 title: "What is Data? (Like I'm 5)"
 toc: true
-categories: "General Data Concepts"
+categories: [General Data Concepts]
 ---
 
 “Daddy, what is your job? What do you *do* there??”, asks my 5 year old in a curious tone as he tries to figure out why I went to *work* today instead of staying home to play with *him*.
