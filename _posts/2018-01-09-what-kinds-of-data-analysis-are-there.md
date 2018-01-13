@@ -3,6 +3,7 @@ title: What Kinds of Data Analysis Are There?
 excerpt: "How can we categorize the data analyses we do? How are they related, and does one kind of analysis set you up for another?  Let's explore..."
 layout: work-in-progress
 toc: true
+categories: [General Data Concepts]
 ---
 
 I stumbled upon an article in Science Magazine from March 2015 titled, "[What is the Question?](https://www.d.umn.edu/~kgilbert/ened5560-1/The%20Research%20Question-2015-Leek-1314-5.pdf)". It's a short but insightful article that succinctly summarizes the kinds of analysis that can be done on data.  I love the flow chart that they include. The authors guide you through figuring out what kind of analysis you're doing based on what you do with the data.
