@@ -55,5 +55,5 @@ In other words, when you *change* one measurement, does it "always and exclusive
 
 If you're trying to find out what happens to a measurement *on average* when another measurement changes, then you're doing **causal analysis**
 
-### Summarizing the Kinds of Data Analysis
+## Summarizing the Kinds of Data Analysis
 ![Kinds of Data Analysis]({{ "/assets/data-analysis-summary.png" | relative_url }})
