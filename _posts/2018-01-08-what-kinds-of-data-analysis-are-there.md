@@ -1,7 +1,7 @@
 ---
 title: What Kinds of Data Analysis Are There?
 excerpt: "How can we categorize the data analyses we do? How are they related, and does one kind of analysis set you up for another?  Let's explore..."
-layout: work-in-progress
+layout: single
 toc: true
 categories: [General Data Concepts]
 ---
