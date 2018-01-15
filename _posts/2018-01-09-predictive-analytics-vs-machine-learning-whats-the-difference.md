@@ -25,3 +25,32 @@ In order to satisfy your curiosity, you collect [data](https://www.dataday.life/
 
 The data fuels the possibility for analysis, so that hopefully, you walk away with a more complete picture than you had before (ie, you have answers).
 
+## Kinds of Data Analysis
+There are at least six kinds of analysis that can be performed on a data set:
+
+1. Descriptive Analysis
+2. Exploratory Analysis
+3. Inferential Analysis
+4. Predictive Analysis
+5. Causal Analysis
+6. Mechanistic Analysis
+
+I've made [more detailed observations](https://www.dataday.life/what-kinds-of-data-analysis-are-there/) about each one of these six categories of analysis separately.  What I want you to notice about the list above is what *is* and *isn't* listed.
+
+"Predictive Analysis" made the list at #4, but "Machine Learning" didn't.  Why?
+
+## The Difference
+Predictive analytics and machine learning are not "the same". 
+
+Machine learning is *a way to do* predictive analytics. Machine learning is a means to another end, namely, to predict measurement(s) for specific "units"/individuals in a population, based on a sample data set from that population.
+
+Predictive analytics seeks to make estimations about specific people (or specific animals or widgets or [whatever] the "unit" of interest is from your population of "units").  We want to be able to ask things like, "Which specific customers are more likely to purchase [this product] if we run [this marketing campaign] targeted at them?" or "What is a likely selling price for [this house]?" or any number of other questions that [fit the pattern](https://www.dataday.life/patterns-and-key-words-of-predictive-analytics-questions/) for predictive analytics to provide the answer for.
+
+Machine learning just happens to be *one way* to accomplish the goal of predictive analytics.
+
+## Before There Were Machines to Learn
+Before there were machines, there were... *people*.
+
+People have been doing predictive analysis for decades. It may have taken longer and been more tedius and error-prone, but steps that are taken to figure out "the answer" in machine learning have been doable by humans for a long time... they are not "new".
+
+What's cool about the modern age is that while it's *possible* for people to compute the outputs that a machine learning algorithm can produce, it's *unnecessary*.  Due to the scale of data in today's world, it's also insanely impractical for many data sets.
