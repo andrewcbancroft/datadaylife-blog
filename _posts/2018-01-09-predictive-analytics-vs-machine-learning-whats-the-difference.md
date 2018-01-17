@@ -56,3 +56,4 @@ People have been doing predictive analysis for decades. It may have taken longer
 Sooooo... why "machine learning"? In short, it's a *scale* problem with modern data sets. The data sets of the 21st century are much larger than ever before in history. 
 
 While it's *possible* for people to compute the outputs that a machine learning algorithm can produce, it's *unnecessary*.  Due to the scale of data in today's world, it's also insanely impractical for many data sets.
+
