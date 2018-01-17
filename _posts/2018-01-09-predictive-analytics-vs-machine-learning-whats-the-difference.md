@@ -51,6 +51,8 @@ Machine learning just happens to be *one way* to accomplish the goal of predicti
 ## Before There Were Machines to Learn
 Before there were machines, there were... *people*.
 
-People have been doing predictive analysis for decades. It may have taken longer and been more tedius and error-prone, but steps that are taken to figure out "the answer" in machine learning have been doable by humans for a long time... they are not "new".
+People have been doing predictive analysis for decades. It may have taken longer and been more tedius and error-prone, but steps that are taken to figure out "the answer" in machine learning have been do-able by humans for a long time... they are not "new".
 
-What's cool about the modern age is that while it's *possible* for people to compute the outputs that a machine learning algorithm can produce, it's *unnecessary*.  Due to the scale of data in today's world, it's also insanely impractical for many data sets.
+Sooooo... why "machine learning"? In short, it's a *scale* problem with modern data sets. The data sets of the 21st century are much larger than ever before in history. 
+
+While it's *possible* for people to compute the outputs that a machine learning algorithm can produce, it's *unnecessary*.  Due to the scale of data in today's world, it's also insanely impractical for many data sets.
