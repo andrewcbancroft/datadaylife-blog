@@ -6,7 +6,9 @@ toc: true
 categories: [General Data Concepts]
 ---
 
-I stumbled upon an article in Science Magazine from March 2015 titled, "[What is the Question?](https://www.d.umn.edu/~kgilbert/ened5560-1/The%20Research%20Question-2015-Leek-1314-5.pdf)". It's a short but insightful article that succinctly summarizes the kinds of analysis that can be done on data.  My takeaways include the following:
+I stumbled upon an article in Science Magazine from March 2015 titled, "[What is the Question?](https://www.d.umn.edu/~kgilbert/ened5560-1/The%20Research%20Question-2015-Leek-1314-5.pdf)". It's a short but insightful article that succinctly summarizes the kinds of analysis that can be done on data.  
+
+A [video summary](https://www.coursera.org/learn/managing-data-analysis/lecture/8hYa6/six-types-of-questions) is also available at Coursera.
 
 ## How many kinds of data analysis are there?
 There are at least six ways to categorize a particular kind of analysis that you can do on data:
