@@ -19,13 +19,13 @@ But before you do *analysis*, you need **data** to perform the analysis on.
 
 But before you bother with *data*, you typically have **questions** in mind.  
 
-You're curious about the world, your industry, your process. You make observations and you wonder if doing [something] will impact or *change* [something else] that would lead to [some goal]. 
+You're curious about the world, your industry, your process. You make observations and you wonder if doing [something] will impact or *change* [something else] in a way that would lead to [some goal]. 
 
 In order to satisfy your curiosity, you collect [data](https://www.dataday.life/what-is-data-like-im-five/) in the form of [quantitative](https://www.dataday.life/what-is-data-like-im-five/#quantitative-numerical) and [qualitative](https://www.dataday.life/what-is-data-like-im-five/#qualitative-categorical) measurements. 
 
 The data fuels the possibility for analysis, so that hopefully, you walk away with a more complete picture than you had before (ie, you have answers).
 
-## Kinds of Data Analysis
+## Types of Data Analysis
 There are at least six kinds of analysis that can be performed on a data set:
 
 1. Descriptive Analysis
@@ -35,7 +35,7 @@ There are at least six kinds of analysis that can be performed on a data set:
 5. Causal Analysis
 6. Mechanistic Analysis
 
-I've made [more detailed observations](https://www.dataday.life/what-kinds-of-data-analysis-are-there/) about each one of these six categories of analysis separately.  What I want you to notice about the list above is what *is* and *isn't* listed.
+I've made [more detailed observations](https://www.dataday.life/what-types-of-data-analysis-are-there/) about each one of these six categories of analysis separately.  What I want you to notice about the list above is what *is* and *isn't* listed.
 
 "Predictive Analysis" made the list at #4, but "Machine Learning" didn't.  Why?
 
