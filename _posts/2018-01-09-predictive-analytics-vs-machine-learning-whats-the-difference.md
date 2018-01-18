@@ -25,10 +25,14 @@ There are at least six kinds of analysis that can be performed on a data set:
 
 I've made [more detailed observations](https://www.dataday.life/what-types-of-data-analysis-are-there/) about each one of these six categories of analysis separately.  What I want you to notice about the list above is what *is* and *isn't* listed.
 
-"Predictive Analysis" made the list at #4, but "Machine Learning" didn't.  Why?
+"Predictive Analysis" made the list at #4.
+
+What about "Machine Learning", though?  Why isn't it there?
 
 ## The Difference
-Predictive analytics and machine learning are not "the same". 
+Predictive analytics and machine learning are not "the same". Predictive analysis exists at this "type of data analysis that *can be done*" level. Machine learning does not.
+
+What is machine learning then?
 
 Machine learning is *a way to do* predictive analytics. Machine learning is a means to another end, namely, to predict measurement(s) for specific "units"/individuals in a population, based on a sample data set from that population.
 
