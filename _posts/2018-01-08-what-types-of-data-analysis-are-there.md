@@ -3,10 +3,28 @@ title: What Types of Data Analysis Are There?
 excerpt: "How can we categorize the data analyses we do? How are they related, and does one kind of analysis set you up for another?  Let's explore..."
 layout: single
 toc: true
+last_modified_at: 2018-01-18
 categories: [General Data Concepts]
 ---
 
-I stumbled upon an article in Science Magazine from March 2015 titled, "[What is the Question?](https://www.d.umn.edu/~kgilbert/ened5560-1/The%20Research%20Question-2015-Leek-1314-5.pdf)". It's a short but insightful article that succinctly summarizes the kinds of analysis that can be done on data.  
+## Questions -> Data -> Analysis -> Answers
+This flow is what it's all about, isn't it?  At the end of the day, you want *answers* so that you can take informed action.
+
+But before you can get **answers**, you need to do a certain kind of **analysis**.
+
+But before you do *analysis*, you need **data** to perform the analysis on.
+
+But before you bother with *data*, you typically have one or more **questions** in mind.  
+
+You're curious about the world, your industry, your process. You make observations and you wonder if doing [something] will impact or *change* [something else] in a way that would lead to [some goal]. 
+
+In order to satisfy your curiosity, you collect [data](https://www.dataday.life/what-is-data-like-im-five/) in the form of [quantitative](https://www.dataday.life/what-is-data-like-im-five/#quantitative-numerical) and [qualitative](https://www.dataday.life/what-is-data-like-im-five/#qualitative-categorical) measurements. 
+
+The data fuels the possibility for analysis, so that hopefully, you walk away with a more complete picture than you had before (ie, you have answers).
+
+-----
+
+I recently stumbled upon an article in Science Magazine from March 2015 titled, "[What is the Question?](https://www.d.umn.edu/~kgilbert/ened5560-1/The%20Research%20Question-2015-Leek-1314-5.pdf)". It's great. It's a short but insightful article that succinctly summarizes the kinds of analysis that can be done on data.  
 
 A [video summary](https://www.coursera.org/learn/managing-data-analysis/lecture/8hYa6/six-types-of-questions) is also available at Coursera.
 
