@@ -45,7 +45,7 @@ Predictive analytics and machine learning are not "the same".
 
 Machine learning is *a way to do* predictive analytics. Machine learning is a means to another end, namely, to predict measurement(s) for specific "units"/individuals in a population, based on a sample data set from that population.
 
-Predictive analytics seeks to make estimations about specific people (or specific animals or widgets or [whatever] the "unit" of interest is from your population of "units").  
+Predictive analytics seeks to make estimations about specific people (or specific animals or widgets or [whatever] the "unit" of interest is from your population of "units"). One of the goals is to figure out paterns from historical data and be able to say something about the *future*, based on how that yet-unknown event fits within the patterns detected from past observations.
 
 We want to be able to ask things like, "Which specific customers are more likely to purchase [this product] if we run [this marketing campaign] targeted at them?" or "What is a likely selling price for [this house]?" or any number of other questions that [fit the pattern](https://www.dataday.life/patterns-and-key-words-of-predictive-analytics-questions/) for predictive analytics to provide the answer for.
 
