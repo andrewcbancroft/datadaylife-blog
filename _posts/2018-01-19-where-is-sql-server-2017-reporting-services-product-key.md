@@ -27,4 +27,4 @@ If you re-run the SQL Server 2017 installer, and just Next Next Next to the **Pr
 
 ![Prompt for product key]({{ "/assets/sql-server-2017-product-key.png" | relative_url }})
 
-Simple.  Hopefully this saves you 30 minutes running around to different portals trying to find a key that's "hidden" right in front of you. 
+Simple.  Hopefully this saves you 30 minutes running around to different portals trying to find a key that's "hidden" right in front of you. 👍
