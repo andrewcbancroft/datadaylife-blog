@@ -16,7 +16,7 @@ But uhhhh... Where is it?
 
 Naturally, we went to our Volume Licensing Portal, but Reporting Services 2017 isn't listed.  
 
-Additionally, we looked for a SQL Server 2017 license, but the portal indicated that our copy of SQL Server "didn't require" a product key.
+Additionally, we looked for a SQL Server 2017 key, but the portal indicated that our copy of SQL Server "didn't require" a product key.
 
 Why?  Because it's *embedded* into the SQL Server 2017 installer itself.
 
