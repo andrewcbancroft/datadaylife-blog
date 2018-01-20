@@ -24,7 +24,7 @@ author_profile: true
     {% for post in pages_list %}
       {% if post.title != null %}
       {% if group == null or group == post.group %}
-      <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a> <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p></li>
+      <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a> <span class="page__meta">(<i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %})</span></li>
       {% endif %}
       {% endif %}
     {% endfor %}
