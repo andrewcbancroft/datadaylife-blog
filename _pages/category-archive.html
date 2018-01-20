@@ -5,7 +5,7 @@ title: "Posts by Category"
 author_profile: true
 ---
 <ul class="tag-box inline">
-{% assign tags_list = site.categories %}  
+{% assign tags_list = site.categories | sort %}  
   {% if tags_list.first[0] == null %}
     {% for tag in tags_list %} 
       <li><a href="#{{ tag }}">{{ tag }} <span>({{ site.tags[tag].size }})</span></a></li>
@@ -18,7 +18,7 @@ author_profile: true
 {% assign tags_list = nil %}
 </ul>
 
-{% for tag in site.categories %} 
+{% for tag in tags_list %} 
   <h2 id="{{ tag[0] }}">{{ tag[0] | capitalize }}</h2>
   <ul class="post-list">
     {% assign pages_list = tag[1] %}  
