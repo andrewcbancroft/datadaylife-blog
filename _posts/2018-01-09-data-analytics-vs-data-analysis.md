@@ -1,6 +1,6 @@
 ---
 title: Data Analytics vs Data Analysis
-excerpt: "Are data analytics and data analysis the same thing? If they're not, what's the difference?"
+excerpt: "Question: How would you explain \"data analytics\" vs \"data analysis\"?"
 layout: work-in-progress
 toc: true
 last_modified_at: 2018-01-22
