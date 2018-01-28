@@ -1,6 +1,6 @@
 ---
-title: Data Analytics vs Data Analysis
-excerpt: "Question: How would you explain \"data analytics\" vs \"data analysis\"?"
+title: "Data Analytics vs Data Analysis: Examining the Suffix"
+excerpt: "Question: How would you explain \"data analytics\" vs \"data analysis\"? Clues lie in the suffix!"
 layout: work-in-progress
 toc: true
 last_modified_at: 2018-01-22
@@ -21,7 +21,7 @@ Here's something cool [from dictionary.com on the "-sis" suffix](http://www.dict
 
 > "-sis" is a suffix that forms abstract nouns of action, process, state, condition, etc. from verbs
 
-"-sis" noun-ifies verbs.  It takes the concept of action, process, state, condition... and it transforms those into a [thing].
+"-sis" noun-ifies verbs.  It takes the concept of action, process, state, condition that an "action word" like a verb might contain... and it transforms those into a [thing].
 
 "I'm doing to *do* "data analysis"...", we say.  "Do" is the verb; "data anslysis" is the noun. 
 
