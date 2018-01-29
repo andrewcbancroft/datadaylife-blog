@@ -12,7 +12,7 @@ Question: How would you explain "data analytics" vs "data analysis"?
 So what's the difference?
 
 ## Clues From the Suffix
-They're extremely similar words... I mean, just the word-*ending* is different:  "-tic" vs "-sis" ("analytic**s**" is plural, so I used the singular)
+They're extremely similar words... I mean, just the word-*ending* is different:  "-tics" vs "-sis"
 
 Since the end of the word is where the difference lies (otherwise, there wouldn't be two terms, right?), why not go find out what each suffix might indicate?
 
@@ -31,3 +31,28 @@ In dictioary terms, the word **analysis** encapsulates the idea of breaking some
 Applied to data, then, analysis is the process of taking a data set apart, inspecting individual segments at a time, looking for the parts in the whole so that we can understand the information it contains.
 
 ### "-tic"
+Here's where it gets even cooler if you're a word nerd. Change "analytics" to "analytic" for me real quick...
+
+Again, [from dictioary.com on the "-tic" suffix]([from dictionary.com on the "-sis" suffix](http://www.dictionary.com/browse/-tic):
+
+> a suffix forming *adjectives* from other parts of speech, *especially* in the formation of adjectives from nouns with stems in "-sis". equivalent in meaning to "-ic"
+
+Here's the gist:  If you've got a "-sis" noun (like "analy**sis**"), you can make a descriptor word out if it by switching the word ending to "-tic".  And for all intents and purposes, "-tic" and "-ic" do exactly the same thing.
+
+**Analysis**, the *noun*, becomes **Analytic**, an adjective.
+
+#### From the Definition
+"Analytic" as a definition isn't extremely interesting. It just means that whatever we're describing with the word "analytic" *has to do with analysis* (breaking something down), as opposed to synthesis (building something up).
+
+### "-ics"
+Let's switch "Anlytic" (the adjective) back to "Analytics".
+
+Here, my friends, is where I thought things got super interesting.
+
+> a suffix of nouns that denote a body of facts, knowledge, principles, etc., *usually corresponding to adjectives ending in -ic*
+
+**boom**
+
+Here we go:  Suppose you've got an adjective that has the ending "-ic" (analytic...which as we saw, basically just means "having something to do with analysis").  If you go from "-ic" to "-ic**s**", what happens?  You just noun-ified the adjective.  Ane *with* that noun-ification, you've brought new connotations to the word.  Suddenly there's a sense of encapsulating a body of facts, knowledge, principles, and so on.
+
+**Analytics** then, denotes the body of facts, knowledge, principles, etc of **analysis**.  Analytics is the **science of analysis**.  It encompases the corpus of understanding we have about analytis...about the processes and principles for breaking things down.
