@@ -22,7 +22,7 @@ Here's something cool [from dictionary.com on the "-sis" suffix](http://www.dict
 
 "-sis" noun-ifies verbs.  It takes the concept of action, process, state, condition that an "action word" like a verb might convey... and it transforms those into a [thing].
 
-Come to think of it, "analysis" is sort of a verb-y noun, isn't it?  "We're going to *do* "data analysis"...", we say.  "Do" is the verb; "data analysis" is the noun. But there's a sense of action involved with data analysis, even if it's captured in this intangible, conceptual sense of a noun.
+Come to think of it, "analysis" is sort of a verb-y noun, isn't it?  "We're going to *do* "data analysis"...", we say.  "Do" is the verb; "data" is an adjective that tells "what kind"; "analysis" is the *noun*. But there's a sense of action involved with data analysis, even if it's captured in this intangible, conceptual sense of a noun.
 
 #### From the Definition
 In dictioary terms, the word **analysis** encapsulates the idea of breaking something down.  It's the opposite of **synthesis**.  Synthesis is the process of composing separate things together into a new, combined [thing].  Analysis is the process of taking something and *de*composing it into its component parts.
@@ -52,6 +52,18 @@ Here, my friends, is where I thought things got super interesting.
 
 **boom**
 
-Here we go:  Suppose you've got an adjective that has the ending "-ic" (analytic...which as we saw, basically just means "having something to do with analysis").  If you go from "-ic" to "-ic**s**", what happens?  You just noun-ified the adjective.  Ane *with* that noun-ification, you've brought new connotations to the word.  Suddenly there's a sense of encapsulating a body of facts, knowledge, principles, and so on.
+Here we go:  Suppose you've got an adjective that has the ending "-ic" (analytic...which as we saw, basically just means "having something to do with analysis").  If you go from "-ic" to "-ic**s**", what happens?  You just noun-ified the adjective.  And *with* that noun-ification, you've brought new connotations to the word.  Suddenly there's a sense of encapsulating a body of facts, knowledge, principles, and so on.
 
-**Analytics** then, denotes the body of facts, knowledge, principles, etc of **analysis**.  Analytics is the **science of analysis**.  It encompases the corpus of understanding we have about analytis...about the processes and principles for breaking things down.
+**Analytics** then, denotes the body of facts, knowledge, principles, etc of something pertaining to **analysis**.  
+
+Analytics is the **science of analysis**.  It encompases the corpus of understanding we have about analysis...about the processes and principles for breaking things down.
+
+### What We've Uncovered
+
+* Analysis is a noun that encompasses the concept and idea of breaking something down.  Data analysis is the concept of taking a data set and reforming it in such a way as to understand it... to see patterns and form conclusions from it.
+
+* Analytic, as an adjective, simply means that some *other* noun has to do with analysis. We use the term, "an analytic approach", for example... meaning that the approach we're taking has to do with breaking something down, decomposing it, shifting it around, etc.
+
+* Analytics is a noun that shifts the word "analytic" into a word that denotes the body of facts... the knowledge about... the principles for:  *analysis*.  Analytics is about *methodology*.  It's the science of analysis.  It's about the approach to performing analysis.
+
+At the end of the day, everything points back toward analysis.
