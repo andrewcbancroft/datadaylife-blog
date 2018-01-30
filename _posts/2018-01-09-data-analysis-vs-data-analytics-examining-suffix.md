@@ -1,15 +1,19 @@
 ---
-title: "Data Analytics vs Data Analysis: Examining the Suffix"
-excerpt: "Question: How would you explain \"data analytics\" vs \"data analysis\"? Clues lie in the suffix!"
+title: "Data Analysis vs Data Analytics: Examining the Suffix"
+excerpt: "Question: How would you explain \"data analysis\" vs \"data analytics\"? Clues lie in the suffix!"
 layout: work-in-progress
 toc: true
 last_modified_at: 2018-01-22
 categories: [General Data Concepts]
 ---
 
-"Analytics" and "analysis" are extremely similar words... I mean, just the word-*ending* is different:  "-tics" vs "-sis"
+"Analysis" and "analytics" are extremely similar words... I mean, just the word-*ending* is different:  "-sis" vs "-tics"
 
 Since the end of the word is where the difference lies (otherwise, there wouldn't be two of them, right?), why not go find out what each suffix might indicate to get some clues as to what the difference between the words are?
+
+I'm going to start with "analy**sis**".  Then I'm going to move to "analy**tic**".  The final stop before I make a summary conclusion will be the word "analyt**ics**".  
+
+Let's go!
 
 ### "-sis"
 Here's something cool [from dictionary.com on the "-sis" suffix](http://www.dictionary.com/browse/-sis):  
