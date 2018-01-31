@@ -36,7 +36,7 @@ Come to think of it, "analysis" is sort of a verb-y noun, isn't it?  "We're goin
 
 "Analysis" is the *noun*. 
 
-Even as a noun, though there's a sense of action involved with data analysis.  It's just captured grammatically in this intangible, conceptual sense of a noun.
+Even as a noun though, there's a sense of action involved with data analysis.  It's just captured grammatically in this intangible, conceptual sense of a noun.
 
 That's because the verb that "analysis" noun-ifies is "analyze", which means "to separate into constituent parts or elements".
 
@@ -54,7 +54,7 @@ Analysis uses partitioning and dividing and restructuring and rearranging to exa
 Applied to data, then, analysis is the process of taking a data set apart, inspecting individual segments at a time, looking for the parts in the whole so that we can understand the information it contains.
 
 ### "-tic"
-Here's where it gets even cooler if you're a word nerd. Change "analytics" to "analytic" for me real quick...
+Here's where it gets slightly more interesting. Change "analytics" to "analytic" for me real quick...
 
 Again, [from dictioary.com on the "-tic" suffix](http://www.dictionary.com/browse/-tic):
 
@@ -74,7 +74,7 @@ So let's cross the bridge and see where we land...
 ### "-ics"
 Switch "Anlytic" (the adjective) back to "Analyt**ics**".
 
-Here, my friends, is where I thought things got super interesting.
+Here, my friends, is where things get cool (if you're a word nerd).
 
 "-ics" is...
 > a suffix of nouns that denote a body of facts, knowledge, principles, etc., *usually corresponding to adjectives ending in -ic*
