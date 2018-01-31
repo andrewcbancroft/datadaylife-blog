@@ -79,8 +79,6 @@ Here, my friends, is where things get cool (if you're a word nerd).
 "-ics" is...
 > a suffix of nouns that denote a body of facts, knowledge, principles, etc., *usually corresponding to adjectives ending in -ic*
 
-**boom**
-
 Here we go:  Suppose you've got an adjective that has the ending "-ic" (analytic...which as we saw, basically just means "having something to do with analysis").  
 
 If you go from "-ic" to "-ic**s**", what happens?  You just noun-ified the adjective.  
@@ -88,6 +86,8 @@ If you go from "-ic" to "-ic**s**", what happens?  You just noun-ified the adjec
 And *with* that noun-ification, you've brought new connotations to the word.  Suddenly there's a sense of encapsulating a body of facts, knowledge, principles, and so on.
 
 **Analytics** then, denotes the body of facts, knowledge, principles, etc. of *something pertaining to*... **analysis**.  
+
+**boom**
 
 ### What We've Uncovered
 If I had summarize what we've uncovered, it'd be this:  Analytics is the **science of analysis**.  Analytics encompases the corpus of understanding we have about analysis...it's techniques and processes and principles for breaking things down.
