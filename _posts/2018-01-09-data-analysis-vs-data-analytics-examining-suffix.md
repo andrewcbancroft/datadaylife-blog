@@ -47,7 +47,7 @@ It's the opposite of **synthesis**.
 
 Synthesis is the process of composing separate things together into a new, combined [thing].  
 
-Analysis is the process of taking something and *de*composing it into its component parts.
+Analysis is the process of taking [something] and *de*composing it into its component parts.
 
 Analysis uses partitioning and dividing and restructuring and rearranging to examine and determine information.
 
