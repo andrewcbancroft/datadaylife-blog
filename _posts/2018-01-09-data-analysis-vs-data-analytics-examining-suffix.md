@@ -92,7 +92,7 @@ And *with* that noun-ification, you've brought new connotations to the word.  Su
 ### What We've Uncovered
 If I had summarize what we've uncovered, it'd be this:  Analytics is the **science of analysis**.  Analytics encompases the corpus of understanding we have about analysis...it's the techniques and processes and principles for breaking things down.
 
-Even though analysis and analytics are both nouns, they aren't "the same thing".  The *concept* of breaking something down (analysis) is different than the *science* or *method* for doing that breaking down.
+Even though analysis and analytics are both nouns, they aren't "the same thing".  The *concept* of breaking something down (analysis) is different than the *science* or *method* for doing that breaking down (analytics).
 
 Analysis is the end-goal (okay, understanding, interpreting, making inferences and predictions and decisions might be the *end*-end goal, but still...).  Analytics is the way we get there.
 
