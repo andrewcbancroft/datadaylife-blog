@@ -1,9 +1,9 @@
 ---
 title: "Breaking Down Data Analysis vs Data Analytics: A Look at the Suffix"
 excerpt: "Question: How would you explain \"data analysis\" vs \"data analytics\"? Clues lie in the suffix!"
-layout: work-in-progress
+layout: single
 toc: true
-last_modified_at: 2018-01-22
+last_modified_at: 2018-01-31
 categories: [General Data Concepts]
 ---
 
