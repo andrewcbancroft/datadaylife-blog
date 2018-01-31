@@ -98,8 +98,8 @@ Analysis is the end-goal (okay, understanding, interpreting, making inferences a
 
 In conclusion,
 
-* Analysis is a noun that encompasses the concept and idea of breaking something down.  Data analysis is the concept of taking a data set and reforming it in such a way as to understand it... to see patterns and form conclusions from it.
+* **Analysis** is a noun that encompasses the concept and idea of breaking something down.  Data analysis is the concept of taking a data set and reforming it in such a way as to understand it... to see patterns and form conclusions from it.
 
-* Analytic, as an adjective, simply means that some *other* noun has to do with analysis. We use the term, "an analytic *approach*", for example... meaning that *the approach* we're taking has to do with breaking something down, decomposing it, shifting it around, etc.
+* **Analytic**, as an adjective, simply means that some *other* noun has to do with analysis. We use the term, "an analytic *approach*", for example... meaning that *the approach* we're taking has to do with breaking something down, decomposing it, shifting it around, etc.
 
-* Analytics is a noun that shifts the word "analytic" into a word that denotes the body of facts... the knowledge about... the principles for:  *analysis*.  Analytics is about *methodology*.  It's about the approach to performing analysis.  It's the science of analysis.
+* **Analytics** is a noun that shifts the word "analytic" into a word that denotes the body of facts... the knowledge about... the principles for:  *analysis*.  Analytics is about *methodology*.  It's about the approach to performing analysis.  It's the science of analysis.
