@@ -62,7 +62,7 @@ Again, [from dictioary.com on the "-tic" suffix](http://www.dictionary.com/brows
 
 Here's the gist:  If you've got a "-sis" noun (like "analy**sis**"), you can make a descriptor word out if it by switching the word ending to "-tic".  And for all intents and purposes, "-tic" and "-ic" do exactly the same thing.
 
-**Analysis**, the *noun*, becomes **Analytic**, an adjective.
+**Analysis**, the *noun*, becomes **analytic**, an adjective.
 
 #### From the Definition
 "Analytic" as a definition isn't extremely interesting (in my opinion). It just means that whatever we're describing with the word "analytic" *has to do with analysis* (breaking something down), as opposed to synthesis (building something up).
