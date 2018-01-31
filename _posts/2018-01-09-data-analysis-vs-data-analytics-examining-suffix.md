@@ -102,4 +102,4 @@ In conclusion,
 
 * Analytic, as an adjective, simply means that some *other* noun has to do with analysis. We use the term, "an analytic *approach*", for example... meaning that *the approach* we're taking has to do with breaking something down, decomposing it, shifting it around, etc.
 
-* Analytics is a noun that shifts the word "analytic" into a word that denotes the body of facts... the knowledge about... the principles for:  *analysis*.  Analytics is about *methodology*.  It's the science of analysis.  It's about the approach to performing analysis.
+* Analytics is a noun that shifts the word "analytic" into a word that denotes the body of facts... the knowledge about... the principles for:  *analysis*.  Analytics is about *methodology*.  It's about the approach to performing analysis.  It's the science of analysis.
