@@ -65,7 +65,11 @@ Here's the gist:  If you've got a "-sis" noun (like "analy**sis**"), you can mak
 **Analysis**, the *noun*, becomes **analytic**, an adjective.
 
 #### From the Definition
-"Analytic" as a definition isn't extremely interesting (in my opinion). It just means that whatever we're describing with the word "analytic" *has to do with analysis* (breaking something down), as opposed to synthesis (building something up).
+"Analyc" just means that whatever we're describing with the word "analytic" *has to do with analysis* (breaking something down), as opposed to synthesis (building something up).
+
+While "analytic" as a definition isn't extremely interesting (in my opinion), it does act as the bridge in my mind between the "-sis" suffix and our destiation suffix:  "-ics".
+
+So let's cross the bridge and see where we land...
 
 ### "-ics"
 Let's switch "Anlytic" (the adjective) back to "Analyt**ics**".
