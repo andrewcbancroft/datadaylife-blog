@@ -28,7 +28,7 @@ Here's something cool [from dictionary.com on the "-sis" suffix](http://www.dict
 
 My interpretation: "-sis" noun-ifies verbs.  It takes the essential action of a verb and turns it into a concept... a concept of action, process, state, or condition.
 
-Come to think of it, "analysis" is sort of a verb-y noun, isn't it?  "We're going to *do* "data analysis"...", we say.  
+Come to think of it, "analysis" is sort of a verb-y noun, isn't it?  "We're going to '*do* data analysis'...", we say.  
 
 "Do" is the verb.
 
