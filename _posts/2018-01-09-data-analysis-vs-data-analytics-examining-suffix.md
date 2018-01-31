@@ -26,7 +26,7 @@ Here's something cool [from dictionary.com on the "-sis" suffix](http://www.dict
 
 > "-sis" is a suffix that forms abstract nouns of action, process, state, condition, etc. from verbs
 
-My interpretation: "-sis" noun-ifies verbs.  It takes the concept of action, process, state, condition that an "action word" like a verb might convey... and it transforms those verb-like meanings into a [thing].
+My interpretation: "-sis" noun-ifies verbs.  It takes the essential action of a verb and turns it into a concept... a concept of action, process, state, or condition.
 
 Come to think of it, "analysis" is sort of a verb-y noun, isn't it?  "We're going to *do* "data analysis"...", we say.  
 
@@ -37,6 +37,8 @@ Come to think of it, "analysis" is sort of a verb-y noun, isn't it?  "We're goin
 "Analysis" is the *noun*. 
 
 Even as a noun, though there's a sense of action involved with data analysis.  It's just captured grammatically in this intangible, conceptual sense of a noun.
+
+That's because the verb that "analysis" noun-ifies is "analyze", which means "to separate into constituent parts or elements".
 
 #### From the Definition
 In dictioary terms, the word **analysis** encapsulates the idea of breaking something down.  
