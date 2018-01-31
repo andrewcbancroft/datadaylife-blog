@@ -65,14 +65,14 @@ Here's the gist:  If you've got a "-sis" noun (like "analy**sis**"), you can mak
 **Analysis**, the *noun*, becomes **analytic**, an adjective.
 
 #### From the Definition
-"Analyc" just means that whatever we're describing with the word "analytic" *has to do with analysis* (breaking something down), as opposed to synthesis (building something up).
+"Analytic" just means that whatever we're describing *has to do with analysis* (breaking something down), as opposed to synthesis (building something up).
 
 While "analytic" as a definition isn't extremely interesting (in my opinion), it does act as the bridge in my mind between the "-sis" suffix and our destiation suffix:  "-ics".
 
 So let's cross the bridge and see where we land...
 
 ### "-ics"
-Let's switch "Anlytic" (the adjective) back to "Analyt**ics**".
+Switch "Anlytic" (the adjective) back to "Analyt**ics**".
 
 Here, my friends, is where I thought things got super interesting.
 
@@ -91,6 +91,10 @@ And *with* that noun-ification, you've brought new connotations to the word.  Su
 
 ### What We've Uncovered
 If I had summarize what we've uncovered, it'd be this:  Analytics is the **science of analysis**.  Analytics encompases the corpus of understanding we have about analysis...it's techniques and processes and principles for breaking things down.
+
+Even though analysis and analytics are both nouns, they aren't "the same thing".  The *concept* of breaking something down (analysis) is different than the *science* or *method* for doing that breaking down.
+
+Analysis is the end-goal (okay, understanding, interpreting, making inferences and predictions and decisions might be the *end*-end goal, but still...).  Analytics is the way we get there.
 
 In conclusion,
 
