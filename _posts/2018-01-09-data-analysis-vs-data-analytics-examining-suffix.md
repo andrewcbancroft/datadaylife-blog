@@ -1,5 +1,5 @@
 ---
-title: "Data Analysis vs Data Analytics: Examining the Suffix"
+title: "Breaking Down Data Analysis vs Data Analytics: A Look at the Suffix"
 excerpt: "Question: How would you explain \"data analysis\" vs \"data analytics\"? Clues lie in the suffix!"
 layout: work-in-progress
 toc: true
