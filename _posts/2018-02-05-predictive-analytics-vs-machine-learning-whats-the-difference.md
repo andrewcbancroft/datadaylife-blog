@@ -3,7 +3,7 @@ title: Predictive Analytics vs Machine Learning - What's the Difference?
 excerpt: "Are predictive analytics and machine learning the same thing? If they're not, what's the difference?"
 layout: work-in-progress
 toc: true
-last_modified_at: 2018-01-18
+last_modified_at: 2018-02-05
 categories: [Machine Learning, Predictive Analytics]
 ---
 
@@ -11,23 +11,23 @@ There's a strong temptation to equate "predictive analytics" and "machine learni
 
 But is there a *difference* that sometimes gets lost when we substitute one term for the other? If there *is* a difference, is it important to distinguish? Is it dangerous or misleading to use the terms as synonyms?
 
-To get to the bottom of this, we need to understand what *kinds* or *types* of data analysis there are.  What are the broad categories that exist for analyzing data?
+## Predictive Analytics:  A Method for Analysis
+In [Breaking Down Data Analysis vs Data Analytics: A Look at the Suffix](https://www.dataday.life/data-analysis-vs-data-analytics-examining-suffix/), I reasoned that analytics essentially "denotes the body of facts… the knowledge about… the principles for: analysis. Analytics is about methodology. It’s about the approach to performing analysis. It’s the science of analysis."
 
-## Types of Data Analysis
-There are at least six kinds of analysis that can be performed on a data set:
+In [What Types of Data Analysis Are There?](https://www.dataday.life/what-types-of-data-analysis-are-there/), I noted that predictive *analysis* is what you're doing when you analyze data in a way that can produce predictions of measurements for specific "units" within a population (as opposed to inferential analysis where the measurement predictions are made for the population as a whole).
 
-1. Descriptive Analysis
-2. Exploratory Analysis
-3. Inferential Analysis
-4. Predictive Analysis
-5. Causal Analysis
-6. Mechanistic Analysis
+Combining the two concepts of "analytics" and "predictive analysis" ought to lend us to a natural definition for predictive analytics.
 
-I've made [more detailed observations](https://www.dataday.life/what-types-of-data-analysis-are-there/) about each one of these six categories of analysis separately.  What I want you to notice about the list above is what *is* and *isn't* listed.
+> Predictive analytics refers to the principles and methods for making measurement predictions for specific "units" within a population.
 
-"Predictive Analysis" made the list at #4.
+Predictive analytics is concerned with the principles and methods for, say...
 
-What about "Machine Learning", though?  Why isn't it there?
+* Taking an individual customer from the population of a company's customer base, analyzing data about him/her, and predicting the liklihood that he/she will purchase a new product offering
+* Taking a single house from the population of homes in a city or neighborhood, and predicting the selling price
+
+## Machine Learning:  A Way to do Predictive Analytics
+
+
 
 ## The Difference
 Predictive analytics and machine learning are not "the same". Predictive analysis exists at this "type of data analysis that *can be done*" level. Machine learning does not.
