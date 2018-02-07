@@ -27,14 +27,14 @@ Predictive analytics is concerned with the principles and methods for, say...
 
 Predictive analytics encapsulates the principles and methods for computing estimations for these measurements (or any number of others that [fit the pattern of questions](https://www.dataday.life/patterns-and-key-words-of-predictive-analytics-questions/) for predictive analytics to provide the answer for).
 
-The thing about "predictive analytics" as a term, is that it's pretty abstract.  Notably missing in these "principles and methods and science" is the **how to do it**.  Predictive analytics *doesn't* prescribe a definitive **how**.
+The thing about "predictive analytics" as a term, is that it's pretty abstract.  Notably missing in these "principles and methods" is the **how to do it**.
 
 *That* is what "machine learning" is.
 
 ## Machine Learning:  A Way to do Predictive Analytics
 Machine learning is a way to *do* predictive analytics.
 
-Machine learning is one way to take this idea of predicting measurements for an "individual unit" within a population and turn it into a reality.
+It is one way to take this idea of predicting measurements for an "individual unit" within a population, and turn it into a reality.
 
 *One* way?  So... there are *other ways* to do predictive analytics??
 
@@ -45,7 +45,9 @@ Before there were machines, there were... *people*.
 
 People (statisticians in particular) have been doing predictive analysis for decades, if not centuries. It may have taken longer and been more tedius and error-prone, but steps that are taken to figure out "the answer" in machine learning have been do-able by humans for a long time... they are not "new".
 
-Sooooo... why "machine learning"? In short, it's a *scale* problem with modern data sets. The data sets of the 21st century are much larger than ever before in history. 
+Sooooo... why "machine learning"? 
+
+In short, it's a *scale* problem with modern data sets. The data sets of the 21st century are much larger than ever before in history. 
 
 While it's *possible* for people to compute the outputs that a machine learning algorithm can produce, it's *unnecessary*.  Due to the scale of data in today's world, it's also insanely impractical for many data sets.
 
@@ -73,13 +75,13 @@ That is machine learning... it involves the encoding of the steps that need to b
 ## The Bottom-Line
 Predictive analytics and machine learning are not "the same". 
 
-Predictive analytics is about [the way(s)] (in general) to make estimations about specific people (or specific animals or widgets or [whatever] the "unit" of interest is from your population of "units"). 
+Predictive analytics is about [the way(s)], in general, to make estimations about specific people (or specific animals or widgets or [whatever] the "unit" of interest is from your population of "units"). 
 
 Machine learning *is* one of those ways to make those predictions a reality.
 
-The means to do something... the methods and strategies and ways we approach accomplishing a goal are not the same thing as the goal itself. They're two distinct things, aren't they?  
+The means to do something...the methods and strategies and ways we approach accomplishing a goal...are not the same thing as the goal itself. They're two distinct things, aren't they?  
 
-If I say, "My goal is to save $1000 by Christmas.", I could go about achieving that goal in a dozen ways.  I might begin a saving strategy that involves setting back about $83 / month, the goal and the strategy are two separate things.  I might take on a side project to earn extra money. In either case, the strategy *accomplishes* the goal.  Without the *goal*, the strategy has no clearly defined purpose.
+If I say, "My goal is to save $1000 by Christmas.", I could go about achieving that goal in a dozen ways.  I might begin a saving strategy that involves setting back about $83 / month, the goal and the strategy are two separate things.  I might take on a side project to earn extra money, or sell stuff on Craigslist. In either case, the strategy *accomplishes* the goal.
 
 Predictive analytics is the goal.  Machine learning is a strategy used to *accomplish* the goal.
 
