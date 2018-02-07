@@ -9,10 +9,10 @@ categories: [Machine Learning, Predictive Analytics]
 
 There's a strong temptation to equate "predictive analytics" and "machine learning". It's not uncommon to throw the terms around interchangeably, which signals that the two are strongly related.
 
-But is there a *difference* that sometimes gets lost when we substitute one term for the other? If there *is* a difference, is it important to distinguish?
+BUT. Is there a *difference* that sometimes gets lost when we substitute one term for the other? If there *is* a difference, is it important to distinguish?
 
 ## Predictive Analytics: A Method for Analysis
-In [Breaking Down Data Analysis vs Data Analytics: A Look at the Suffix](https://www.dataday.life/data-analysis-vs-data-analytics-examining-suffix/), I reasoned that analytics essentially "denotes the body of facts… the knowledge about… the principles for: analysis. Analytics is about methodology. It’s about the approach to performing analysis. It’s the science of analysis."
+In [Breaking Down Data Analysis vs Data Analytics: A Look at the Suffix](https://www.dataday.life/data-analysis-vs-data-analytics-examining-suffix/), I reasoned that analytics essentially "denotes the body of facts… the knowledge about… the principles for: analysis. Analytics is about methodology. It’s about the approach to performing analysis. It’s the *science* of analysis."
 
 In [What Types of Data Analysis Are There?](https://www.dataday.life/what-types-of-data-analysis-are-there/), I noted that predictive *analysis* is what you're doing when you analyze data in a way that can produce predictions of measurements for specific "units" within a population (as opposed to inferential analysis where the measurement predictions are made for the population as a whole).
 
@@ -25,11 +25,9 @@ Predictive analytics is concerned with the principles and methods for, say...
 * Taking an individual customer from the population of a company's customer base, analyzing data about him/her, and predicting the liklihood that he/she will purchase [this product] if we run [this marketing campaign] targeted at them
 * Taking a single house from the population of homes in a city or neighborhood, and predicting the selling price
 
-Predictive analytics encapsulates the principles for giving estimations for these measurements or any number of others that [fit the pattern of questions](https://www.dataday.life/patterns-and-key-words-of-predictive-analytics-questions/) for predictive analytics to provide the answer for.
+Predictive analytics encapsulates the principles and methods for computing estimations for these measurements (or any number of others that [fit the pattern of questions](https://www.dataday.life/patterns-and-key-words-of-predictive-analytics-questions/) for predictive analytics to provide the answer for).
 
-The thing about "predictive analytics" as a term, is that it's pretty abstract, isn't it? It's about the principles and methods for doing the kind of analysis I just described with examples.  Predictive analytics is the general, abstract collection of principles...the science...for how to predict measurements for specific people or animals or parts or [whatever the unit is] within a population.
-
-But "predictive analytics" *doesn't* prescribe a definitive **how**.
+The thing about "predictive analytics" as a term, is that it's pretty abstract.  Notably missing in these "principles and methods and science" is the **how to do it**.  Predictive analytics *doesn't* prescribe a definitive **how**.
 
 *That* is what "machine learning" is.
 
