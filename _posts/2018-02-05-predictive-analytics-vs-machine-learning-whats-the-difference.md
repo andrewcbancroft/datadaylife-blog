@@ -1,7 +1,7 @@
 ---
 title: Predictive Analytics vs Machine Learning - What's the Difference?
 excerpt: "Are predictive analytics and machine learning the same thing? If they're not, what's the difference?"
-layout: work-in-progress
+layout: single
 toc: true
 last_modified_at: 2018-02-05
 categories: [Machine Learning, Predictive Analytics]
