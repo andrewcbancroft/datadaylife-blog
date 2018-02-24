@@ -25,7 +25,7 @@ They want the information that can help them make a business decision without lo
 
 That's why I believe there are at least 5 reasons that dimensional models can be a huge win for the business and for IT.
 
-# 1. Data in context is the most powerful model for robust analysis
+## 1. Data in context is the most powerful model for robust analysis
 
 A dimensional model is a representation of data that portrays its measurements **in context**... that is, it takes the numbers and surrounds them with highly descriptive characteristics about the event that generated the measurements.
 
@@ -33,7 +33,7 @@ Dimensional models highlight the characteristics, qualities, features, and facet
 
 Therefore, a dimensional model is ideal for understanding the patterns and information that the data contains in a way that is **widely approachable** by analysts of all kinds.
 
-# 2. Data cleansing will always have to be done
+## 2. Data cleansing will always have to be done
 There's no escaping data cleansing and transformation.  
 
 In ["Stages to Machine Learning"](https://www.dataday.life/stages-to-machine-learning/), I discuss some always-required steps to getting from A to Z in machine learning endeavors.  Two of those:  data cleansing, and data transformation.
@@ -44,7 +44,7 @@ No matter what, someone has to put in the effort to ensure quality, consistent d
 
 So if you're going to go through the trouble *anyways*, it makes sense to put in the effort to model the data so that business users can focus on what matters most: the business.
 
-# 3. It's just a matter of time until you need a schema
+## 3. It's just a matter of time until you need a schema
 You're not escaping schemas if you're delivering the ability for end-users to interact with the business' data sets with relative ease.
 
 "Data lakes" offer the opportunity to reverse the order in which schemas are required for a particular analysis, shifting it from an up-front necessity to a "schema on read" / "just-in-time schema" approach.  But "schema on read" isn't the same as "no schema".
@@ -53,7 +53,7 @@ So again, whether it's schema on write, as you do in traditional Extract-Transfo
 
 It makes sense, then, to design a schema (a model, if you will) that end-users can readily understand and work with using a business intelligence reporting and visualization tool of their choice.
 
-# 4. Not all data problems are "big data" problems
+## 4. Not all data problems are "big data" problems
 Before your team runs off to implment a Hadoop cluster, ask, "Do we really have 'big data'??"
 
 If your data set can fit in memory on a single computer, your data is not "big data".  If your data is coming in at manageable intervals...ie, if you're able to keep up, you don't have the velocity problem that big data presents.
@@ -62,7 +62,7 @@ If you don't have a big data problem, don't invent one for yourself!
 
 Somewhere along the way, your business users just want to perform some basic descriptive analytics.  Go there.  Provide that value.  
 
-# 5. Dimensional models are low-hanging fruit
+## 5. Dimensional models are low-hanging fruit
 In terms of investment, dimensional models are relatively low-hanging fruit to implement. 
 
 Additionally, they provide real, tangible value to a business.  
