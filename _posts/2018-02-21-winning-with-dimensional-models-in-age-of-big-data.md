@@ -53,6 +53,20 @@ So again, whether it's schema on write, as you do in traditional Extract-Transfo
 
 It makes sense, then, to design a schema (a model, if you will) that end-users can readily understand and work with using a business intelligence reporting and visualization tool of their choice.
 
-# 4.
+# 4. Not all data problems are "big data" problems
+Before your team runs off to implment a Hadoop cluster, ask, "Do we really have 'big data'??"
 
-# 5.
+If your data set can fit in memory on a single computer, your data is not "big data".  If your data is coming in at manageable intervals...ie, if you're able to keep up, you don't have the velocity problem that big data presents.
+
+If you don't have a big data problem, don't invent one for yourself!
+
+Somewhere along the way, your business users just want to perform some basic descriptive analytics.  Go there.  Provide that value.  
+
+# 5. Dimensional models are low-hanging fruit
+In terms of investment, dimensional models are relatively low-hanging fruit to implement. 
+
+Additionally, they provide real, tangible value to a business.  
+
+If you're looking for a relatively "easy" win, building dimensional models that reflect the processes of the business in an integrated manner is a good way to get off the ground.
+
+When the time comes, you'll have done the data cleansing and transformation work to provide standard data sets that can be used for more advanced forms of analysis.
