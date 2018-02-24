@@ -25,7 +25,7 @@ They want the information that can help them make a business decision without lo
 
 That's why I believe there are at least 5 reasons that dimensional models can be a huge win for the business and for IT.
 
-1. Data in context is the most powerful model for robust analysis
+# 1. Data in context is the most powerful model for robust analysis
 
 A dimensional model is a representation of data that portrays its measurements **in context**... that is, it takes the numbers and surrounds them with highly descriptive characteristics about the event that generated the measurements.
 
@@ -33,7 +33,7 @@ Dimensional models highlight the characteristics, qualities, features, and facet
 
 Therefore, a dimensional model is ideal for understanding the patterns and information that the data contains in a way that is **widely approachable** by analysts of all kinds.
 
-2. Data cleansing will always have to be done
+# 2. Data cleansing will always have to be done
 There's no escaping data cleansing and transformation.  
 
 In ["Stages to Machine Learning"](https://www.dataday.life/stages-to-machine-learning/), I discuss some always-required steps to getting from A to Z in machine learning endeavors.  Two of those:  data cleansing, and data transformation.
@@ -44,15 +44,15 @@ No matter what, someone has to put in the effort to ensure quality, consistent d
 
 So if you're going to go through the trouble *anyways*, it makes sense to put in the effort to model the data so that business users can focus on what matters most: the business.
 
-3. It's just a matter of time until you need a schema
-We'll never escape schemas, because schemas are the metadata we have about the model of our data sets.
+# 3. It's just a matter of time until you need a schema
+We're not escaping schemas if we're delivering the ability for end-users to interact with the business' data sets with relative ease.
 
-"Data lakes" offer the opportunity to reverse the order in which schemas are required for a particular analysis, shifting it from an up-front necessity to a "schema on read" / "just-in-time" approach.  But "schema on read" isn't the same as "no schema".
+"Data lakes" offer the opportunity to reverse the order in which schemas are required for a particular analysis, shifting it from an up-front necessity to a "schema on read" / "just-in-time schema" approach.  But "schema on read" isn't the same as "no schema".
 
 So again, whether it's schema on write, as we do in traditional Extract-Transform-Load processes, or if it's schema on read, as the advent of a data lake provides, there's likely going to be a schema in your future.
 
 It makes sense, then, to design a schema (a model, if you will) that end-users can readily understand and work with using a business intelligence reporting and visualization tool of their choice.
 
-4.
+# 4.
 
-5.
+# 5.
