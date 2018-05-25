@@ -6,11 +6,11 @@ toc: true
 categories: [Data Modeling]
 ---
 
-So you're building a dimensional model and you're asking he question, "Should I group these columns together, or should I split them into separate dimensions?"
+So you're building a dimensional model and you're asking the question, "Should I group these columns together, or should I split them into separate dimensions?"
 
 It's not always clear, and when most examples that you run across on the internet are dealing with "obvious" dimensions like Product or Date or Employee, it's hard when you run into ambiguous real-world situations.
 
-Here, I offer a few angles from which you can approach your decision to "Dimension" (or not).
+Here, I offer a few angles from which you can approach your decision "to Dimension" (or not).
 
 ## Ask: What are the organizational units that your users refer to?
 
@@ -18,15 +18,21 @@ Listen to users of your to-be dimensional model.  How do they talk about the stu
 
 Often, the high-level nouns they use are clues as to what could be translated to a dimension table in your dimensional model.
 
-When in doubt, ask the folks who will use the model. Dimensional modeling is highly collaborative by nature, so utilize your business partners when you're unsure of how to organize their data.
+Dimensional modeling is highly collaborative by nature, so utilize your business partners when you're unsure of how to organize their data.  When in doubt, ask the folks who will use the model. 
+
+## Ask the extreme: What if we only had one huge dimension?
+Having one huge dimension feels like the wrong design move, but why?
+
+Right now, I'm imagining a table that contains every bit of descriptive context about a measurement without discrimination...just one huge dimension.  What's the discomfort here?
+
+
+
+
+## Ask the other extreme: What if every column was its own dimension?
 
 ## Ask: If I were to create a dimension, how many columns would it have?
 
 ## Ask: What attributes change together?
-
-## Ask the extreme:  What if every column was its own dimension?  
-
-## Ask the other extreme: What if we only had one huge dimension?
 
 ## Ask: What pieces or chunks of descriptive context will be reused without the need for other chunks of descriptive context?
 
