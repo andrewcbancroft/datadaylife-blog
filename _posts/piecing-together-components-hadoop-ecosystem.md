@@ -14,31 +14,36 @@ When I approach ecosystems like Hadoop, I try to assume that if a component exis
 
 Therefore, it seems reasonable to start piecing things together by asking questions around the particular problems as they arise organically.  Something like this...
 
-# Q: What do you do when a file you have exceeds the storage capacity of your local disk?
+# Data Storage & Resource Management
+## Q: What do you do when a file you have exceeds the storage capacity of your local disk?
 One option might be to buy a bigger disk and put it in your computer, true? But as data keeps growing in size, you'll run into a bottleneck where the reasonable capacity for a single disk doesn't keep pace with the volume of data you're storing.
 
 An alternative option might be to buy *more* disks, and split up files into chunks.  The whole file might not fit together on a single disk, but if you split it into smaller chunks and spread them across the disks, you could make it work.
 
 This leads to a sub-question:
 
-## What if one of the disks that a piece of your file is stored on dies?
+### What if one of the disks that a piece of your file is stored on dies?
 Nothing lasts forever, so how do you protect against data loss if one of the storage devices fails?
 
-# A: Hadoop Distributed File System (HDFS)
+## A: Hadoop Distributed File System (HDFS)
 
-# Q: If you split up a file, how do you piece it back together or work with it as a whole entity?
+# Working with Data
+## Q: If you split up a file, how do you piece it back together or work with it as a whole entity?
 Presumably you'll want to get the file back into its original form eventually... or at the very least, come up with a way to process it fully as an entire entity, even if it's divided up across storage devices.
 
-# A: MapReduce
+## A: MapReduce
 
-# Q: What if I wanted to use my SQL skills and query data in HDFS using SQLish syntax?
-# A: Hive
+## Q: What if I wanted to use my SQL skills and query data in HDFS using SQLish syntax?
+## A: Hive
 
-# Q: What if I need to transform data step-by-step in a chunk-like process?
-# A: Pig
+## Q: What if I need to transform data step-by-step in a chunk-like process?
+## A: Pig
 
-# Q: How do I make sure that [x] happens first, then [y], then [z] in my data processing pipeline?
-# A: Oozie
+## New Problem:  the traditional MapReduce engine doesn't do Hive & Pig.  What do you do?
+## A: New engine called Tez can process Hive and Pig jobs
 
-# Q: What options so I have for getting data out of a traditional relational database?
-# A: Sqoop
+## Q: How do I make sure that [x] happens first, then [y], then [z] in my data processing pipeline?
+## A: Oozie
+
+## Q: What options so I have for getting data out of a traditional relational database?
+## A: Sqoop
