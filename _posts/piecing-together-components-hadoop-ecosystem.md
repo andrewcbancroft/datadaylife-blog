@@ -39,7 +39,7 @@ Presumably you'll want to get the file back into its original form eventually...
 ## Q: What if I need to transform data step-by-step in a chunk-like process?
 ## A: Pig
 
-## New Problem:  the traditional MapReduce engine doesn't do Hive & Pig.  What do you do?
+## I want a faster version of MapReduce.  What do I have?
 ## A: New engine called Tez can process Hive and Pig jobs
 
 ## Q: How do I make sure that [x] happens first, then [y], then [z] in my data processing pipeline?
