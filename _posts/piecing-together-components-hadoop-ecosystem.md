@@ -31,3 +31,14 @@ Presumably you'll want to get the file back into its original form eventually...
 
 # A: MapReduce
 
+# Q: What if I wanted to use my SQL skills and query data in HDFS using SQLish syntax?
+# A: Hive
+
+# Q: What if I need to transform data step-by-step in a chunk-like process?
+# A: Pig
+
+# Q: How do I make sure that [x] happens first, then [y], then [z] in my data processing pipeline?
+# A: Oozie
+
+# Q: What options so I have for getting data out of a traditional relational database?
+# A: Sqoop
