@@ -9,14 +9,14 @@ Being able to programmatically create an HDInsight cluster, use it, and subseque
 
 Here, I want to break the use-case down into chunks:
 
-# Log in to Azure (PowerShell)
+## Log in to Azure (PowerShell)
 The first step is to log in to your Azure account:
 
 ```powershell
 Login-AzureRmAccount
 ```
 
-# Create a Resource Group
+## Create a Resource Group
 Resource Groups in Azure make it extremely convenient to package all of the pieces of your temporary, on-the-fly-use, HDInsight Hadoop cluster.  
 
 The idea is to create the storage you need, along with the Hadoop cluster infrastructure you need, and stick them together inside of a resource group. Why? So that you can tear it all down once you're done in a single step by removing the resource group itself. Removing a resource group is how you can delete both the storage and the HDInsight Hadoop cluster all at once.
@@ -45,7 +45,7 @@ $location = "South Central US"
 New-AzureRmResourceGroup -Name $resourceGroupName -Location $location
 ```
 
-# Create Storage
+## Create Storage
 Hadoop clusters need a storage area that they can use to store files and do processing.  For temporary clusters use on-the-fly, I like to create a new storage account in the newly-created resource group.  Alternatively, you can use an existing storage account.
 
 What do you need in order to create and/or use storage in PowerShell?
@@ -84,10 +84,10 @@ $storageAccountKey = (Get-AzureRmStorageAccountKey -ResourceGroupName $resourceG
 $context = New-AzureStorageContext -StorageAccountName $storageAccountName -StorageAccountKey $storageAccountKey
 New-AzureStorageContainer -Name $containerName -Context $context
 ```
-# Create the Hadoop Cluster
+## Create the Hadoop Cluster
 Final piece!  What do you need to know in order to create an HDInsight Hadoop cluster with PowerShell?
 
-## Cluster-specific Details
+### Cluster-specific Details
 * A **name** for the HDInsight cluster 
 * The **type** of cluster (Hadoop, Storm, Spark, Kafka, etc.)
 * The **version** of Hadoop (or Storm, Spark, Kafka, etc.)
@@ -97,7 +97,7 @@ Final piece!  What do you need to know in order to create an HDInsight Hadoop cl
   * One set for HTTP
   * One set for SSH
   
-## Resource-logistic Details
+### Resource-logistic Details
 * The **resource group** that the cluster will be a part of (you created this earlier)
 * The **location** (You can reuse the `$location` variable you used to create the new resource group earlier)
 * The **default storage account name** (you created this earlier)
@@ -136,7 +136,7 @@ New-AzureRmHDInsightCluster
 Write-Host "Finished!"
 ```
 
-# Final Script
+## Final Script
 Before I call it "good", I like to bring my shared variables up to the top of the script so they're not sprinkled throughout.  Here's a final script that I use as a template for creating new HDInsight Hadoop clusters in Azure:
 
 ```powershell
