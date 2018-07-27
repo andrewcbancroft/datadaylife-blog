@@ -19,11 +19,11 @@ Login-AzureRmAccount
 # Create a Resource Group
 Resource Groups in Azure make it extremely convenient to package all of the pieces of your temporary, on-the-fly-use, HDInsight Hadoop cluster.  
 
-The idea is to create the storage you need, along with the Hadoop cluster infrastructure you need, and stick them together inside of a resource group. Why? So that you can tear it all down once you're down by removing the resource group itself. 
+The idea is to create the storage you need, along with the Hadoop cluster infrastructure you need, and stick them together inside of a resource group. Why? So that you can tear it all down once you're done in a single step by removing the resource group itself. Removing a resource group is how you can delete both the storage and the HDInsight Hadoop cluster all at once.
 
-Alternatively, if you happened to want to keep the storage around, no worries.  HDInsight is the piece that can get expensive while it's online.  You can always resort to removing the HDInsight cluster *only*, if you're wanting to keep the storage, but save on costs while the Hadoop cluster isn't being utilized.
+If you happened to want to keep the storage around, no worries.  HDInsight is the piece that can get expensive while it's online.  You can always resort to removing the HDInsight cluster *only*, if you're wanting to keep the storage, but save on costs while the Hadoop cluster isn't being utilized.
 
-What do you need to know in order to create a resouce group?
+Om either case, the question remains:  What do you need to know in order to create a resouce group?
 
 * The **name** of the resource group (you get to make this up)
 * The **location** of the resource group (this is one of the Azure regions)
@@ -47,7 +47,7 @@ New-AzureRmResourceGroup -Name $resourceGroupName -Location $location
 # Create Storage
 Hadoop clusters need a storage area that they can use to store files and do processing.  For temporary clusters use on-the-fly, I like to create a new storage account in the newly-created resource group.  Alternatively, you can use an existing storage account.
 
-What do you need in PowerShell to create and/or use storage?
+What do you need in order to create and/or use storage in PowerShell?
 
 * A **storage account**.  You can use an existing one, or create a new one just for this temporary-use cluster.  What do you need in order to create a new storage account?
   * A **name** for the storage account
