@@ -1,7 +1,7 @@
 ---
 title: Create an HDInsight Cluster in Azure with PowerShell
 excerpt: "How do you create an HDInsight Hadoop cluster programmatically in Azure with PowerShell? Here, I walk through what you need to know and provide a sample script."
-layout: work-in-progress
+layout: single
 toc: true
 categories: [Big Data, Azure, HDInsight]
 ---
