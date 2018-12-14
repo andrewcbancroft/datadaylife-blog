@@ -6,7 +6,7 @@ toc: true
 categories: [Big Data]
 ---
 
-I want to explore the value of "Extract - Load - Transform" over "Extract - Transform - Load" in terms of the advantages and effeciencies that this particular data preparation paradigm enables.
+I want to explore the value of "Extract - **Load** - Transform" over "Extract - Transform - **Load**" in terms of the advantages and effeciencies that this particular data preparation paradigm enables.
 
 Why does the position of the "L" in the initialism matter?
 
