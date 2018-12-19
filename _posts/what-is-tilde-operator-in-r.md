@@ -28,3 +28,8 @@ In other words, what we're saying is that "y responds to changes in x"... "value
 `~` is a "definition" operator.  
 
 What does it define? A formula for a statistical model.  It encapsulates all the inputs that are required to produce an estimated output of some sort.
+
+
+https://stackoverflow.com/questions/14976331/use-of-tilde-in-r-programming-language
+
+https://stackoverflow.com/questions/8055508/in-r-formulas-why-do-i-have-to-use-the-i-function-on-power-terms-like-y-i/8055683#8055683
