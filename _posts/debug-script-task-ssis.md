@@ -8,12 +8,14 @@ Click the Control Flow tab
 
 Double-click the Script *task*
 
+Click Script and then click Edit Script...
+
 ### Script Component (Data Flow)
 Click the Data Flow tab
 
 Double-click the Script *component*
 
-Click Script and then click Edit Script.
+Click Script and then click Edit Script...
 
 ## 2) Set the breakpoint
 Locate the line of script on which you want to set a breakpoint
