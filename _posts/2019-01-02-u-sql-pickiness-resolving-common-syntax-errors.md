@@ -1,5 +1,5 @@
 ---
-title: U-SQL Pickiness for Newbies
+title: U-SQL Pickiness - Resolving Common Syntax Errors
 excerpt: "Here are a few \"gotcha's\" to look out for newcommers writing U-SQL for Azure Data Lake Analytics from a T-SQL background."
 layout: single
 toc: true
