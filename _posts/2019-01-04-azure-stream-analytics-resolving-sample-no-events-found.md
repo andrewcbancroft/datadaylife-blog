@@ -1,9 +1,9 @@
 ---
 title: Resolving "No Events Found" When Sampling Data with Azure Stream Analytics
 excerpt: ""
-layout: draft
+layout: work-in-progress
 toc: true
-categories: [Data Modeling]
+categories: []
 ---
 
 No events found for `HubName`.
