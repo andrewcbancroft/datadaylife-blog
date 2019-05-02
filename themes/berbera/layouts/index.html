@@ -1,0 +1,160 @@
+{{ define "main" }}
+<main>
+    <div class="homepage">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1>
+                    <div class="author-avatar">
+                            <img src="https://0.gravatar.com/avatar/693d6ce36672340c22f55dd4f44f9f69" alt="Andrew Bancroft" itemprop="image">
+                    </div>
+                    <span class="major_line">Data-Day Life</span>
+                    <br>
+                    <span class="minor_line">Describing Data Discoveries from Day to Day</span>
+                </h1>
+            </div>
+        </div>
+
+        <div class="row" id="notes">
+            <div class="col-sm-12">
+                <h3 class="category_header">Notes</h3>
+            </div>
+        </div>
+
+        <div class="row" id="sql-server-notes">
+            <div class="col-sm-12">
+                <div class="card">
+                    <h4 class="card-header">SQL Server</h4>
+                    <div class="card-body">
+                        <ul>
+                            {{ range (where .Pages "File.Dir" "in" "/notes/sql-server/").ByTitle }}
+                            <li>
+                                <a href="{{.Permalink}}">{{.Title}}</a>
+                            </li>
+                            {{ end }}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="blog-articles">
+            <div class="col-sm-12">
+                <h3 class="category_header">Blog Articles</h3>
+            </div>
+        </div>
+
+        <div class="row" id="azure">
+            <div class="col-sm-12">
+                <div class="card">
+                    <h4 class="card-header">Azure</h4>
+                    <div class="article_list card-body">
+                        <ul>
+                                {{ range (where .Pages "File.Dir" "in" "/blog/azure/").ByTitle }}
+                                <li><a href="{{.Permalink}}">{{.Title}}</a></li>
+                                <div class="excerpt">{{.Description}}</div>
+                                {{ end }}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="dimensional-modeling">
+                <div class="col-sm-12">
+                    <div class="card">
+                        <h4 class="card-header">Dimensional Modeling</h4>
+                        <div class="article_list card-body">
+                            <ul>
+                                    {{ range (where .Pages "File.Dir" "in" "/blog/dimensional-modeling/").ByTitle }}
+                                    <li><a href="{{.Permalink}}">{{.Title}}</a></li>
+                                    <div class="excerpt">{{.Description}}</div>
+                                    {{ end }}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <div class="row" id="general-data-concepts">
+                <div class="col-sm-12">
+                    <div class="card">
+                        <h4 class="card-header">General Data Concepts</h4>
+                        <div class="article_list card-body">
+                            <ul>
+                                    {{ range (where .Pages "File.Dir" "in" "/blog/general-data-concepts/").ByTitle }}
+                                    <li><a href="{{.Permalink}}">{{.Title}}</a></li>
+                                    <div class="excerpt">{{.Description}}</div>
+                                    {{ end }}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <div class="row" id="machine-learning">
+                <div class="col-sm-12">
+                    <div class="card">
+                        <h4 class="card-header">Machine Learning</h4>
+                        <div class="article_list card-body">
+                            <ul>
+                                    {{ range (where .Pages "File.Dir" "in" "/blog/machine-learning/").ByTitle }}
+                                    <li><a href="{{.Permalink}}">{{.Title}}</a></li>
+                                    <div class="excerpt">{{.Description}}</div>
+                                    {{ end }}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <div class="row" id="r">
+                <div class="col-sm-12">
+                    <div class="card">
+                        <h4 class="card-header">R</h4>
+                        <div class="article_list card-body">
+                            <ul>
+                                    {{ range (where .Pages "File.Dir" "in" "/blog/r/").ByTitle }}
+                                    <li><a href="{{.Permalink}}">{{.Title}}</a></li>
+                                    <div class="excerpt">{{.Description}}</div>
+                                    {{ end }}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <div class="row" id="sql-server">
+                <div class="col-sm-12">
+                    <div class="card">
+                        <h4 class="card-header">SQL Server</h4>
+                        <div class="article_list card-body">
+                            <ul>
+                                    {{ range (where .Pages "File.Dir" "in" "/blog/sql-server/").ByTitle }}
+                                    <li><a href="{{.Permalink}}">{{.Title}}</a></li>
+                                    <div class="excerpt">{{.Description}}</div>
+                                    {{ end }}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <div class="row" id="statistics">
+                <div class="col-sm-12">
+                    <div class="card">
+                        <h4 class="card-header">Statistics</h4>
+                        <div class="article_list card-body">
+                            <ul>
+                                    {{ range (where .Pages "File.Dir" "in" "/blog/statistics/").ByTitle }}
+                                    <li><a href="{{.Permalink}}">{{.Title}}</a></li>
+                                    <div class="excerpt">{{.Description}}</div>
+                                    {{ end }}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+</main>
+{{ end }}

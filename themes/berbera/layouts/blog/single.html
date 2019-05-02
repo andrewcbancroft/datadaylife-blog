@@ -1,0 +1,83 @@
+{{ define "title" }}{{ .Title | markdownify }}{{ end }}
+
+{{ define "schema-dot-org" }}
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  {{- /* Google recommends the headline be no more than 110 characters */}}
+  "headline": "{{ substr .Title 0 110 }}",
+  {{- with .Params.images -}}{{ range first 1 . }}
+  "image": {
+    "@type": "ImageObject",
+    "url": "{{ . | absURL }}"
+    {{- /* Don't try to get imageConfig if image param is not local */ -}}
+    {{- if not (or (hasPrefix . "http://") (hasPrefix . "https://")) -}}
+    {{- with (imageConfig (printf "/static/%s" .)) -}}
+    ,
+    "height": "{{ .Height }}",
+    "width": "{{ .Width }}"
+    {{- end -}}
+    {{ end }}
+  },
+  {{- end -}}{{ end }}
+  "url": "{{ printf "%s" .Permalink }}",
+  "wordCount": "{{ .WordCount }}",
+  {{- $ISO8601 := "2006-01-02T15:04:05-07:00" }}
+  {{- if not .PublishDate.IsZero }}
+  "datePublished": "{{ .PublishDate.Format $ISO8601 }}",
+  {{- else }}
+  "datePublished": "{{ .Date.Format $ISO8601 }}",
+  {{- end }}
+  {{- if not .Lastmod.IsZero }}
+  "dateModified": "{{ .Lastmod.Format $ISO8601 }}",
+  {{- end }}
+  {{- with .Site.Social.GooglePlus }}
+  "publisher": "{{ printf "%s" . }}",
+  {{- end }}
+  "author": {
+    "@type": "Person",
+    "name": "{{ .Params.author | default .Site.Params.author }}"
+  }
+  {{- if or (.Params.categories) (.Params.tags) -}}
+  ,
+  "keywords": "{{ delimit (union .Params.categories .Params.tags) ", " }}"
+  {{- end }}
+
+  {{- with .Params.description -}}
+  ,
+  "description": "{{ . }}"
+  {{- end }}
+}
+</script>
+
+{{ end }}
+
+{{ define "main" }}
+{{ $dateFormat := default " January 2, 2006" (index .Site.Params "date_format") }}
+
+<article>
+  <div class="article">
+    <header>
+      <h1 class="article-title">{{ .Title }}</h1>
+      <div class="article_date">
+        <time datetime="{{ .Date.Format " 2006-01-02T15:04:05Z07:00 " }}">{{ .Date.Format $dateFormat }}</time>
+      </div>
+    </header>
+    <div class="content">
+    {{- if .Params.wip }}
+    <aside class="wip">
+        <div>
+            <h4>Thanks for stopping by!</h4>
+            <p>You're reading an <a href="/work-in-progress">active work in progress</a>, which means things could be a little cluttered. But I'm glad you're here, and I hope you enjoy the data discoveries below!</p>
+              <p>Everything on this site is available on GitHub if you'd like to <a href='https://github.com/andrewcbancroft/datadaylife-blog/'>contribute</a>.</p>
+        </div>
+    </aside>
+    {{- end}}
+
+    {{ .Content }}
+
+    {{ template "_internal/disqus.html" . }}
+  </article>
+
+{{ end }}
