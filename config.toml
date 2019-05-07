@@ -3,9 +3,9 @@ languageCode = "en-us"
 title = "Data-Day Life"
 theme = "berbera"
 
-pygmentsCodeFences = true
-pygmentsUseClasses = true
-canonifyURLs = true
-publishDir = "docs"
-disableKinds = []
-disqusShortname = "https://datadaylife.disqus.com"
+pygmentsCodeFences=true
+pygmentsUseClasses=true
+canonifyURLs=true
+publishDir="docs"
+disableKinds = ["section", "taxonomy", "taxonomyTerm"]
+disqusShortname="https://datadaylife.disqus.com"

@@ -2,8 +2,10 @@
 title: "A Mnemonic for Remembering Type I vs Type II Errors"
 author: "Andrew Bancroft"
 description: "False positive, false negative, alpha, beta...keep the interpretation of Type I and Type II errors straight with this poetic mnemonic."
+date: 2019-05-07
 type: blog
-draft: true
+draft: false
+wip: true
 comments: true
 ---
 
@@ -13,8 +15,8 @@ How about a mnemonic to help solidify the concepts?
 
 To frame the mnemonic, consider the following scenario:
 
-A man has been charged with murder and you're on the jury.  Witnesses have brought forth testimony.  Evidence has been submitted.  And now... you've handed in your verdict.
+A man has been charged with murder and you're on the jury.  Witnesses have brought forth testimony.  Evidence has been submitted.  You've *just* handed in your verdict.
 
-Now for the mnemonic.
+Now for the mnemonic:
 
-> If he's going to jail but shouldn't be<br>you've committed an error<br>of the 1st degree (Type I)<br><br>on the *other* hand<br><br>If you set him free when he's<br>actually guilty<br>your evidence was too few<br>and you've committed a Type II.
+> If he's going to jail but shouldn't be<br>you've committed an error<br>of the 1st degree (Type I)<br><br>on the **other** hand<br><br>If you set him free<br>when he'sactually guilty<br>your evidence was too few<br>and you've committed a Type II.
