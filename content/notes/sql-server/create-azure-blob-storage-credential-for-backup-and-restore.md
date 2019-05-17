@@ -3,7 +3,7 @@ import-module sqlps
 $storageAccount = "<StorageAccountName>"  
 $storageKey = "<StorageAccountKey>"  
 $secureString = convertto-securestring $storageKey  -asplaintext -force  
-$credentialName = "NobleGeneralBlobStorageCredential"
+$credentialName = "BlobStorageCredential"
 
 cd SQLServer:\SQL\$env:COMPUTERNAME
 
