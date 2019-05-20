@@ -405,14 +405,6 @@ Articles
   margin: 30px 0 30px 0;
 }
 
-.article .content{
-  font-family: "Computer Modern", serif;
-}
-
-.article .content p, .article .content li{
-  font-size: 1.25em;
-}
-
 .article .content p{
   padding-top:.25em;
   padding-bottom:.25em;
