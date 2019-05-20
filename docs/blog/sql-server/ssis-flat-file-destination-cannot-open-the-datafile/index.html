@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111087893-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-111087893-1');
+    </script>
+
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-6356224024630676",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+    <script>
+    window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+    "palette": {
+        "popup": {
+        "background": "#0092CB"
+        },
+        "button": {
+        "background": "#8ec760",
+        "text": "#ffffff"
+        }
+    }
+    })});
+    </script>
+
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<meta property="og:title" content="Fix SSIS Flat File Destination Error: Cannot open the datafile" />
+<meta property="og:description" content="Here&#39;s how to fix the &#34;Cannot open the datafile&#34; error with SSIS Flat File Destinations." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.dataday.life/blog/sql-server/ssis-flat-file-destination-cannot-open-the-datafile/" />
+<meta property="article:published_time" content="2018-02-01T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2018-02-01T00:00:00&#43;00:00"/>
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Fix SSIS Flat File Destination Error: Cannot open the datafile"/>
+<meta name="twitter:description" content="Here&#39;s how to fix the &#34;Cannot open the datafile&#34; error with SSIS Flat File Destinations."/>
+<meta name="generator" content="Hugo 0.55.4" /> 
+    
+    
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Fix SSIS Flat File Destination Error: Cannot open the datafile",
+  "url": "https:\/\/www.dataday.life\/blog\/sql-server\/ssis-flat-file-destination-cannot-open-the-datafile\/",
+  "wordCount": "243",
+  "datePublished": "2018-02-01T00:00:00\x2b00:00",
+  "dateModified": "2018-02-01T00:00:00\x2b00:00",
+  "author": {
+    "@type": "Person",
+    "name": "Andrew Bancroft"
+  },
+  "description": "Here\x27s how to fix the \x22Cannot open the datafile\x22 error with SSIS Flat File Destinations."
+}
+</script>
+
+
+
+    <title>Fix SSIS Flat File Destination Error: Cannot open the datafile</title>
+
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
+
+    
+    <link href="https://www.dataday.life/css/custom.css" rel="stylesheet"> 
+    <link href="https://www.dataday.life/css/syntax.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,500,700" rel="stylesheet">
+        
+    <link href="" rel="alternate" type="application/rss+xml" title="Data-Day Life" /> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre','code'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top px-5">
+            <a class="navbar-brand" href="https://www.dataday.life"><i class="fas fa-home"></i> Home</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="nav navbar-nav mr-auto mt-2 mt-lg-0"></ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            Notes
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="https://www.dataday.life#sql-server-notes">SQL Server</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                Blog Articles
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="https://www.dataday.life#azure">Azure</a>
+                                <a class="dropdown-item" href="https://www.dataday.life#dimensional-modeling">Dimensional Modeling</a>
+                                <a class="dropdown-item" href="https://www.dataday.life#general-data-concepts">General Data Concepts</a>
+                                <a class="dropdown-item" href="https://www.dataday.life#machine-learning">Machine Learning</a>
+                                <a class="dropdown-item" href="https://www.dataday.life#r">R</a>
+                                <a class="dropdown-item" href="https://www.dataday.life#sql-server">SQL Server</a>
+                                <a class="dropdown-item" href="https://www.dataday.life#statistics">Statistics</a>
+                            </div>
+                        </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            About
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="https://www.dataday.lifeabout/andrew_bancroft/">About Andrew</a>
+                            <a class="dropdown-item" href="https://github.com/andrewcbancroft">GitHub</a>
+                            <a class="dropdown-item" href="https://www.linkedin.com/in/andrewcbancroft/">LinkedIn</a>
+                            <a class="dropdown-item" href="https://twitter.com/andrewcbancroft">Twitter</a>
+                            <a class="dropdown-item" href="https://www.youtube.com/channel/UCDPV9kMhP-b5EFRI7d812pg">YouTube</a>
+                            <a class="dropdown-item" href="https://www.pluralsight.com/authors/andrew-bancroft">Pluralsight Courses</a>
+                            <a class="dropdown-item" href="https://www.andrewcbancroft.com">www.andrewcbancroft.com</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+    </nav>
+
+
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+
+                
+
+
+<article>
+  <div class="article">
+    <header>
+      <h1 class="article-title">Fix SSIS Flat File Destination Error: Cannot open the datafile</h1>
+    </header>
+    <div class="content">
+
+    <p>This SSIS package execution error can occur for a few reasons:</p>
+
+<ul>
+<li><strong>Path to the file does not exist.</strong></li>
+</ul>
+
+<p>So for example, if you&rsquo;re writing the file to C:\Some\Folder\somefile.txt, C:\Some\Folder needs to exist <strong>first</strong>.</p>
+
+<p><strong>Fix</strong>:  Create the folder that the package will write to prior to executing it.</p>
+
+<p>Alternatively, you can add a File System Task with a <code>Create Directory</code> operation prior to the Flat File Destination component.</p>
+
+<ul>
+<li><strong>The account executing the package does not have permissions</strong></li>
+</ul>
+
+<p>Check to make sure whichever account is executing the package has sufficient file system permissions to write the file to disk.</p>
+
+<p><strong>Fix</strong>:  Grant the appropriate write permissions to the user account that is executing the package. On a server, this would be the SQL Server Agent account that&rsquo;s executing the package.</p>
+
+<ul>
+<li>The file you&rsquo;re writing to is being used by another process</li>
+</ul>
+
+<p>If some other process is using the file you&rsquo;re writing to, it will block SSIS&rsquo; attempt to write to it simultaneously.</p>
+
+<p><strong>Fix</strong>:  <strong>In general, make sure that the file is not in use by some other application or process.</strong></p>
+
+<p>Be careful copying and pasting SSIS tasks and components inside of a package &ndash; If you <em>do</em>, make absolutely sure you&rsquo;ve adjusted each configuration appropriately.  I&rsquo;ve run into this &ldquo;file is being used by another process&rdquo; situation because I copied and pasted an Execute Package task, and forgot to update the config &ndash; attempting ot execute the same package in parrallel can cause issues, apparently!  haha</p>
+
+
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "https://datadaylife.disqus.com" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </article>
+
+
+
+            </div>
+
+        </div>
+    </div>
+
+    
+
+    <footer class="footer text-center">
+        <div class="container">
+            <span class="text-muted">This project contains 22 pages and is available on <a href="https://github.com/andrewcbancroft/datadaylife-blog">GitHub</a>. Copyright &copy; Andrew Bancroft, <time datetime="2019">2019</time>.</span>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
