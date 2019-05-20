@@ -7,7 +7,7 @@ min_version = 0.25
 
 [author]
   name = "Andrew Bancroft"
-  homepage = "https://data-day.life"
+  homepage = "https://www.dataday.life"
 
 [based on]
   name = "Alan Orth"
