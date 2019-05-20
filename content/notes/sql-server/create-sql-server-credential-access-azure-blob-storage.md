@@ -1,18 +1,21 @@
 ---
-title: "Create an Azure Blob Storage Credential for Backup and Restore"
+title: "Create a SQL Server Credential for Accessing Azure Blob Storage"
 author: "Andrew Bancroft"
-date:   2018-01-09
-description: "Process for getting a SQL Server database out of SINGLE_USER Mode if you're stuck in it."
+date:   2019-05-20
+description: "PowerShell script for creating a SQL Server Credential to access Azure Blob Storage."
 type: technical_note
 draft: false
 comments: true
-aliases:
-    - /sqlserverscripts/get-out-of-single-user-mode/
 ---
+
+## Prerequisites:
+
+* The `SqlServer` PowerShell module must be installed.
+  * Run `Install-Module -Name SqlServer` if you need to install it...
 
 ##### create-credential.ps1
 {{< highlight powershell >}}
-import-module sqlps
+import-module SqlServer
 
 $storageAccount = "<StorageAccountName>"  #replace this with your Azure storage account name
 $storageKey = "<StorageAccountKey>"  #replace this with one of your Azure storage account keys

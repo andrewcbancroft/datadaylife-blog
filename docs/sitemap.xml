@@ -3,14 +3,19 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://www.dataday.life/blog/statistics/mnemonic-for-remembering-type-i-type-ii-errors/</loc>
-    <lastmod>2019-05-07T00:00:00+00:00</lastmod>
+    <loc>https://www.dataday.life/notes/sql-server/create-sql-server-credential-access-azure-blob-storage/</loc>
+    <lastmod>2019-05-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.dataday.life/</loc>
-    <lastmod>2019-05-07T00:00:00+00:00</lastmod>
+    <lastmod>2019-05-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.dataday.life/blog/statistics/mnemonic-for-remembering-type-i-type-ii-errors/</loc>
+    <lastmod>2019-05-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -71,11 +76,6 @@
   <url>
     <loc>https://www.dataday.life/blog/general-data-concepts/what-types-of-data-analysis-are-there/</loc>
     <lastmod>2018-01-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.dataday.life/notes/sql-server/create-azure-blob-storage-credential-for-backup-and-restore/</loc>
-    <lastmod>2018-01-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>

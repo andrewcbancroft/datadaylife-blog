@@ -41,16 +41,16 @@
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<meta property="og:title" content="Create an Azure Blob Storage Credential for Backup and Restore" />
-<meta property="og:description" content="Process for getting a SQL Server database out of SINGLE_USER Mode if you&#39;re stuck in it." />
+<meta property="og:title" content="Create a SQL Server Credential for Accessing Azure Blob Storage" />
+<meta property="og:description" content="PowerShell script for creating a SQL Server Credential to access Azure Blob Storage." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.dataday.life/notes/sql-server/create-azure-blob-storage-credential-for-backup-and-restore/" />
-<meta property="article:published_time" content="2018-01-09T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2018-01-09T00:00:00&#43;00:00"/>
+<meta property="og:url" content="https://www.dataday.life/notes/sql-server/create-sql-server-credential-access-azure-blob-storage/" />
+<meta property="article:published_time" content="2019-05-20T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2019-05-20T00:00:00&#43;00:00"/>
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Create an Azure Blob Storage Credential for Backup and Restore"/>
-<meta name="twitter:description" content="Process for getting a SQL Server database out of SINGLE_USER Mode if you&#39;re stuck in it."/>
+<meta name="twitter:title" content="Create a SQL Server Credential for Accessing Azure Blob Storage"/>
+<meta name="twitter:description" content="PowerShell script for creating a SQL Server Credential to access Azure Blob Storage."/>
 <meta name="generator" content="Hugo 0.55.4" /> 
     
     
@@ -58,20 +58,20 @@
 {
   "@context": "http://schema.org",
   "@type": "BlogPosting",
-  "headline": "Create an Azure Blob Storage Credential for Backup and Restore",
-  "url": "https:\/\/www.dataday.life\/notes\/sql-server\/create-azure-blob-storage-credential-for-backup-and-restore\/",
-  "wordCount": "66",
-  "datePublished": "2018-01-09T00:00:00\x2b00:00",
-  "dateModified": "2018-01-09T00:00:00\x2b00:00",
+  "headline": "Create a SQL Server Credential for Accessing Azure Blob Storage",
+  "url": "https:\/\/www.dataday.life\/notes\/sql-server\/create-sql-server-credential-access-azure-blob-storage\/",
+  "wordCount": "84",
+  "datePublished": "2019-05-20T00:00:00\x2b00:00",
+  "dateModified": "2019-05-20T00:00:00\x2b00:00",
   "author": {
     "@type": "Person",
     "name": "Andrew Bancroft"
   },
-  "description": "Process for getting a SQL Server database out of SINGLE_USER Mode if you\x27re stuck in it."
+  "description": "PowerShell script for creating a SQL Server Credential to access Azure Blob Storage."
 }
 </script> 
 
-    <title>Create an Azure Blob Storage Credential for Backup and Restore</title>
+    <title>Create a SQL Server Credential for Accessing Azure Blob Storage</title>
 
     
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
@@ -172,14 +172,24 @@ MathJax.Hub.Config({
 <article>
   <div class="article">
     <header>
-      <h1 class="article-title">Create an Azure Blob Storage Credential for Backup and Restore</h1>
+      <h1 class="article-title">Create a SQL Server Credential for Accessing Azure Blob Storage</h1>
     </header>
     <div class="content">
     
 
+<h2 id="prerequisites">Prerequisites:</h2>
+
+<ul>
+<li>The <code>SqlServer</code> PowerShell module must be installed.
+
+<ul>
+<li>Run <code>Install-Module -Name SqlServer</code> if you need to install it&hellip;</li>
+</ul></li>
+</ul>
+
 <h5 id="create-credential-ps1">create-credential.ps1</h5>
 
-<div class="highlight"><pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="nb">import-module</span> <span class="n">sqlps</span>
+<div class="highlight"><pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="nb">import-module</span> <span class="n">SqlServer</span>
 
 <span class="nv">$storageAccount</span> <span class="p">=</span> <span class="s2">&#34;&lt;StorageAccountName&gt;&#34;</span>  <span class="c">#replace this with your Azure storage account name</span>
 <span class="nv">$storageKey</span> <span class="p">=</span> <span class="s2">&#34;&lt;StorageAccountKey&gt;&#34;</span>  <span class="c">#replace this with one of your Azure storage account keys</span>

@@ -6,10 +6,19 @@
     <description>Recent content on Data-Day Life</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 07 May 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 20 May 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.dataday.life/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Create a SQL Server Credential for Accessing Azure Blob Storage</title>
+      <link>https://www.dataday.life/notes/sql-server/create-sql-server-credential-access-azure-blob-storage/</link>
+      <pubDate>Mon, 20 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.dataday.life/notes/sql-server/create-sql-server-credential-access-azure-blob-storage/</guid>
+      <description> Prerequisites:  The SqlServer PowerShell module must be installed.  Run Install-Module -Name SqlServer if you need to install it&amp;hellip;   create-credential.ps1 import-module SqlServer $storageAccount = &amp;#34;&amp;lt;StorageAccountName&amp;gt;&amp;#34; #replace this with your Azure storage account name $storageKey = &amp;#34;&amp;lt;StorageAccountKey&amp;gt;&amp;#34; #replace this with one of your Azure storage account keys $secureString = convertto-securestring $storageKey -asplaintext -force $credentialName = &amp;#34;BlobStorageCredential&amp;#34; #give the credential a name - you&amp;#39;ll reference it again later (in other scripts, for example) cd SQLServer:\SQL\$env:COMPUTERNAME $instances = Get-ChildItem $instances | new-sqlcredential -Name $credentialName -Identity $storageAccount -Secret $secureString </description>
+    </item>
     
     <item>
       <title>A Mnemonic for Remembering Type I vs Type II Errors</title>
@@ -171,15 +180,6 @@ Additionally, we looked for a SQL Server 2017 key, but the portal indicated that
 But before you can get answers, you need to do a certain kind of analysis.
 But before you do analysis, you need data to perform the analysis on.
 But before you bother with data, you typically have one or more questions in mind.</description>
-    </item>
-    
-    <item>
-      <title>Create an Azure Blob Storage Credential for Backup and Restore</title>
-      <link>https://www.dataday.life/notes/sql-server/create-azure-blob-storage-credential-for-backup-and-restore/</link>
-      <pubDate>Tue, 09 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.dataday.life/notes/sql-server/create-azure-blob-storage-credential-for-backup-and-restore/</guid>
-      <description> create-credential.ps1 import-module sqlps $storageAccount = &amp;#34;&amp;lt;StorageAccountName&amp;gt;&amp;#34; #replace this with your Azure storage account name $storageKey = &amp;#34;&amp;lt;StorageAccountKey&amp;gt;&amp;#34; #replace this with one of your Azure storage account keys $secureString = convertto-securestring $storageKey -asplaintext -force $credentialName = &amp;#34;BlobStorageCredential&amp;#34; #give the credential a name - you&amp;#39;ll reference it again later (in other scripts, for example) cd SQLServer:\SQL\$env:COMPUTERNAME $instances = Get-ChildItem $instances | new-sqlcredential -Name $credentialName -Identity $storageAccount -Secret $secureString </description>
     </item>
     
     <item>
