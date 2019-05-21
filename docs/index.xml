@@ -6,10 +6,21 @@
     <description>Recent content on Data-Day Life</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 20 May 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 21 May 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.dataday.life/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Cheat Sheet - Jupyter Notebook Keyboard Shortcuts</title>
+      <link>https://www.dataday.life/blog/jupyter-notebooks/cheat-sheet-jupyter-notebook-keyboard-shortcuts/</link>
+      <pubDate>Tue, 21 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.dataday.life/blog/jupyter-notebooks/cheat-sheet-jupyter-notebook-keyboard-shortcuts/</guid>
+      <description>Command Mode (Blue) Shortcut  What Happens  
+h  Shows a pop-up window listing out all keyboard shortcuts   cmd + shift + p (Mac)
+ctrl + shift + p (Win)  Shows the Command Palette   enter  Goes into Edit Mode (green) for the currently selected cell   ctrl + enter  Runs the selected cell   shift + enter  Runs the selected cell; Selects the cell below   alt + shift + enter (Mac) alt + shift + enter (Win)  Runs the selected cell; Adds a new cell below; Enters the new cell in Edit Mode   A  Inserts a new cell above the currently-selected cell   B  Inserts a new cell below the currently-selected cell   C  Copies the currently-selected cell(s)   V  Pastes a cell(s) that have been C Copied as new cell(s) below the currently-selected cell   shiftV  Pastes a cell(s) that have been C Copied as new cell(s) above the currently-selected cell   D D (the &#39;D&#39; key twice)  Deletes the currently selected cell(s)   Shift + Click Cell  Highlights the range of cells between the one that was selected, and the one that you clicked.</description>
+    </item>
     
     <item>
       <title>Create a SQL Server Credential for Accessing Azure Blob Storage</title>

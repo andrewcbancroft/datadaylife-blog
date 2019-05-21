@@ -8,4 +8,4 @@ pygmentsUseClasses=true
 canonifyURLs=true
 publishDir="docs"
 disableKinds = ["section", "taxonomy", "taxonomyTerm"]
-disqusShortname="https://datadaylife.disqus.com"
+disqusShortname="datadaylife"

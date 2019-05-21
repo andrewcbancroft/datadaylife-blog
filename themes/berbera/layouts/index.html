@@ -91,6 +91,22 @@
                 </div>
         </div>
 
+        <div class="row" id="jupyter-notebooks">
+                <div class="col-sm-12">
+                    <div class="card">
+                        <h4 class="card-header">Jupyter Notebooks</h4>
+                        <div class="article_list card-body">
+                            <ul>
+                                    {{ range (where .Pages "File.Dir" "in" "/blog/jupyter-notebooks/").ByTitle }}
+                                    <li><a href="{{.Permalink}}">{{.Title}}</a></li>
+                                    <div class="excerpt">{{.Description}}</div>
+                                    {{ end }}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
         <div class="row" id="machine-learning">
                 <div class="col-sm-12">
                     <div class="card">

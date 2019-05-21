@@ -3,14 +3,19 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://www.dataday.life/notes/sql-server/create-sql-server-credential-access-azure-blob-storage/</loc>
-    <lastmod>2019-05-20T00:00:00+00:00</lastmod>
+    <loc>https://www.dataday.life/blog/jupyter-notebooks/cheat-sheet-jupyter-notebook-keyboard-shortcuts/</loc>
+    <lastmod>2019-05-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.dataday.life/</loc>
-    <lastmod>2019-05-20T00:00:00+00:00</lastmod>
+    <lastmod>2019-05-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.dataday.life/notes/sql-server/create-sql-server-credential-access-azure-blob-storage/</loc>
+    <lastmod>2019-05-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
