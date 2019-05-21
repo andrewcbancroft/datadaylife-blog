@@ -80,8 +80,8 @@ Runs the selected cell; Selects the cell below
 
 <div class="row">
 <div class="col-sm-4">
-<code>alt</code> + <code>shift</code> + <code>enter</code> (Mac)
-<code>alt</code> + <code>shift</code> + <code>enter</code> (Win)
+<code>option</code> + <code>shift</code> + <code>enter</code> (Mac)
+<code>alt</code> + <code>enter</code> (Win)
 </div>
 <div class="col-sm-8">
 Runs the selected cell; Adds a new cell below; Enters the new cell in Edit Mode
@@ -269,8 +269,8 @@ Runs the selected cell; Selects the cell below
 
 <div class="row">
 <div class="col-sm-4">
-<code>alt</code> + <code>shift</code> + <code>enter</code> (Mac)
-<code>alt</code> + <code>shift</code> + <code>enter</code> (Win)
+<code>option</code> + <code>shift</code> + <code>enter</code> (Mac)
+<code>alt</code> + <code>enter</code> (Win)
 </div>
 <div class="col-sm-8">
 Runs the selected cell; Adds a new cell below; Enters the new cell in Edit Mode
