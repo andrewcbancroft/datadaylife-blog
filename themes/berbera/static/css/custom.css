@@ -299,6 +299,10 @@ Homepage cards
     list-style: none;
   }
 
+.homepage .note-card-body ul{
+  list-style: square;
+}
+
   .homepage .card-body li{
     font-size: 1.05em;
   }
@@ -343,7 +347,6 @@ Homepage cards
       font-size: 1.2em;
     }
   }
-  
 
 /* ---------------------------------------------------------
 Technical Notes
