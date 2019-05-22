@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://www.dataday.life/</loc>
+    <lastmod>2019-05-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.dataday.life/notes/data-engineering-python/load-csv-file-with-python-pandas/</loc>
+    <lastmod>2019-05-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.dataday.life/notes/data-engineering-python/load-excel-file-with-python-pandas/</loc>
+    <lastmod>2019-05-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.dataday.life/notes/jupyter-notebooks/cheat-sheet-jupyter-notebook-keyboard-shortcuts/</loc>
+    <lastmod>2019-05-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.dataday.life/notes/sql-server/create-sql-server-credential-access-azure-blob-storage/</loc>
+    <lastmod>2019-05-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.dataday.life/blog/statistics/mnemonic-for-remembering-type-i-type-ii-errors/</loc>
+    <lastmod>2019-05-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.dataday.life/blog/r/what-is-tilde-operator-in-r/</loc>
+    <lastmod>2019-04-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.dataday.life/blog/azure/azure-stream-analytics-resolving-sample-no-events-found/</loc>
+    <lastmod>2019-01-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.dataday.life/blog/azure/deciphering-usql-error-messages/</loc>
+    <lastmod>2019-01-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.dataday.life/blog/azure/u-sql-pickiness-resolving-common-syntax-errors/</loc>
+    <lastmod>2019-01-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.dataday.life/blog/azure/create-hdinsight-cluster-azure-powershell/</loc>
+    <lastmod>2018-07-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.dataday.life/blog/dimensional-modeling/winning-with-dimensional-models-in-age-of-big-data/</loc>
+    <lastmod>2018-02-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.dataday.life/blog/machine-learning/predictive-analytics-vs-machine-learning-whats-the-difference/</loc>
+    <lastmod>2018-02-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.dataday.life/blog/sql-server/ssis-flat-file-destination-cannot-open-the-datafile/</loc>
+    <lastmod>2018-02-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.dataday.life/work-in-progress/</loc>
+    <lastmod>2018-02-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.dataday.life/blog/general-data-concepts/data-analysis-vs-data-analytics-examining-suffix/</loc>
+    <lastmod>2018-01-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.dataday.life/blog/sql-server/where-is-sql-server-2017-reporting-services-product-key/</loc>
+    <lastmod>2018-01-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.dataday.life/blog/general-data-concepts/what-types-of-data-analysis-are-there/</loc>
+    <lastmod>2018-01-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.dataday.life/notes/sql-server/get-out-of-single-user-mode/</loc>
+    <lastmod>2018-01-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.dataday.life/notes/sql-server/kill-all-sessions/</loc>
+    <lastmod>2018-01-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.dataday.life/notes/sql-server/search-object-definitions-for-text/</loc>
+    <lastmod>2018-01-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.dataday.life/blog/dimensional-modeling/what-is-a-dimensional-model/</loc>
+    <lastmod>2017-12-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.dataday.life/about/andrew_bancroft/</loc>
+    <lastmod>2017-12-20T11:53:49-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.dataday.life/blog/general-data-concepts/patterns-and-key-words-of-predictive-analytics-questions/</loc>
+    <lastmod>2017-12-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.dataday.life/blog/machine-learning/stages-to-machine-learning/</loc>
+    <lastmod>2017-12-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.dataday.life/blog/general-data-concepts/what-is-data-like-im-five/</loc>
+    <lastmod>2017-12-16T00:00:00+00:00</lastmod>
+  </url>
+  
+</urlset>

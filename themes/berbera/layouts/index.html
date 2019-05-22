@@ -36,7 +36,7 @@
                     </div>
                 </div>
             </div>
-    </div>
+        </div>
 
     <span id="sql-server-notes" class="jump-target"></span>
         <div class="row" id="">
@@ -46,6 +46,24 @@
                     <div class="card-body note-card-body">
                         <ul>
                             {{ range (where .Pages "File.Dir" "in" "/notes/sql-server/").ByTitle }}
+                            <li>
+                                <a href="{{.Permalink}}">{{.Title}}</a>
+                            </li>
+                            {{ end }}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <span id="working-with-data-python-notes" class="jump-target"></span>
+        <div class="row" id="">
+            <div class="col-sm-12">
+                <div class="card">
+                    <h4 class="card-header">Working With Data in Python</h4>
+                    <div class="card-body note-card-body">
+                        <ul>
+                            {{ range (where .Pages "File.Dir" "in" "/notes/data-engineering-python/").ByTitle }}
                             <li>
                                 <a href="{{.Permalink}}">{{.Title}}</a>
                             </li>

@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data-Day Life</title>
+    <link>https://www.dataday.life/</link>
+    <description>Recent content on Data-Day Life</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 22 May 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.dataday.life/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Load a CSV File With Python and Pandas</title>
+      <link>https://www.dataday.life/notes/data-engineering-python/load-csv-file-with-python-pandas/</link>
+      <pubDate>Wed, 22 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.dataday.life/notes/data-engineering-python/load-csv-file-with-python-pandas/</guid>
+      <description>Prerequisites  Install the Pandas library for your Python environment Cells in this notebook expect the Car Sales.csv file to be in certain locations; specifics are in the cell itself Resources to help you practice are available at the end  First Things First import pandas as pd Load Data From Excel File is in the same directory as your Jupyter Notebook # Read the Excel file car_sales_data = pd.</description>
+    </item>
+    
+    <item>
+      <title>Load an Excel File With Python and Pandas</title>
+      <link>https://www.dataday.life/notes/data-engineering-python/load-excel-file-with-python-pandas/</link>
+      <pubDate>Wed, 22 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.dataday.life/notes/data-engineering-python/load-excel-file-with-python-pandas/</guid>
+      <description>Prerequisites  Install the Pandas library for your Python environment Cells in this notebook expect the Car Sales.xlsx file to be in certain locations; specifics are in the cell itself Resources to help you practice are available at the end  First Things First import pandas as pd Load Data From Excel File is in the same directory as your Jupyter Notebook # Read the Excel file car_sales_data = pd.</description>
+    </item>
+    
+    <item>
+      <title>Cheat Sheet - Jupyter Notebook Keyboard Shortcuts</title>
+      <link>https://www.dataday.life/notes/jupyter-notebooks/cheat-sheet-jupyter-notebook-keyboard-shortcuts/</link>
+      <pubDate>Tue, 21 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.dataday.life/notes/jupyter-notebooks/cheat-sheet-jupyter-notebook-keyboard-shortcuts/</guid>
+      <description>Command Mode (Blue) Shortcut  What Happens  
+h  Shows a pop-up window listing out all keyboard shortcuts   cmd + shift + p (Mac)
+ctrl + shift + p (Win)  Shows the Command Palette   enter  Goes into Edit Mode (green) for the currently selected cell   ctrl + enter  Runs the selected cell   shift + enter  Runs the selected cell; Selects the cell below   option + shift + enter (Mac) alt + enter (Win)  Runs the selected cell; Adds a new cell below; Enters the new cell in Edit Mode   A  Inserts a new cell above the currently-selected cell   B  Inserts a new cell below the currently-selected cell   C  Copies the currently-selected cell(s)   V  Pastes a cell(s) that have been C Copied as new cell(s) below the currently-selected cell   shiftV  Pastes a cell(s) that have been C Copied as new cell(s) above the currently-selected cell   D D (the &#39;D&#39; key twice)  Deletes the currently selected cell(s)   Shift + Click Cell  Highlights the range of cells between the one that was selected, and the one that you clicked.</description>
+    </item>
+    
+    <item>
+      <title>Create a SQL Server Credential for Accessing Azure Blob Storage</title>
+      <link>https://www.dataday.life/notes/sql-server/create-sql-server-credential-access-azure-blob-storage/</link>
+      <pubDate>Mon, 20 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.dataday.life/notes/sql-server/create-sql-server-credential-access-azure-blob-storage/</guid>
+      <description> Prerequisites:  The SqlServer PowerShell module must be installed.  Run Install-Module -Name SqlServer if you need to install it&amp;hellip;   create-credential.ps1 import-module SqlServer $storageAccount = &amp;#34;&amp;lt;StorageAccountName&amp;gt;&amp;#34; #replace this with your Azure storage account name $storageKey = &amp;#34;&amp;lt;StorageAccountKey&amp;gt;&amp;#34; #replace this with one of your Azure storage account keys $secureString = convertto-securestring $storageKey -asplaintext -force $credentialName = &amp;#34;BlobStorageCredential&amp;#34; #give the credential a name - you&amp;#39;ll reference it again later (in other scripts, for example) cd SQLServer:\SQL\$env:COMPUTERNAME $instances = Get-ChildItem $instances | new-sqlcredential -Name $credentialName -Identity $storageAccount -Secret $secureString </description>
+    </item>
+    
+    <item>
+      <title>A Mnemonic for Remembering Type I vs Type II Errors</title>
+      <link>https://www.dataday.life/blog/statistics/mnemonic-for-remembering-type-i-type-ii-errors/</link>
+      <pubDate>Tue, 07 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.dataday.life/blog/statistics/mnemonic-for-remembering-type-i-type-ii-errors/</guid>
+      <description>Step away from inferential statistics for a while and the interpretation of Type I and Type II errors in hypothesis testing could slip away.
+How about a mnemonic to help solidify the concepts?
+To frame the mnemonic, consider the following scenario:
+A man has been charged with murder and you&amp;rsquo;re on the jury. Witnesses have brought forth testimony. Evidence has been submitted. You&amp;rsquo;ve just handed in your verdict.
+Now for the mnemonic:</description>
+    </item>
+    
+    <item>
+      <title>What is the tilde (~) &#34;symbol&#34; in R?</title>
+      <link>https://www.dataday.life/blog/r/what-is-tilde-operator-in-r/</link>
+      <pubDate>Tue, 30 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.dataday.life/blog/r/what-is-tilde-operator-in-r/</guid>
+      <description>What is the tilde (~) &amp;ldquo;symbol&amp;rdquo; in R?
+If you were to put words to what it is, how would you explain it or interpret it?
+What does it mean (and therefore, what does it do)?
+Here, I document a few of the unpackings that I&amp;rsquo;ve run across when it comes to ~ in R.
+From the Docs: &amp;ldquo;y on x&amp;rdquo; In the R-project.org documentation, tilde ~ starts getting mentioned in chapter 11 when the discussion of &amp;ldquo;statistical models&amp;rdquo; begins.</description>
+    </item>
+    
+    <item>
+      <title>Resolving &#34;No Events Found&#34; When Sampling Data with Azure Stream Analytics</title>
+      <link>https://www.dataday.life/blog/azure/azure-stream-analytics-resolving-sample-no-events-found/</link>
+      <pubDate>Fri, 04 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.dataday.life/blog/azure/azure-stream-analytics-resolving-sample-no-events-found/</guid>
+      <description>Data is making it to the Event Hub&amp;hellip;at least you&amp;rsquo;re 99% sure it is, because successful requests are being made by your app/device and received by the Hub.
+The trouble is, when you attempt to sample data with Azure Stream Analytics, you come up empty with a message like
+ No events found for HubName.
+ or
+ Diagnostics: While sampling data, no data was received from # partitions.
+ In my particular case, everything was fine with both the Event Hub and the Stream Analytics Job configurations.</description>
+    </item>
+    
+    <item>
+      <title>Deciphering U-SQL&#39;s Error Messages</title>
+      <link>https://www.dataday.life/blog/azure/deciphering-usql-error-messages/</link>
+      <pubDate>Thu, 03 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.dataday.life/blog/azure/deciphering-usql-error-messages/</guid>
+      <description>It&amp;rsquo;s inevitable - you&amp;rsquo;re going to encounter job failures when working with Azure Data Lake Analytics U-SQL jobs.
+Error Sources There are at least three root causes for a U-SQL job failure:
+1) A problem with your script
+2) A problem with the data
+3) A problem with your extractor&amp;rsquo;s &amp;ldquo;shematizing&amp;rdquo; of your data
+Deciphering Error Messages Whenever an error is reported, it can be helpful to slow down and read through the feedback that the Azure Data Lake Analytics service gave you.</description>
+    </item>
+    
+    <item>
+      <title>U-SQL Pickiness - Resolving Common Syntax Errors</title>
+      <link>https://www.dataday.life/blog/azure/u-sql-pickiness-resolving-common-syntax-errors/</link>
+      <pubDate>Wed, 02 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.dataday.life/blog/azure/u-sql-pickiness-resolving-common-syntax-errors/</guid>
+      <description>Newbies to U-SQL from T-SQL will soon run face-first into the wall that I ran into.
+Where T-SQL isn&amp;rsquo;t picky about stuff like capitalization and terminating semicolons, U-SQL definitely is.
+If you happen to fail at capitalizing one of the U-SQL keywords like SELECT or FROM, or if you miss a ; somewhere, you&amp;rsquo;ll get a syntax error:
+ syntax error. Expected one of: &amp;lsquo;.&amp;rsquo; ALL ANTISEMIJOIN ANY AS BEGIN BROADCASTLEFT BROADCASTRIGHT CROSS DISTINCT EXCEPT FULL FULLCROSS GROUP HASH HAVING INDEXLOOKUP INNER INTERSECT JOIN LEFT LOOP MERGE ON OPTION ORDER OUTER OUTER UNION PAIR PIVOT PRESORT PRODUCE READONLY REQUIRED RIGHT SAMPLE SEMIJOIN SERIAL TO UNIFORM UNION UNIVERSE UNPIVOT USING WHERE WITH &amp;lsquo;;&amp;rsquo; &amp;lsquo;(&amp;rsquo; &amp;lsquo;)&amp;rsquo; &amp;lsquo;,&amp;rsquo;</description>
+    </item>
+    
+    <item>
+      <title>Create an HDInsight Cluster in Azure with PowerShell</title>
+      <link>https://www.dataday.life/blog/azure/create-hdinsight-cluster-azure-powershell/</link>
+      <pubDate>Fri, 27 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.dataday.life/blog/azure/create-hdinsight-cluster-azure-powershell/</guid>
+      <description>Being able to programmatically create an HDInsight cluster, use it, and subsequently tear it down so that you don&amp;rsquo;t incur cost is one use-case for maximizing efficient use of Azure&amp;rsquo;s cloud platform.
+Here, I want to break the use-case down into chunks:
+Log in to Azure (PowerShell) The first step is to log in to your Azure account:
+Login-AzureRmAccount Create a Resource Group Resource Groups in Azure make it extremely convenient to package all of the pieces of your temporary, on-the-fly-use, HDInsight Hadoop cluster.</description>
+    </item>
+    
+    <item>
+      <title>Winning with Dimensional Models in the Age of Big Data</title>
+      <link>https://www.dataday.life/blog/dimensional-modeling/winning-with-dimensional-models-in-age-of-big-data/</link>
+      <pubDate>Wed, 21 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.dataday.life/blog/dimensional-modeling/winning-with-dimensional-models-in-age-of-big-data/</guid>
+      <description>It&amp;rsquo;s a fair question: Is dimensional modeling still relevant in the age of big data?
+Read enough about &amp;ldquo;big data&amp;rdquo;, and you may start to get the impression that modeling techniques are old-fashioned or irrelevant.
+Data professionals in IT departments are used to wrangling data - it&amp;rsquo;s understood that there&amp;rsquo;s no &amp;ldquo;easy button&amp;rdquo; when it comes to integrating data and geting meaning out of it. So we muster the energy and we do what it takes to get the data in order for whatever analysis the business is after.</description>
+    </item>
+    
+    <item>
+      <title>Predictive Analytics vs Machine Learning - What&#39;s the Difference?</title>
+      <link>https://www.dataday.life/blog/machine-learning/predictive-analytics-vs-machine-learning-whats-the-difference/</link>
+      <pubDate>Mon, 05 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.dataday.life/blog/machine-learning/predictive-analytics-vs-machine-learning-whats-the-difference/</guid>
+      <description>There&amp;rsquo;s a strong temptation to equate &amp;ldquo;predictive analytics&amp;rdquo; and &amp;ldquo;machine learning&amp;rdquo;. It&amp;rsquo;s not uncommon to throw the terms around interchangeably, which signals that the two are strongly related.
+BUT. Is there a difference that sometimes gets lost when we substitute one term for the other? If there is a difference, is it important to distinguish?
+Predictive Analytics: A Method for Analysis In Breaking Down Data Analysis vs Data Analytics: A Look at the Suffix, I reasoned that analytics essentially &amp;ldquo;denotes the body of facts… the knowledge about… the principles for: analysis.</description>
+    </item>
+    
+    <item>
+      <title>Fix SSIS Flat File Destination Error: Cannot open the datafile</title>
+      <link>https://www.dataday.life/blog/sql-server/ssis-flat-file-destination-cannot-open-the-datafile/</link>
+      <pubDate>Thu, 01 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.dataday.life/blog/sql-server/ssis-flat-file-destination-cannot-open-the-datafile/</guid>
+      <description>This SSIS package execution error can occur for a few reasons:
+ Path to the file does not exist.  So for example, if you&amp;rsquo;re writing the file to C:\Some\Folder\somefile.txt, C:\Some\Folder needs to exist first.
+Fix: Create the folder that the package will write to prior to executing it.
+Alternatively, you can add a File System Task with a Create Directory operation prior to the Flat File Destination component.
+ The account executing the package does not have permissions  Check to make sure whichever account is executing the package has sufficient file system permissions to write the file to disk.</description>
+    </item>
+    
+    <item>
+      <title>Work in Progress?</title>
+      <link>https://www.dataday.life/work-in-progress/</link>
+      <pubDate>Thu, 01 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.dataday.life/work-in-progress/</guid>
+      <description>Nothing I publish is perfect.
+Everything I publish is a &amp;ldquo;work in progress&amp;rdquo; to some degree or another.
+I once wrote about Agile Blogging. My thought was, &amp;ldquo;What if I could incrementally build up content, rather than have to sit down and write until all my thoughts were fully fleshed out and &amp;lsquo;perfect&amp;rsquo;? What would that look like?&amp;rdquo;
+I took some cues from the Agile software development methodology, and decided that I&amp;rsquo;d value continual enhancement and gradual build-up of my content, over and above long time commitments and perfection.</description>
+    </item>
+    
+    <item>
+      <title>Breaking Down Data Analysis vs Data Analytics: A Look at the Suffix</title>
+      <link>https://www.dataday.life/blog/general-data-concepts/data-analysis-vs-data-analytics-examining-suffix/</link>
+      <pubDate>Wed, 31 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.dataday.life/blog/general-data-concepts/data-analysis-vs-data-analytics-examining-suffix/</guid>
+      <description>&amp;ldquo;Analysis&amp;rdquo; and &amp;ldquo;analytics&amp;rdquo; are extremely similar words&amp;hellip; I mean, just the word-ending is different: &amp;ldquo;-sis&amp;rdquo; vs &amp;ldquo;-tics&amp;rdquo;
+Since the end of the words is where the difference lies (otherwise, there wouldn&amp;rsquo;t be two of them, right?), why not go find out what each suffix might indicate to get some clues as to what the difference between the words are?
+I&amp;rsquo;m going to start with &amp;ldquo;analysis&amp;rdquo;.
+Then I&amp;rsquo;m going to move to &amp;ldquo;analytic&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Where is the SQL Server 2017 Reporting Services License Key??</title>
+      <link>https://www.dataday.life/blog/sql-server/where-is-sql-server-2017-reporting-services-product-key/</link>
+      <pubDate>Fri, 19 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.dataday.life/blog/sql-server/where-is-sql-server-2017-reporting-services-product-key/</guid>
+      <description>SQL Server 2017 Reporting Services is no longer bundled with the main SQL Server installer, so if you&amp;rsquo;re looking to add the Reporting Services 2017 feature, you need to run the stand-alone installer.
+When you run said installer, you&amp;rsquo;ll be presented with a dialog asking for a product key.
+But uhhhh&amp;hellip; Where is it?
+Naturally, we went to our Volume Licensing Portal, but Reporting Services 2017 isn&amp;rsquo;t listed.
+Additionally, we looked for a SQL Server 2017 key, but the portal indicated that our copy of SQL Server &amp;ldquo;didn&amp;rsquo;t require&amp;rdquo; a product key.</description>
+    </item>
+    
+    <item>
+      <title>What Types of Data Analysis Are There?</title>
+      <link>https://www.dataday.life/blog/general-data-concepts/what-types-of-data-analysis-are-there/</link>
+      <pubDate>Thu, 18 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.dataday.life/blog/general-data-concepts/what-types-of-data-analysis-are-there/</guid>
+      <description>Questions -&amp;gt; Data -&amp;gt; Analysis -&amp;gt; Answers This flow is what it&amp;rsquo;s all about, isn&amp;rsquo;t it? At the end of the day, you want answers so that you can take informed action.
+But before you can get answers, you need to do a certain kind of analysis.
+But before you do analysis, you need data to perform the analysis on.
+But before you bother with data, you typically have one or more questions in mind.</description>
+    </item>
+    
+    <item>
+      <title>Get Out of SINGLE_USER Mode</title>
+      <link>https://www.dataday.life/notes/sql-server/get-out-of-single-user-mode/</link>
+      <pubDate>Tue, 09 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.dataday.life/notes/sql-server/get-out-of-single-user-mode/</guid>
+      <description>If you find yourself stuck in SINGLE_USER mode in a SQL Server database, do the following:
+1 - Find SPIDs connected to your database USE master GO EXEC sp_who Note any SPIDs connected to your database, and then&amp;hellip;
+2 - Kill connections KILL [spid] -- do this for each spid returned by exec sp_who 3 - Set back to MULTI_USER USE Master ALTER DATABASE DatabaseName SET MULTI_USER Plan B (If that doesn&amp;rsquo;t work) If that doesn&amp;rsquo;t work, the following query can be used to find the connection(s):</description>
+    </item>
+    
+    <item>
+      <title>Kill All Sessions</title>
+      <link>https://www.dataday.life/notes/sql-server/kill-all-sessions/</link>
+      <pubDate>Tue, 09 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.dataday.life/notes/sql-server/kill-all-sessions/</guid>
+      <description>USE master; GO ALTER DATABASE [DatabaseName] SET SINGLE_USER WITH ROLLBACK IMMEDIATE; ALTER DATABASE [DatabaseName] SET MULTI_USER; GO</description>
+    </item>
+    
+    <item>
+      <title>Search Database Object Definitions for Text</title>
+      <link>https://www.dataday.life/notes/sql-server/search-object-definitions-for-text/</link>
+      <pubDate>Tue, 09 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.dataday.life/notes/sql-server/search-object-definitions-for-text/</guid>
+      <description>If you need to find some text within a database object definition, this script can be helpful.
+It should allow you to find text within the definitions of the following types of database objects:
+ Functions (scalar and table-valued) Stored Procedures Triggers Views  DECLARE @SearchString VARCHAR(255) SET @SearchString = &amp;#39;TextToFind&amp;#39; SELECT DISTINCT o.name AS ObjectName, o.type_desc as TypeDescription FROM sys.sql_modules m INNER JOIN sys.objects o ON m.object_id = o.object_id WHERE m.</description>
+    </item>
+    
+    <item>
+      <title>What is a Dimensional Model?</title>
+      <link>https://www.dataday.life/blog/dimensional-modeling/what-is-a-dimensional-model/</link>
+      <pubDate>Tue, 26 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.dataday.life/blog/dimensional-modeling/what-is-a-dimensional-model/</guid>
+      <description>Measurements and Descriptions There are endless ways to measure and describe the world around us.
+When you boil data down to the essentials, what you get are&amp;hellip;
+ Measurement(s) Descriptions of the measurement(s)  It doesn&amp;rsquo;t matter what industry you&amp;rsquo;re in. It doesn&amp;rsquo;t matter the process that captured the data you&amp;rsquo;re looking at. At the end of the day, you&amp;rsquo;ve got numbers and classifications as measurements, and you&amp;rsquo;ve got the context describing the who, what, when, where, why, and how of those measurements.</description>
+    </item>
+    
+    <item>
+      <title>About Andrew Bancroft</title>
+      <link>https://www.dataday.life/about/andrew_bancroft/</link>
+      <pubDate>Wed, 20 Dec 2017 11:53:49 -0700</pubDate>
+      
+      <guid>https://www.dataday.life/about/andrew_bancroft/</guid>
+      <description>Data-Day Life Describing Data Discoveries from Day to Day     Hey - I&amp;rsquo;m Andrew Bancroft.
+I&amp;rsquo;m a born learner, passionate about discovery and about sharing new insights that come my way.
+Dataday.life is my outlet for writing about all things data.
+At andrewcbancroft.com I nerd out about iOS App development in Swift.
+Teaching is also one of my passions. As an Author for Pluralsight, I&amp;rsquo;ve published a few courses to their library:</description>
+    </item>
+    
+    <item>
+      <title>Patterns and Key Words of Predictive Analytics Questions</title>
+      <link>https://www.dataday.life/blog/general-data-concepts/patterns-and-key-words-of-predictive-analytics-questions/</link>
+      <pubDate>Sun, 17 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.dataday.life/blog/general-data-concepts/patterns-and-key-words-of-predictive-analytics-questions/</guid>
+      <description>Not all questions are &amp;ldquo;predictive analytics questions&amp;rdquo;. That is to say, not every question you receive as a data science practitioner requires predictive analytics to answer.
+So how do you know if someone is asking a question that&amp;rsquo;s a good fit for using predictive analytics to provide the answer?
+Patterns and Key Words From a recent read through Predictive Analytics, I jotted down a few patterns that emerged as each application of predictive analytics was presented.</description>
+    </item>
+    
+    <item>
+      <title>Stages to Machine Learning</title>
+      <link>https://www.dataday.life/blog/machine-learning/stages-to-machine-learning/</link>
+      <pubDate>Sun, 17 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.dataday.life/blog/machine-learning/stages-to-machine-learning/</guid>
+      <description>If one does not simply&amp;hellip; &amp;ldquo;machine learn&amp;rdquo;&amp;hellip; what does one do to cover all the bases and make sure that the process is complete and value-producing?
+Here 10 high level stages to check off as you take on a machine learning task.
+Business Metric Before you do anything with machine learning, you absolutely must have a good undertanding of which business metric we&amp;rsquo;re hoping to improve as a result of employing machine learning.</description>
+    </item>
+    
+    <item>
+      <title>What is Data? (Like I&#39;m 5)</title>
+      <link>https://www.dataday.life/blog/general-data-concepts/what-is-data-like-im-five/</link>
+      <pubDate>Sat, 16 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.dataday.life/blog/general-data-concepts/what-is-data-like-im-five/</guid>
+      <description>“Daddy, what is your job? What do you do there??”, asks my 5 year old in a curious tone as he tries to figure out why I went to work today instead of staying home to play with him.
+“Weeeell&amp;hellip;” (not a confident start to my response, I know&amp;hellip;).
+“Iiiiii&amp;hellip;help people with data.” 😬
+“Data? What’s data??”
+ [Think, Andrew! Think! &amp;hellip; Iiit&amp;rsquo;s the&amp;hellip; recorded facts (numbers and such) that we use to interperet reality&amp;hellip; no&amp;hellip; sratch that.</description>
+    </item>
+    
+  </channel>
+</rss>
