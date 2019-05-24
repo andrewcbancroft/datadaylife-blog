@@ -20,13 +20,13 @@ comments: true
 import pandas as pd
 ```
 
-## Load Data From Excel
+## Load Data From a CSV File
 
 ### File is in the same directory as your Jupyter Notebook
 
 
 ```python
-# Read the Excel file
+# Read the CSV file
 car_sales_data = pd.read_csv("Car Sales.csv")
 
 # Show the first 5 rows
@@ -133,7 +133,7 @@ user_home_directory = ospath("~")
 
 ```python
 # Make sure to use "/" slashes and not "\" slashes
-# There actually needs to be folders named "Path" and "To" and "Excel" and "File"
+# There actually needs to be folders named "Path" and "To" and "CSV" and "File"
 # in your home directory (the "~" means "home directory") for this cell to work
 csv_file_path = user_home_directory + "/Path/To/CSV/File/Car Sales.csv"
 

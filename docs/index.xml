@@ -17,7 +17,7 @@
       <pubDate>Wed, 22 May 2019 00:00:00 +0000</pubDate>
       
       <guid>https://www.dataday.life/notes/data-engineering-python/load-csv-file-with-python-pandas/</guid>
-      <description>Prerequisites  Install the Pandas library for your Python environment Cells in this notebook expect the Car Sales.csv file to be in certain locations; specifics are in the cell itself Resources to help you practice are available at the end  First Things First import pandas as pd Load Data From Excel File is in the same directory as your Jupyter Notebook # Read the Excel file car_sales_data = pd.</description>
+      <description>Prerequisites  Install the Pandas library for your Python environment Cells in this notebook expect the Car Sales.csv file to be in certain locations; specifics are in the cell itself Resources to help you practice are available at the end  First Things First import pandas as pd Load Data From a CSV File File is in the same directory as your Jupyter Notebook # Read the CSV file car_sales_data = pd.</description>
     </item>
     
     <item>
@@ -27,6 +27,19 @@
       
       <guid>https://www.dataday.life/notes/data-engineering-python/load-excel-file-with-python-pandas/</guid>
       <description>Prerequisites  Install the Pandas library for your Python environment Cells in this notebook expect the Car Sales.xlsx file to be in certain locations; specifics are in the cell itself Resources to help you practice are available at the end  First Things First import pandas as pd Load Data From Excel File is in the same directory as your Jupyter Notebook # Read the Excel file car_sales_data = pd.</description>
+    </item>
+    
+    <item>
+      <title>What is the Difference Between axis=0 and axis=1 When Working with Pandas Dataframes?</title>
+      <link>https://www.dataday.life/notes/data-engineering-python/difference-between-axis-0-axis-1-python-pandas/</link>
+      <pubDate>Wed, 22 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.dataday.life/notes/data-engineering-python/difference-between-axis-0-axis-1-python-pandas/</guid>
+      <description>Sometimes, functions ask you to specify an axis. The documentation can often feel vague and/or technical.
+For instance, here&amp;rsquo;s a quote from the apply function&amp;rsquo;s documentation:
+ axis : {0 or ‘index’, 1 or ‘columns’}, default 0 Axis along which the function is applied: 0 or ‘index’: apply function to each column. 1 or ‘columns’: apply function to each row.
+ Uuuum&amp;hellip; right.
+So what&amp;rsquo;s the difference? Here&amp;rsquo;s an example&amp;hellip;</description>
     </item>
     
     <item>
