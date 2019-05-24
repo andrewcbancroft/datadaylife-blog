@@ -61,6 +61,16 @@
       {{- end }}
     </header>
     <div class="content">
+        {{- if .Params.wip }}
+        <aside class="wip">
+            <div>
+                <h4>Thanks for stopping by!</h4>
+                <p>You're reading an <a href="/work-in-progress">active work in progress</a>, which means things could be a little cluttered. But I'm glad you're here, and I hope you enjoy the data discoveries below!</p>
+                  <p>Everything on this site is available on GitHub if you'd like to <a href='https://github.com/andrewcbancroft/datadaylife-blog/'>contribute</a>.</p>
+            </div>
+        </aside>
+        {{- end}}
+        
     {{ .Content }}
 </div>
   <aside>
