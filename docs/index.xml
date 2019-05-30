@@ -6,10 +6,19 @@
     <description>Recent content on Data-Day Life</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 22 May 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 29 May 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.dataday.life/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Load a CSV File With R</title>
+      <link>https://www.dataday.life/notes/data-engineering-r/load-csv-file-with-r-windows/</link>
+      <pubDate>Wed, 29 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.dataday.life/notes/data-engineering-r/load-csv-file-with-r-windows/</guid>
+      <description>Prerequisites  No additional R packages are necessary for this notebook to run Cells in this notebook expect the Car Sales.csv file to be in certain locations; specifics are in the cell itself Resources to help you practice are available at the end  Load Data From a CSV File File is in the same directory as your Jupyter Notebook # Read the CSV file car.sales &amp;lt;- read.csv(&amp;#34;Car Sales.csv&amp;#34;) # Show the first 5 rows head(car.</description>
+    </item>
     
     <item>
       <title>Load a CSV File With Python and Pandas</title>
@@ -17,7 +26,8 @@
       <pubDate>Wed, 22 May 2019 00:00:00 +0000</pubDate>
       
       <guid>https://www.dataday.life/notes/data-engineering-python/load-csv-file-with-python-pandas/</guid>
-      <description>Prerequisites  Install the Pandas library for your Python environment Cells in this notebook expect the Car Sales.csv file to be in certain locations; specifics are in the cell itself Resources to help you practice are available at the end  First Things First import pandas as pd Load Data From a CSV File File is in the same directory as your Jupyter Notebook # Read the CSV file car_sales_data = pd.</description>
+      <description>Resources  Right-click -&amp;gt; Save as&amp;hellip;    Car Sales.csv    load-csv-file-with-python-pandas.ipynb   
+Prerequisites  Install the Pandas library for your Python environment Cells in this notebook expect the Car Sales.csv file to be in certain locations; specifics are in the cell itself Resources to help you practice  First Things First import pandas as pd Load Data From a CSV File File is in the same directory as your Jupyter Notebook # Read the CSV file car_sales_data = pd.</description>
     </item>
     
     <item>
@@ -26,7 +36,8 @@
       <pubDate>Wed, 22 May 2019 00:00:00 +0000</pubDate>
       
       <guid>https://www.dataday.life/notes/data-engineering-python/load-excel-file-with-python-pandas/</guid>
-      <description>Prerequisites  Install the Pandas library for your Python environment Cells in this notebook expect the Car Sales.xlsx file to be in certain locations; specifics are in the cell itself Resources to help you practice are available at the end  First Things First import pandas as pd Load Data From Excel File is in the same directory as your Jupyter Notebook # Read the Excel file car_sales_data = pd.</description>
+      <description>Resources  Right-click -&amp;gt; Save as&amp;hellip;    Car Sales.xlsx    load-excel-file-with-python-pandas.ipynb   
+Prerequisites  Install the Pandas library for your Python environment Cells in this notebook expect the Car Sales.xlsx file to be in certain locations; specifics are in the cell itself Resources to help you practice  First Things First import pandas as pd Load Data From Excel File is in the same directory as your Jupyter Notebook # Read the Excel file car_sales_data = pd.</description>
     </item>
     
     <item>

@@ -6,7 +6,7 @@ description: "Provides an example scenario to help decipher the difference betwe
 type: technical_note
 draft: false
 comments: true
-wip: true
+wip: false
 ---
 Sometimes, functions ask you to specify an `axis`.  The documentation can often feel vague and/or technical.
 
@@ -21,13 +21,31 @@ Uuuum... right.
 
 So what's the difference?  Here's an example...
 
+<a name="resources" class="jump-target"></a>
+<div class="resources">
+  <div class="resources-header">
+    Resources
+  </div>
+    <div class="resources-download-instructions">
+    Right-click -> Save as...
+  </div>
+  <ul class="resources-content">
+    <li>
+        <i class="fas fa-file-csv"></i> <a href="https://github.com/andrewcbancroft/datadaylife-blog/raw/master/datasets/Car%20Sales.csv" download>Car Sales.csv</a>
+    </li>
+    <li>
+        <i class="fas fa-book"></i> <a href="https://raw.githubusercontent.com/andrewcbancroft/datadaylife-blog/master/content/notes/data-engineering-python/difference-between-axis-0-axis-1-python-pandas.ipynb" download>difference-between-axis-0-axis-1-python-pandas.ipynb</a>
+    </li>
+  </ul>
+</div>
+
 ## Load a CSV file to play with 
 
 ### Prerequisites (if you want to practice)
 
 * Install the [Pandas](https://pandas.pydata.org/) library for your Python environment
 * Cells in this notebook expect the <a href="https://github.com/andrewcbancroft/datadaylife-blog/raw/master/datasets/Car%20Sales.csv">Car Sales.csv</a> file to be in the same directory as your notebook
-* [Resources](#resources) to help you practice are available at the end
+* [Resources](#resources) to help you practice
 
 ### First Things First
 
@@ -137,7 +155,7 @@ To state the "grain" of the data frame another way, the data frame contains **on
 
 ### Choose Your Scenario
 
-Suppose that two people come to you and ask separate questions about average car sales.
+Suppose that two people come to you and ask separate questions about **average car sales**.
 
 * Lucy asks, "Can you calculate the average number of cars sold for each color?"
 
@@ -151,7 +169,7 @@ Think about what you'd do to answer Lucy's question by hand, manually, if you di
 3. Divide that sum by the total number of values.  Boom.  RedCars average.
 4. Rinse and reapeat steps 1-3 for SilverCars, BlackCars, and BlueCars.
 
-**This is an axis=0 scenario**.
+**This is an axis=0 scenario** in Pandas.
 
 
 ```python
@@ -195,22 +213,12 @@ first_five[['RedCars', 'SilverCars', 'BlackCars', 'BlueCars']].mean(axis=1)
 
 
 
-<a name="resources" class="jump-target"></a>
-<div class="resources">
-  <div class="resources-header">
-    Resources
-  </div>
-  <ul class="resources-content">
-    <li>
-        <i class="fas fa-file-csv"></i> <a href="https://github.com/andrewcbancroft/datadaylife-blog/raw/master/datasets/Car%20Sales.csv">Car Sales.csv</a>
-    </li>
-    <li>
-        <i class="fas fa-book"></i> <a href="https://raw.githubusercontent.com/andrewcbancroft/datadaylife-blog/master/content/notes/difference-between-axis-0-axis-1-python-pandas.ipynb">difference-between-axis-0-axis-1-python-pandas.ipynb</a>
-    </li>
-  </ul>
-</div>
+### Summarizing the Findings
+Specifying an `axis` to a function in Pandas is helping answer one of the following questions:
 
+* Should I (Pandas) **start with a column** and make this function do its job *downward* on all the "cells" for that column, and then continue doing the same thing **for all the rest of the columns** in the data frame? (`axis=0`)
 
-```python
+*or*
 
-```
+* Should I (Pandas) **start with the first row** of data in the data frame and make this function do its job *horizontally* on all of the "cells" for that row, and then continue doing the same thing **for all the rest of the rows** in the data frame? (`axis=1`)
+

@@ -186,6 +186,12 @@ a:hover {
   background-color: #eaeaed;
   font-size: 1.25em;
 }
+
+.resources .resources-download-instructions {
+  padding: .5em;  
+  font-size: 1.00em;
+}
+
 .resources .resources-content {
   padding: .5em;
   margin-bottom: 1em;

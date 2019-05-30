@@ -7,11 +7,29 @@ type: technical_note
 draft: false
 comments: true
 ---
+<a name="resources" class="jump-target"></a>
+<div class="resources">
+  <div class="resources-header">
+    Resources
+  </div>
+    <div class="resources-download-instructions">
+    Right-click -> Save as...
+  </div>
+  <ul class="resources-content">
+    <li>
+        <i class="fas fa-file-excel"></i> <a href="https://github.com/andrewcbancroft/datadaylife-blog/raw/master/datasets/Car%20Sales.xlsx">Car Sales.xlsx</a>
+    </li>
+    <li>
+        <i class="fas fa-book"></i> <a href="https://raw.githubusercontent.com/andrewcbancroft/datadaylife-blog/master/content/notes/data-engineering-python/load-excel-file-with-python-pandas.ipynb">load-excel-file-with-python-pandas.ipynb</a>
+    </li>
+  </ul>
+</div>
+
 ## Prerequisites
 
 * Install the [Pandas](https://pandas.pydata.org/) library for your Python environment
 * Cells in this notebook expect the <a href="https://github.com/andrewcbancroft/datadaylife-blog/raw/master/datasets/Car%20Sales.xlsx">Car Sales.xlsx</a> file to be in certain locations; specifics are in the cell itself
-* [Resources](#resources) to help you practice are available at the end
+* [Resources](#resources) to help you practice
 
 ## First Things First
 
@@ -332,18 +350,3 @@ url_car_sales_data.head(5)
 </div>
 
 
-
-<a name="resources" class="jump-target"></a>
-<div class="resources">
-  <div class="resources-header">
-    Resources
-  </div>
-  <ul class="resources-content">
-    <li>
-        <i class="fas fa-file-excel"></i> <a href="https://github.com/andrewcbancroft/datadaylife-blog/raw/master/datasets/Car%20Sales.xlsx">Car Sales.xlsx</a>
-    </li>
-    <li>
-        <i class="fas fa-book"></i> <a href="https://raw.githubusercontent.com/andrewcbancroft/datadaylife-blog/master/content/notes/load-excel-file-with-python-pandas.ipynb">load-excel-file-with-python-pandas.ipynb</a>
-    </li>
-  </ul>
-</div>

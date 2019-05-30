@@ -4,8 +4,13 @@
   
   <url>
     <loc>https://www.dataday.life/</loc>
-    <lastmod>2019-05-22T00:00:00+00:00</lastmod>
+    <lastmod>2019-05-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.dataday.life/notes/data-engineering-r/load-csv-file-with-r-windows/</loc>
+    <lastmod>2019-05-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
