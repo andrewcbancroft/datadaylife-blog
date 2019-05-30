@@ -2,7 +2,7 @@
 title: "Work in Progress?"
 author: "Andrew Bancroft"
 date:   2018-02-01
-description: "Everything I publish is a work in progress to some degree or another.  Here's what I mean..."
+description: "Everything I publish is a work in progress to some degree or another.  Here is what I mean..."
 type: blog
 draft: false
 comments: false

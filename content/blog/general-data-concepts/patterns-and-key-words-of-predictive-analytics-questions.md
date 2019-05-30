@@ -2,7 +2,7 @@
 title:  "Patterns and Key Words of Predictive Analytics Questions"
 author: "Andrew Bancroft"
 date:   2017-12-17
-description: "How do you know if someone is asking a question that's a good fit for using predictive analytics to provide the answer?"
+description: "How do you know if someone is asking a question that is a good fit for using predictive analytics to provide the answer?"
 type: blog
 draft: false
 comments: true

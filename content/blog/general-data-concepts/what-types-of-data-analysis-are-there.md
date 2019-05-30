@@ -2,7 +2,7 @@
 title: "What Types of Data Analysis Are There?"
 author: "Andrew Bancroft"
 date:   2018-01-18
-description: "How can we categorize the data analyses we do? How are they related, and does one kind of analysis set you up for another?  Let's explore..."
+description: "How can we categorize the data analyses we do? How are they related, and does one kind of analysis set you up for another?"
 type: blog
 draft: false
 comments: true

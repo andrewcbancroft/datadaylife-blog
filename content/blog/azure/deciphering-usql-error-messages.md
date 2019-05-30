@@ -2,7 +2,7 @@
 title: "Deciphering U-SQL's Error Messages"
 author: "Andrew Bancroft"
 date:   2019-01-03
-description: "When your U-SQL Job fails, look closely at the Details secion of the message to decipher what's going on."
+description: "When your U-SQL Job fails, look closely at the Details secion of the message to decipher what is going on."
 type: blog
 draft: false
 comments: true

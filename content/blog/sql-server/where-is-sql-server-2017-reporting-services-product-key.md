@@ -2,7 +2,7 @@
 title: "Where is the SQL Server 2017 Reporting Services License Key??"
 author: "Andrew Bancroft"
 date:   2018-01-19
-description: "After running the SQL Server 2017 Reporting Services standalone installer, you'll be presented with a dialog asking for a Product Key.  Where is it??"
+description: "After running the SQL Server 2017 Reporting Services standalone installer, you will be presented with a dialog asking for a Product Key.  Where is it??"
 type: blog
 draft: false
 comments: true

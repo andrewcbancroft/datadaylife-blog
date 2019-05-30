@@ -2,7 +2,7 @@
 title: "Fix SSIS Flat File Destination Error: Cannot open the datafile"
 author: "Andrew Bancroft"
 date:   2018-02-01
-description: "Here's how to fix the Cannot open the datafile error with SSIS Flat File Destinations."
+description: "Here is how to fix the Cannot open the datafile error with SSIS Flat File Destinations."
 type: blog
 draft: false
 comments: true

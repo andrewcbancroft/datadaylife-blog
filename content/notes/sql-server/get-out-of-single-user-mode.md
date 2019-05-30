@@ -2,7 +2,7 @@
 title: "Get Out of SINGLE_USER Mode"
 author: "Andrew Bancroft"
 date:   2018-01-09
-description: "Process for getting a SQL Server database out of SINGLE_USER Mode if you're stuck in it."
+description: "Process for getting a SQL Server database out of SINGLE_USER Mode if you are stuck in it."
 type: technical_note
 draft: false
 comments: true

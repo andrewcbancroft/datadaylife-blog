@@ -2,7 +2,7 @@
 title: "U-SQL Pickiness - Resolving Common Syntax Errors"
 author: "Andrew Bancroft"
 date:   2019-01-02
-description: "Here are a few gotcha's to look out for newcommers writing U-SQL for Azure Data Lake Analytics from a T-SQL background."
+description: "Here are a few gotchas to look out for newcommers writing U-SQL for Azure Data Lake Analytics from a T-SQL background."
 type: blog
 draft: false
 comments: true

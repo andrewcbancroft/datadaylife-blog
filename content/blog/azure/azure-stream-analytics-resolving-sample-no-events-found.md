@@ -2,7 +2,7 @@
 title: "Resolving No Events Found When Sampling Data with Azure Stream Analytics"
 author: "Andrew Bancroft"
 date:   2019-01-04
-description: "No events found for HubName... Ugh. If you're pretty sure data is making it to the Hub, but you're unable to get Stream Analytics to sample from the stream, check out how I was able to resolve this issue."
+description: "No events found for HubName... Ugh. If you are pretty sure data is making it to the Hub, but you are unable to get Stream Analytics to sample from the stream, check out how I was able to resolve this issue."
 type: blog
 draft: false
 comments: true
