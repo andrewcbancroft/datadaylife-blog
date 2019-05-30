@@ -2,7 +2,7 @@
 title: "Winning with Dimensional Models in the Age of Big Data"
 author: "Andrew Bancroft"
 date:   2018-02-21
-description: "Is dimensional modeling still relevant in the age of big data? Here are 5 reasons why the answer is an emphatic \"yes\"!"
+description: "Is dimensional modeling still relevant in the age of big data? Here are 5 reasons why the answer is an emphatic yes!"
 type: blog
 draft: false
 comments: true

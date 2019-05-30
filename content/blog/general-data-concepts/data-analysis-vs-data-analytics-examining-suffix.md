@@ -2,7 +2,7 @@
 title: "Breaking Down Data Analysis vs Data Analytics: A Look at the Suffix"
 author: "Andrew Bancroft"
 date:   2018-01-31
-description: "Question: How would you explain \"data analysis\" vs \"data analytics\"? Clues lie in the suffix!"
+description: "Question: How would you explain data analysis vs data analytics? Clues lie in the suffix!"
 type: blog
 draft: false
 comments: true

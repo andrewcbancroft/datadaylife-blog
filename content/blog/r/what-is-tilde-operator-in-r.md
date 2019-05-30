@@ -1,5 +1,5 @@
 ---
-title: "What is the tilde (~) \"symbol\" in R?"
+title: "What is the tilde (~) symbol in R?"
 author: "Andrew Bancroft"
 date:   2019-04-30
 description: "If you were to put words to what the tilde (~) symbol is in R, how would you explain it or interpret it? "

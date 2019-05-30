@@ -2,7 +2,7 @@
 title: "What is a Dimensional Model?"
 author: "Andrew Bancroft"
 date:   2017-12-26
-description: "Let's unpack the term \"dimensional model\" to see if we can make heads of tails of what the words mean when they're put together in this term."
+description: "Let's unpack the term dimensional model to see if we can make heads of tails of what the words mean when they're put together in this term."
 type: blog
 draft: false
 comments: true
