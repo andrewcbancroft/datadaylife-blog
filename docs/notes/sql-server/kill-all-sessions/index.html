@@ -6,11 +6,20 @@
     
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111087893-1"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
 
-    gtag('config', 'UA-111087893-1');
+        (function () {
+            if (window.location.hostname === "localhost") {
+                console.log("Analytics not running on local dev.");
+                return;
+            } else {
+
+                window.dataLayer = window.dataLayer || [];
+                function gtag() { dataLayer.push(arguments); }
+                gtag('js', new Date());
+
+                gtag('config', 'UA-111087893-1');
+            }
+        })();
     </script>
 
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -21,21 +30,23 @@
         });
     </script>
 
-    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
     <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
     <script>
-    window.addEventListener("load", function(){
-    window.cookieconsent.initialise({
-    "palette": {
-        "popup": {
-        "background": "#0092CB"
-        },
-        "button": {
-        "background": "#8ec760",
-        "text": "#ffffff"
-        }
-    }
-    })});
+        window.addEventListener("load", function () {
+            window.cookieconsent.initialise({
+                "palette": {
+                    "popup": {
+                        "background": "#0092CB"
+                    },
+                    "button": {
+                        "background": "#8ec760",
+                        "text": "#ffffff"
+                    }
+                }
+            })
+        });
     </script>
 
     <meta charset="utf-8">
@@ -51,8 +62,8 @@
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Kill All Sessions"/>
 <meta name="twitter:description" content="Script to close all sessions/connections to a specified database"/>
-<meta name="generator" content="Hugo 0.55.6" /> 
-    
+<meta name="generator" content="Hugo 0.55.6" />
+
     
 <script type="application/ld+json">
 {
@@ -74,16 +85,17 @@
     <title>Kill All Sessions</title>
 
     
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+        integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
     
-    <link href="https://www.dataday.life/css/custom.css" rel="stylesheet"> 
+    <link href="https://www.dataday.life/css/custom.css" rel="stylesheet">
     <link href="https://www.dataday.life/css/syntax.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli:400,500,700" rel="stylesheet">
-        
-    <link href="" rel="alternate" type="application/rss+xml" title="Data-Day Life" /> 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <link href="" rel="alternate" type="application/rss+xml" title="Data-Day Life" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
     <script type="text/javascript" async
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
@@ -107,59 +119,65 @@ MathJax.Hub.Config({
 <body>
 
     <nav class="navbar navbar-expand-lg fixed-top px-5">
-            <a class="navbar-brand" href="https://www.dataday.life"><i class="fas fa-home"></i> Home</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <a class="navbar-brand" href="https://www.dataday.life"><i class="fas fa-home"></i> Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="nav navbar-nav mr-auto mt-2 mt-lg-0"></ul>
-                <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-                            aria-expanded="false">
-                            Notes
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="https://www.dataday.life#jupyter-notebooks-notes">Jupyter Notebooks</a>
-                            <a class="dropdown-item" href="https://www.dataday.life#sql-server-notes">SQL Server</a>
-                            <a class="dropdown-item" href="https://www.dataday.life#working-with-data-python-notes">Working With Data in Python</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false">
-                                Blog Articles
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="https://www.dataday.life#azure">Azure</a>
-                                <a class="dropdown-item" href="https://www.dataday.life#dimensional-modeling">Dimensional Modeling</a>
-                                <a class="dropdown-item" href="https://www.dataday.life#general-data-concepts">General Data Concepts</a>
-                                <a class="dropdown-item" href="https://www.dataday.life#machine-learning">Machine Learning</a>
-                                <a class="dropdown-item" href="https://www.dataday.life#r">R</a>
-                                <a class="dropdown-item" href="https://www.dataday.life#sql-server">SQL Server</a>
-                                <a class="dropdown-item" href="https://www.dataday.life#statistics">Statistics</a>
-                            </div>
-                        </li>
-                    
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-                            aria-expanded="false">
-                            About
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="https://www.dataday.lifeabout/andrew_bancroft/">About Andrew</a>
-                            <a class="dropdown-item" href="https://github.com/andrewcbancroft">GitHub</a>
-                            <a class="dropdown-item" href="https://www.linkedin.com/in/andrewcbancroft/">LinkedIn</a>
-                            <a class="dropdown-item" href="https://twitter.com/andrewcbancroft">Twitter</a>
-                            <a class="dropdown-item" href="https://www.youtube.com/channel/UCDPV9kMhP-b5EFRI7d812pg">YouTube</a>
-                            <a class="dropdown-item" href="https://www.pluralsight.com/authors/andrew-bancroft">Pluralsight Courses</a>
-                            <a class="dropdown-item" href="https://www.andrewcbancroft.com">www.andrewcbancroft.com</a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav navbar-nav mr-auto mt-2 mt-lg-0"></ul>
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Notes
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="https://www.dataday.life#jupyter-notebooks-notes">Jupyter
+                            Notebooks</a>
+                        <a class="dropdown-item" href="https://www.dataday.life#sql-server-notes">SQL Server</a>
+                        <a class="dropdown-item" href="https://www.dataday.life#working-with-data-python-notes">Working With
+                            Data in Python</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Blog Articles
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="https://www.dataday.life#azure">Azure</a>
+                        <a class="dropdown-item" href="https://www.dataday.life#dimensional-modeling">Dimensional
+                            Modeling</a>
+                        <a class="dropdown-item" href="https://www.dataday.life#general-data-concepts">General Data
+                            Concepts</a>
+                        <a class="dropdown-item" href="https://www.dataday.life#machine-learning">Machine Learning</a>
+                        <a class="dropdown-item" href="https://www.dataday.life#r">R</a>
+                        <a class="dropdown-item" href="https://www.dataday.life#sql-server">SQL Server</a>
+                        <a class="dropdown-item" href="https://www.dataday.life#statistics">Statistics</a>
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        About
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="https://www.dataday.lifeabout/andrew_bancroft/">About Andrew</a>
+                        <a class="dropdown-item" href="https://github.com/andrewcbancroft">GitHub</a>
+                        <a class="dropdown-item" href="https://www.linkedin.com/in/andrewcbancroft/">LinkedIn</a>
+                        <a class="dropdown-item" href="https://twitter.com/andrewcbancroft">Twitter</a>
+                        <a class="dropdown-item"
+                            href="https://www.youtube.com/channel/UCDPV9kMhP-b5EFRI7d812pg">YouTube</a>
+                        <a class="dropdown-item" href="https://www.pluralsight.com/authors/andrew-bancroft">Pluralsight
+                            Courses</a>
+                        <a class="dropdown-item" href="https://www.andrewcbancroft.com">www.andrewcbancroft.com</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </nav>
 
 
@@ -210,15 +228,20 @@ MathJax.Hub.Config({
 
     <footer class="footer text-center">
         <div class="container">
-            <span class="text-muted">This project contains 27 pages and is available on <a href="https://github.com/andrewcbancroft/datadaylife-blog">GitHub</a>. Copyright &copy; Andrew Bancroft, <time datetime="2019">2019</time>.</span>
+            <span class="text-muted">This project contains 27 pages and is available on <a
+                    href="https://github.com/andrewcbancroft/datadaylife-blog">GitHub</a>. Copyright &copy; Andrew
+                Bancroft, <time datetime="2019">2019</time>.</span>
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+        integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
         crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+        integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
         crossorigin="anonymous"></script>
 
 </body>
