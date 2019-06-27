@@ -1,10 +1,12 @@
-{{ define "title" }}{{ .Title | markdownify }}{{ end }} {{ define "schema-dot-org" }}
+{{ define "title" }}{{ .Title | markdownify }}{{ end }} 
+
+{{ define "schema-dot-org" }}
 <script type="application/ld+json">
 {
   "@context": "http://schema.org",
   "@type": "BlogPosting",
   {{- /* Google recommends the headline be no more than 110 characters */}}
-  "headline": "{{ substr .Title 0 110 }}",
+  "headline": {{ printf "\"%s\"" (substr .Title 0 110) | safeJS }},
   {{- with .Params.images -}}{{ range first 1 . }}
   "image": {
     "@type": "ImageObject",
@@ -42,12 +44,13 @@
   "keywords": "{{ delimit (union .Params.categories .Params.tags) ", " }}"
   {{- end }}
 
-  {{- with .Params.description -}}
-  ,
-  "description": "{{ . }}"
-  {{- end }}
+  ,"description": {{ printf "\"%s\"" .Description | safeJS }}
 }
-</script> {{ end }} {{ define "main" }} {{ $dateFormat := default " January 2, 2006" (index .Site.Params "date_format") }}
+</script>
+
+{{ end }}
+
+{{ define "main" }} {{ $dateFormat := default " January 2, 2006" (index .Site.Params "date_format") }}
 
 
 <article>
