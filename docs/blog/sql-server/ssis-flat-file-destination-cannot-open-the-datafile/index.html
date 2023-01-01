@@ -50,14 +50,15 @@
 <meta property="og:title" content="Fix SSIS Flat File Destination Error: Cannot open the datafile" />
 <meta property="og:description" content="Here is how to fix the Cannot open the datafile error with SSIS Flat File Destinations." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.dataday.life/blog/sql-server/ssis-flat-file-destination-cannot-open-the-datafile/" />
-<meta property="article:published_time" content="2018-02-01T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2018-02-01T00:00:00&#43;00:00"/>
+<meta property="og:url" content="https://www.dataday.life/blog/sql-server/ssis-flat-file-destination-cannot-open-the-datafile/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2018-02-01T00:00:00+00:00" />
+<meta property="article:modified_time" content="2018-02-01T00:00:00+00:00" />
+
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Fix SSIS Flat File Destination Error: Cannot open the datafile"/>
 <meta name="twitter:description" content="Here is how to fix the Cannot open the datafile error with SSIS Flat File Destinations."/>
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.101.0" />
 
     
 <script type="application/ld+json">
@@ -91,7 +92,7 @@
     <link href="https://www.dataday.life/css/syntax.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli:400,500,700" rel="stylesheet">
 
-    <link href="" rel="alternate" type="application/rss+xml" title="Data-Day Life" />
+    
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
@@ -195,39 +196,28 @@ MathJax.Hub.Config({
     <div class="content">
 
     <p>This SSIS package execution error can occur for a few reasons:</p>
-
 <ul>
 <li><strong>Path to the file does not exist.</strong></li>
 </ul>
-
 <p>So for example, if you&rsquo;re writing the file to C:\Some\Folder\somefile.txt, C:\Some\Folder needs to exist <strong>first</strong>.</p>
-
 <p><strong>Fix</strong>:  Create the folder that the package will write to prior to executing it.</p>
-
 <p>Alternatively, you can add a File System Task with a <code>Create Directory</code> operation prior to the Flat File Destination component.</p>
-
 <ul>
 <li><strong>The account executing the package does not have permissions</strong></li>
 </ul>
-
 <p>Check to make sure whichever account is executing the package has sufficient file system permissions to write the file to disk.</p>
-
 <p><strong>Fix</strong>:  Grant the appropriate write permissions to the user account that is executing the package. On a server, this would be the SQL Server Agent account that&rsquo;s executing the package.</p>
-
 <ul>
 <li>The file you&rsquo;re writing to is being used by another process</li>
 </ul>
-
 <p>If some other process is using the file you&rsquo;re writing to, it will block SSIS&rsquo; attempt to write to it simultaneously.</p>
-
 <p><strong>Fix</strong>:  <strong>In general, make sure that the file is not in use by some other application or process.</strong></p>
-
 <p>Be careful copying and pasting SSIS tasks and components inside of a package &ndash; If you <em>do</em>, make absolutely sure you&rsquo;ve adjusted each configuration appropriately.  I&rsquo;ve run into this &ldquo;file is being used by another process&rdquo; situation because I copied and pasted an Execute Package task, and forgot to update the config &ndash; attempting ot execute the same package in parrallel can cause issues, apparently!  haha</p>
 
 
     <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

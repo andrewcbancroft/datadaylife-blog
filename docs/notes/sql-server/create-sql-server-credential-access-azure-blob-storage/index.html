@@ -50,14 +50,15 @@
 <meta property="og:title" content="Create a SQL Server Credential for Accessing Azure Blob Storage" />
 <meta property="og:description" content="PowerShell script for creating a SQL Server Credential to access Azure Blob Storage." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.dataday.life/notes/sql-server/create-sql-server-credential-access-azure-blob-storage/" />
-<meta property="article:published_time" content="2019-05-20T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2019-05-20T00:00:00&#43;00:00"/>
+<meta property="og:url" content="https://www.dataday.life/notes/sql-server/create-sql-server-credential-access-azure-blob-storage/" /><meta property="article:section" content="notes" />
+<meta property="article:published_time" content="2019-05-20T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-05-20T00:00:00+00:00" />
+
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Create a SQL Server Credential for Accessing Azure Blob Storage"/>
 <meta name="twitter:description" content="PowerShell script for creating a SQL Server Credential to access Azure Blob Storage."/>
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.101.0" />
 
     
 <script type="application/ld+json">
@@ -91,7 +92,7 @@
     <link href="https://www.dataday.life/css/syntax.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli:400,500,700" rel="stylesheet">
 
-    <link href="" rel="alternate" type="application/rss+xml" title="Data-Day Life" />
+    
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
@@ -194,31 +195,26 @@ MathJax.Hub.Config({
     </header>
     <div class="content">
 
-    
-
-<h2 id="prerequisites">Prerequisites:</h2>
-
+    <h2 id="prerequisites">Prerequisites:</h2>
 <ul>
 <li>The <code>SqlServer</code> PowerShell module must be installed.
-
 <ul>
 <li>Run <code>Install-Module -Name SqlServer</code> if you need to install it&hellip;</li>
-</ul></li>
 </ul>
-
-<h5 id="create-credential-ps1">create-credential.ps1</h5>
-
-<div class="highlight"><pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="nb">import-module</span> <span class="n">SqlServer</span>
-
-<span class="nv">$storageAccount</span> <span class="p">=</span> <span class="s2">&#34;&lt;StorageAccountName&gt;&#34;</span>  <span class="c">#replace this with your Azure storage account name</span>
-<span class="nv">$storageKey</span> <span class="p">=</span> <span class="s2">&#34;&lt;StorageAccountKey&gt;&#34;</span>  <span class="c">#replace this with one of your Azure storage account keys</span>
-<span class="nv">$secureString</span> <span class="p">=</span> <span class="nb">convertto-securestring</span> <span class="nv">$storageKey</span>  <span class="n">-asplaintext</span> <span class="n">-force</span>  
-<span class="nv">$credentialName</span> <span class="p">=</span> <span class="s2">&#34;BlobStorageCredential&#34;</span> <span class="c">#give the credential a name - you&#39;ll reference it again later (in other scripts, for example)</span>
-
-<span class="n">cd</span> <span class="n">SQLServer</span><span class="err">:</span><span class="p">\</span><span class="n">SQL</span><span class="p">\</span><span class="nv">$env:COMPUTERNAME</span>
-
-<span class="nv">$instances</span> <span class="p">=</span> <span class="nb">Get-ChildItem</span>
-<span class="nv">$instances</span> <span class="p">|</span> <span class="nb">new-sqlcredential</span> <span class="n">-Name</span> <span class="nv">$credentialName</span> <span class="n">-Identity</span> <span class="nv">$storageAccount</span> <span class="n">-Secret</span> <span class="nv">$secureString</span></code></pre></div>
+</li>
+</ul>
+<h5 id="create-credentialps1">create-credential.ps1</h5>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="nb">import-module</span> <span class="n">SqlServer</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">$storageAccount</span> <span class="p">=</span> <span class="s2">&#34;&lt;StorageAccountName&gt;&#34;</span>  <span class="c">#replace this with your Azure storage account name</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$storageKey</span> <span class="p">=</span> <span class="s2">&#34;&lt;StorageAccountKey&gt;&#34;</span>  <span class="c">#replace this with one of your Azure storage account keys</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$secureString</span> <span class="p">=</span> <span class="nb">convertto-securestring</span> <span class="nv">$storageKey</span>  <span class="n">-asplaintext</span> <span class="n">-force</span>  
+</span></span><span class="line"><span class="cl"><span class="nv">$credentialName</span> <span class="p">=</span> <span class="s2">&#34;BlobStorageCredential&#34;</span> <span class="c">#give the credential a name - you&#39;ll reference it again later (in other scripts, for example)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">cd </span><span class="n">SQLServer</span><span class="err">:</span><span class="p">\</span><span class="n">SQL</span><span class="p">\</span><span class="nv">$env:COMPUTERNAME</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">$instances</span> <span class="p">=</span> <span class="nb">Get-ChildItem</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$instances</span> <span class="p">|</span> <span class="nb">new-sqlcredential</span> <span class="n">-Name</span> <span class="nv">$credentialName</span> <span class="n">-Identity</span> <span class="nv">$storageAccount</span> <span class="n">-Secret</span> <span class="nv">$secureString</span></span></span></code></pre></div>
 
 </div>
   <aside>

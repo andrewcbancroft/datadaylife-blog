@@ -50,14 +50,15 @@
 <meta property="og:title" content="Get Out of SINGLE_USER Mode" />
 <meta property="og:description" content="Process for getting a SQL Server database out of SINGLE_USER Mode if you are stuck in it." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.dataday.life/notes/sql-server/get-out-of-single-user-mode/" />
-<meta property="article:published_time" content="2018-01-09T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2018-01-09T00:00:00&#43;00:00"/>
+<meta property="og:url" content="https://www.dataday.life/notes/sql-server/get-out-of-single-user-mode/" /><meta property="article:section" content="notes" />
+<meta property="article:published_time" content="2018-01-09T00:00:00+00:00" />
+<meta property="article:modified_time" content="2018-01-09T00:00:00+00:00" />
+
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Get Out of SINGLE_USER Mode"/>
 <meta name="twitter:description" content="Process for getting a SQL Server database out of SINGLE_USER Mode if you are stuck in it."/>
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.101.0" />
 
     
 <script type="application/ld+json">
@@ -91,7 +92,7 @@
     <link href="https://www.dataday.life/css/syntax.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli:400,500,700" rel="stylesheet">
 
-    <link href="" rel="alternate" type="application/rss+xml" title="Data-Day Life" />
+    
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
@@ -194,37 +195,32 @@ MathJax.Hub.Config({
     </header>
     <div class="content">
 
-    
-
-<p>If you find yourself stuck in <code>SINGLE_USER</code> mode in a SQL Server database, do the following:</p>
-
-<h2 id="1-find-spids-connected-to-your-database">1 - Find SPIDs connected to your database</h2>
-<div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="n">USE</span> <span class="n">master</span>
-<span class="k">GO</span>
-<span class="k">EXEC</span> <span class="n">sp_who</span></code></pre></div>
-<p>Note any SPIDs connected to your database, and then&hellip;</p>
-
-<h2 id="2-kill-connections">2 - Kill connections</h2>
-<div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="n">KILL</span> <span class="p">[</span><span class="n">spid</span><span class="p">]</span> <span class="c1">-- do this for each spid returned by exec sp_who</span></code></pre></div>
-<h2 id="3-set-back-to-multi-user">3 - Set back to MULTI_USER</h2>
-<div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="n">USE</span> <span class="n">Master</span>
-<span class="k">ALTER</span> <span class="k">DATABASE</span> <span class="n">DatabaseName</span> <span class="k">SET</span> <span class="n">MULTI_USER</span></code></pre></div>
-<h2 id="plan-b-if-that-doesn-t-work">Plan B (If that doesn&rsquo;t work)</h2>
-
+    <p>If you find yourself stuck in <code>SINGLE_USER</code> mode in a SQL Server database, do the following:</p>
+<h2 id="1---find-spids-connected-to-your-database">1 - Find SPIDs connected to your database</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="n">USE</span><span class="w"> </span><span class="n">master</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">GO</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">EXEC</span><span class="w"> </span><span class="n">sp_who</span><span class="w">
+</span></span></span></code></pre></div><p>Note any SPIDs connected to your database, and then&hellip;</p>
+<h2 id="2---kill-connections">2 - Kill connections</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="n">KILL</span><span class="w"> </span><span class="p">[</span><span class="n">spid</span><span class="p">]</span><span class="w"> </span><span class="c1">-- do this for each spid returned by exec sp_who
+</span></span></span></code></pre></div><h2 id="3---set-back-to-multi_user">3 - Set back to MULTI_USER</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="n">USE</span><span class="w"> </span><span class="n">Master</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">ALTER</span><span class="w"> </span><span class="k">DATABASE</span><span class="w"> </span><span class="n">DatabaseName</span><span class="w"> </span><span class="k">SET</span><span class="w"> </span><span class="n">MULTI_USER</span><span class="w">
+</span></span></span></code></pre></div><h2 id="plan-b-if-that-doesnt-work">Plan B (If that doesn&rsquo;t work)</h2>
 <p>If that doesn&rsquo;t work, the following query can be used to find the connection(s):</p>
-<div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">SELECT</span>
-	<span class="n">request_session_id</span>
-<span class="k">FROM</span>
-	<span class="n">sys</span><span class="p">.</span><span class="n">dm_tran_locks</span>
-<span class="k">WHERE</span>
-	<span class="n">resource_database_id</span> <span class="o">=</span> <span class="n">DB_ID</span><span class="p">(</span><span class="s1">&#39;DatabaseName&#39;</span><span class="p">)</span></code></pre></div>
-<p>Note any spid&rsquo;s that are returned, and then run</p>
-<div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="n">KILL</span> <span class="p">[</span><span class="n">spid</span><span class="p">]</span> <span class="c1">-- do this for each spid returned by the previous query
-</span><span class="c1"></span>
-
-<span class="n">USE</span> <span class="n">Master</span>
-<span class="k">ALTER</span> <span class="k">DATABASE</span> <span class="n">YourDatabase</span> <span class="k">SET</span> <span class="n">MULTI_USER</span></code></pre></div>
-<p>Source:  <a href="https://stackoverflow.com/questions/24608702/sql-server-2008-r2-stuck-in-single-user-mode">Stack Overflow</a></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">SELECT</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">request_session_id</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">FROM</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">sys</span><span class="p">.</span><span class="n">dm_tran_locks</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">WHERE</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">resource_database_id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">DB_ID</span><span class="p">(</span><span class="s1">&#39;DatabaseName&#39;</span><span class="p">)</span><span class="w">
+</span></span></span></code></pre></div><p>Note any spid&rsquo;s that are returned, and then run</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="n">KILL</span><span class="w"> </span><span class="p">[</span><span class="n">spid</span><span class="p">]</span><span class="w"> </span><span class="c1">-- do this for each spid returned by the previous query
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">USE</span><span class="w"> </span><span class="n">Master</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">ALTER</span><span class="w"> </span><span class="k">DATABASE</span><span class="w"> </span><span class="n">YourDatabase</span><span class="w"> </span><span class="k">SET</span><span class="w"> </span><span class="n">MULTI_USER</span><span class="w">
+</span></span></span></code></pre></div><p>Source:  <a href="https://stackoverflow.com/questions/24608702/sql-server-2008-r2-stuck-in-single-user-mode">Stack Overflow</a></p>
 
 </div>
   <aside>

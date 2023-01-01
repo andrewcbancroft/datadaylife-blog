@@ -50,14 +50,15 @@
 <meta property="og:title" content="What is the tilde (~) symbol in R?" />
 <meta property="og:description" content="If you were to put words to what the tilde (~) symbol is in R, how would you explain it or interpret it? " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.dataday.life/blog/r/what-is-tilde-operator-in-r/" />
-<meta property="article:published_time" content="2019-04-30T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2019-04-30T00:00:00&#43;00:00"/>
+<meta property="og:url" content="https://www.dataday.life/blog/r/what-is-tilde-operator-in-r/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2019-04-30T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-04-30T00:00:00+00:00" />
+
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="What is the tilde (~) symbol in R?"/>
 <meta name="twitter:description" content="If you were to put words to what the tilde (~) symbol is in R, how would you explain it or interpret it? "/>
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.101.0" />
 
     
 <script type="application/ld+json">
@@ -91,7 +92,7 @@
     <link href="https://www.dataday.life/css/syntax.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli:400,500,700" rel="stylesheet">
 
-    <link href="" rel="alternate" type="application/rss+xml" title="Data-Day Life" />
+    
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
@@ -201,48 +202,29 @@ MathJax.Hub.Config({
         </div>
     </aside>
 
-    
-
-<p>What is the tilde (<code>~</code>) &ldquo;symbol&rdquo; in R?</p>
-
+    <p>What is the tilde (<code>~</code>) &ldquo;symbol&rdquo; in R?</p>
 <p>If you were to put words to what it <em>is</em>, how would you explain it or interpret it?</p>
-
 <p>What does it mean (and therefore, what does it <em>do</em>)?</p>
-
 <p>Here, I document a few of the unpackings that I&rsquo;ve run across when it comes to <code>~</code> in R.</p>
-
-<h2 id="from-the-docs-y-on-x">From the Docs:  &ldquo;y on x&rdquo;</h2>
-
+<h2 id="from-the-docs--y-on-x">From the Docs:  &ldquo;y on x&rdquo;</h2>
 <p>In the <a href="https://cran.r-project.org/doc/manuals/r-release/R-intro.html#Statistical-models-in-R">R-project.org documentation</a>, tilde <code>~</code> starts getting mentioned in chapter 11 when the discussion of &ldquo;statistical models&rdquo; begins.</p>
-
 <p>So right away, one could glean that the <code>~</code> is used when trying to express a statistical model.</p>
-
 <p>When [this variable] changes, [that one] responds.</p>
-
 <p>When I nudge [this number], [that number] goes up (or down or stays the same).</p>
-
 <p>Or at least we <em>think</em> so&hellip; The goal of a statistical model is to estimate an output (y) from one or more inputs (x&rsquo;s).  One thing we&rsquo;d like to do is &ldquo;model&rdquo; the relationship of the variables using the data we&rsquo;ve got, and use that model in the future on <em>new</em> data.</p>
-
 <p>The way one <em>expresses</em> that modeled relationship in R is with <code>~</code>.</p>
-
 <p><code>y ~ x</code> for example might express a &ldquo;linear regression model of y on x&rdquo;, according to the docs.</p>
-
 <p>Interesting phrase&hellip; &ldquo;y on x&rdquo;.</p>
-
 <p>In other words, what we&rsquo;re saying is that &ldquo;y responds to changes in x&rdquo;&hellip; &ldquo;values that come out (y&rsquo;s) depend on the various values that come in through x&rsquo;s&rdquo;.</p>
-
 <p><code>~</code> is a &ldquo;definition&rdquo; operator.</p>
-
 <p>What does it define? A formula for a statistical model.  It encapsulates all the inputs that are required to produce an estimated output of some sort.</p>
-
 <p><a href="https://stackoverflow.com/questions/14976331/use-of-tilde-in-r-programming-language">https://stackoverflow.com/questions/14976331/use-of-tilde-in-r-programming-language</a></p>
-
 <p><a href="https://stackoverflow.com/questions/8055508/in-r-formulas-why-do-i-have-to-use-the-i-function-on-power-terms-like-y-i/8055683#8055683">https://stackoverflow.com/questions/8055508/in-r-formulas-why-do-i-have-to-use-the-i-function-on-power-terms-like-y-i/8055683#8055683</a></p>
 
 
     <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

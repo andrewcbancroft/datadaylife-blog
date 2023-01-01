@@ -50,14 +50,15 @@
 <meta property="og:title" content="Stages to Machine Learning" />
 <meta property="og:description" content="What does it take to really do machine learning? Explore these 11 stages to an effective machine learning process." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.dataday.life/blog/machine-learning/stages-to-machine-learning/" />
-<meta property="article:published_time" content="2017-12-17T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2017-12-17T00:00:00&#43;00:00"/>
+<meta property="og:url" content="https://www.dataday.life/blog/machine-learning/stages-to-machine-learning/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2017-12-17T00:00:00+00:00" />
+<meta property="article:modified_time" content="2017-12-17T00:00:00+00:00" />
+
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Stages to Machine Learning"/>
 <meta name="twitter:description" content="What does it take to really do machine learning? Explore these 11 stages to an effective machine learning process."/>
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.101.0" />
 
     
 <script type="application/ld+json">
@@ -66,7 +67,7 @@
   "@type": "BlogPosting",
   "headline": "Stages to Machine Learning",
   "url": "https:\/\/www.dataday.life\/blog\/machine-learning\/stages-to-machine-learning\/",
-  "wordCount": "1036",
+  "wordCount": "1024",
   "datePublished": "2017-12-17T00:00:00Z",
   "dateModified": "2017-12-17T00:00:00Z",
   "author": {
@@ -91,7 +92,7 @@
     <link href="https://www.dataday.life/css/syntax.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli:400,500,700" rel="stylesheet">
 
-    <link href="" rel="alternate" type="application/rss+xml" title="Data-Day Life" />
+    
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
@@ -194,137 +195,89 @@ MathJax.Hub.Config({
     </header>
     <div class="content">
 
-    
-
-<p><img src="one-does-not-simply-machine-learn.png" alt="" /></p>
-
+    <p><img src="one-does-not-simply-machine-learn.png" alt=""></p>
 <p>If one does not simply&hellip; &ldquo;machine learn&rdquo;&hellip; what <em>does</em> one do to cover all the bases and make sure that the process is complete and value-producing?</p>
-
 <p>Here 10 high level stages to check off as you take on a machine learning task.</p>
-
 <h2 id="business-metric">Business Metric</h2>
-
 <p>Before you do <em>anything</em> with machine learning, you absolutely <em>must</em> have a good undertanding of <strong>which business metric we&rsquo;re hoping to improve</strong> as a result of employing machine learning.</p>
-
 <p>Otherwise, how will you know if it &ldquo;worked&rdquo;?</p>
-
 <p>Talk with management.  Find out their goals.  Hear the story and understand what they&rsquo;re wanting to see improvement in, <strong>in terms of the business</strong>.</p>
-
 <p>Try not to get a high level answer like, &ldquo;We want to see an increase in sales.&rdquo; Okay.  Well.  Don&rsquo;t we all?</p>
-
 <p>The more specific and defined management can get with their business metric of choice, the better.  &ldquo;We want to see a 10% increase in sales for [some product] among customers to whom we advertise directly regarding an exclusive discount on [that product].&rdquo;  It&rsquo;s much more specific, measurable, targeted, and well-defined than the first &ldquo;goal&rdquo;, isn&rsquo;t it?  With this statement, we could work toward building a machine learning model to classify customers who are more likely to respond positively to our advertising.  At the end, we can look back to the customers we predicted on, and see if a difference 1) exists and 2) can reasonably be attributed to the work of our machine learning model.</p>
-
 <h2 id="blend">Blend</h2>
-
 <p><em>More data</em>.  That always seems to be the answer to our predictive woes, doesn&rsquo;t it?</p>
-
 <p>Two data sets augmenting one another lend more knowledge for machine learning algorithms to latch on to and figure out patterns within.</p>
-
 <p>You could use the word &ldquo;integrate&rdquo; here if you want.  The point is that you&rsquo;re gathering data from multiple sources to help give the most complete picture of what you&rsquo;re analyzing and predicting.</p>
-
 <h2 id="explore">Explore</h2>
-
 <p>To make sense of the data you&rsquo;ve got, especially if you didn&rsquo;t generate it in the first place, you need an exploration process built in to your machine learning pipeline.</p>
-
 <p>Profile your data &ndash; find out the good parts and the bad (dirty) parts, such as missing values, inconsistent labels, etc.</p>
-
 <p>Compute summary statistics.</p>
-
 <p>Visualize your data set by plotting the variables against one another to gain intuition about how the variables relate.</p>
-
 <p>Use multiple kinds of visualizations to get a good feel for the &ldquo;shape&rdquo; of your data.</p>
-
 <h2 id="clean">Clean</h2>
-
 <p>Data is messy (pretty much always).</p>
-
 <p>Somewhere in your machine learning pipeline, you&rsquo;ve got to have a cleaning step where you fill in missing values, correct misspellings, etc.</p>
-
 <p>Do the work to clean your data so that the predictions generated by machine learning are optimal.</p>
-
 <h2 id="transform">Transform</h2>
-
 <p>Data is in constant need of transformation, especially when it comes from multiple sources.</p>
-
 <p>In order to get things consistent and clean, you often need to transform the values of your variables so that they&rsquo;re in conformity with one another.</p>
-
-<p>For example, suppose that two data sets contain a column named &ldquo;State&rdquo;.  In the first, the values look like this:
-* OK
-* NY
-* FL</p>
-
-<p>In the second, the values look like this:
-* Oklahoma
-* New York
-* Florida</p>
-
+<p>For example, suppose that two data sets contain a column named &ldquo;State&rdquo;.  In the first, the values look like this:</p>
+<ul>
+<li>OK</li>
+<li>NY</li>
+<li>FL</li>
+</ul>
+<p>In the second, the values look like this:</p>
+<ul>
+<li>Oklahoma</li>
+<li>New York</li>
+<li>Florida</li>
+</ul>
 <p>For conformity and consistency&rsquo;s sake, you need to pick a format (either the abbreviation, or the name) and transform the <em>other</em> into that standardized format.</p>
-
 <p>Another example:  Suppose that two data sets contain weight measurements.  In the first, the units of measure are in pounds, and in the second, the units are in kilograms.  Again, a transformation is needed: Pick the standard unit you want to measure things in across your data sets, and transform the one(s) that aren&rsquo;t in conformity to that standard.</p>
-
 <h2 id="engineer-features">Engineer Features</h2>
-
 <p>Akin to transformation, there are times when additional features (predictor variables, columns) can be created, or <em>engineered</em>.</p>
-
 <p>At times, you&rsquo;ll use the existing features in the data set to make a calculation &ndash; the calculation can be added to the overall data set as a new feature for the machine learning algorithm(s) you choose.</p>
-
 <p>Other times, you may bring in a supplemental data set, blend it, explore it, clean it, transform it, and then use its variables as new engineered features.</p>
-
 <h2 id="select-features">Select Features</h2>
-
 <p>Not all features are created equal.</p>
-
 <p>Meaningless features should be dropped before moving on to the final stages of machine learning.  &ldquo;Meaningless&rdquo; is relative, but in general, anything that doesn&rsquo;t seem to help with informing or influencing the outcome to your predictive problem should be left out.</p>
-
 <p>You can (and should) experiment with this, of course.  But at some point, you&rsquo;ve got to <strong>pick the features that matter</strong>.</p>
-
 <h2 id="train-model">Train Model</h2>
-
 <p>To &ldquo;machine learn&rdquo;, one needs to select a machine learning algorithm that is reasonable for the predictive problem at hand.</p>
-
 <p>Once a machine learning algorithm is chosen, the selected features of the cleaned, transformed data sets are used to train a model.</p>
-
 <p>When this stage is done, you have a model (usually a mathematical equation or function that can take inputs, follow the patterns discovered as the algorithm trained on the data, and produce ann output in the end).</p>
-
 <h2 id="evaluate">Evaluate</h2>
-
 <p>How well does the trained model perform?  To know, you need to evaluate the outputs.</p>
-
 <p>Your metric for evaluation varies depending on the predictive problem you&rsquo;ve got on your hands.  You may be interested in maximizing
-<strong>Classification</strong>
-* <a href="https://en.wikipedia.org/wiki/Accuracy_and_precision">Classification Accuracy</a>?
-* <a href="https://www.kaggle.com/wiki/LogLoss">Logarithmic Loss</a>
-* <a href="https://en.wikipedia.org/wiki/Receiver_operating_characteristic">Area under ROC Curve</a></p>
-
-<p><strong>Regression</strong>
-* <a href="https://en.wikipedia.org/wiki/Mean_absolute_error">Mean Absolute Error</a>
-* <a href="https://en.wikipedia.org/wiki/Mean_squared_error">Mean Squared Error</a>
-* <a href="https://en.wikipedia.org/wiki/Coefficient_of_determination">R-Squared (R^2)</a></p>
-
+<strong>Classification</strong></p>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Accuracy_and_precision">Classification Accuracy</a>?</li>
+<li><a href="https://www.kaggle.com/wiki/LogLoss">Logarithmic Loss</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Receiver_operating_characteristic">Area under ROC Curve</a></li>
+</ul>
+<p><strong>Regression</strong></p>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Mean_absolute_error">Mean Absolute Error</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Mean_squared_error">Mean Squared Error</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Coefficient_of_determination">R-Squared (R^2)</a></li>
+</ul>
 <h2 id="deploy">Deploy</h2>
-
 <p>A machine learning model doesn&rsquo;t do much good until it&rsquo;s deployed, does it?</p>
-
 <p>Get it out there, and let it start creating value by proiding actionable insight.</p>
-
 <h2 id="verify">Verify</h2>
-
 <p>It starts and ends with your business&hellip;your organizational metrics that you or your company&rsquo;s leadership are trying to improve.</p>
-
 <p>Once the model is producing predictions and leaders are taking action on those predictions, you need to check back to that <strong>original business metric</strong> that you defined in stage zero, to see if the model is working or not.</p>
-
 <p>If it is, great!
 If it&rsquo;s not, shut it down!</p>
-
-<p><strong>In both cases</strong>, the final stage is:<br />
+<p><strong>In both cases</strong>, the final stage is:<br>
 <em>Rinse and repeat.</em></p>
-
 <p>Do it all again, either for the purpose of improving your existing model, or building an entirely new one.</p>
 
 
     <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

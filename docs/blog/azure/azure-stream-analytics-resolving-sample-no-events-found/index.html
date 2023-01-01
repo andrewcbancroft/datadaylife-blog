@@ -50,14 +50,15 @@
 <meta property="og:title" content="Resolving No Events Found When Sampling Data with Azure Stream Analytics" />
 <meta property="og:description" content="No events found for HubName... Ugh. If you are pretty sure data is making it to the Hub, but you are unable to get Stream Analytics to sample from the stream, check out how I was able to resolve this issue." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.dataday.life/blog/azure/azure-stream-analytics-resolving-sample-no-events-found/" />
-<meta property="article:published_time" content="2019-01-04T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2019-01-04T00:00:00&#43;00:00"/>
+<meta property="og:url" content="https://www.dataday.life/blog/azure/azure-stream-analytics-resolving-sample-no-events-found/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2019-01-04T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-01-04T00:00:00+00:00" />
+
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Resolving No Events Found When Sampling Data with Azure Stream Analytics"/>
 <meta name="twitter:description" content="No events found for HubName... Ugh. If you are pretty sure data is making it to the Hub, but you are unable to get Stream Analytics to sample from the stream, check out how I was able to resolve this issue."/>
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.101.0" />
 
     
 <script type="application/ld+json">
@@ -91,7 +92,7 @@
     <link href="https://www.dataday.life/css/syntax.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli:400,500,700" rel="stylesheet">
 
-    <link href="" rel="alternate" type="application/rss+xml" title="Data-Day Life" />
+    
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
@@ -195,50 +196,37 @@ MathJax.Hub.Config({
     <div class="content">
 
     <p>Data is making it to the Event Hub&hellip;at least you&rsquo;re 99% sure it is, because successful requests are being made by your app/device and received by the Hub.</p>
-
 <p>The trouble is, when you attempt to sample data with Azure Stream Analytics, you come up empty with a message like</p>
-
 <blockquote>
 <p>No events found for <code>HubName</code>.</p>
 </blockquote>
-
 <p>or</p>
-
 <blockquote>
 <p>Diagnostics: While sampling data, no data was received from <code>#</code> partitions.</p>
 </blockquote>
-
 <p>In my particular case, everything was fine with both the Event Hub and the Stream Analytics Job configurations. My issue was <strong>how my client app was encoding things as JSON</strong>.</p>
-
 <p>I was using Node to simulate a device sending data to the Event Hub.</p>
-
 <p>I had a standard import of the required library objects, and the creation of an <code>EventHubClient</code> as follows:</p>
-<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="k">const</span> <span class="p">{</span> <span class="nx">EventHubClient</span><span class="p">,</span> <span class="nx">EventPosition</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;@azure/event-hubs&#39;</span><span class="p">);</span>
-<span class="k">const</span> <span class="nx">client</span> <span class="o">=</span> <span class="nx">EventHubClient</span><span class="p">.</span><span class="nx">createFromConnectionString</span><span class="p">(</span><span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">[</span><span class="s2">&#34;EVENTHUB_CONNECTION_STRING&#34;</span><span class="p">],</span> <span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">[</span><span class="s2">&#34;EVENTHUB_NAME&#34;</span><span class="p">]);</span>
-</code></pre></div>
-<p>But my <code>main</code> function contained a flaw. It was sending valid JSON, but not in the &ldquo;shape&rdquo; that Azure Stream Analytics expected it.  It resulted in a JSON parsing error.</p>
-
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kr">const</span> <span class="p">{</span> <span class="nx">EventHubClient</span><span class="p">,</span> <span class="nx">EventPosition</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;@azure/event-hubs&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">client</span> <span class="o">=</span> <span class="nx">EventHubClient</span><span class="p">.</span><span class="nx">createFromConnectionString</span><span class="p">(</span><span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">[</span><span class="s2">&#34;EVENTHUB_CONNECTION_STRING&#34;</span><span class="p">],</span> <span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">[</span><span class="s2">&#34;EVENTHUB_NAME&#34;</span><span class="p">]);</span>
+</span></span></code></pre></div><p>But my <code>main</code> function contained a flaw. It was sending valid JSON, but not in the &ldquo;shape&rdquo; that Azure Stream Analytics expected it.  It resulted in a JSON parsing error.</p>
 <p>What was the flaw?  Compare the following snippets inline:</p>
-<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="kd">function</span> <span class="nx">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="k">const</span> <span class="nx">incorrectDataFormat</span> <span class="o">=</span> <span class="p">{</span> <span class="nx">DeviceID</span><span class="o">:</span> <span class="s2">&#34;SomeDeviceID&#34;</span><span class="p">,</span> <span class="nx">LocationID</span><span class="o">:</span> <span class="s2">&#34;SomeLocationID&#34;</span><span class="p">,</span> <span class="nx">Measurement</span><span class="o">:</span> <span class="s2">&#34;SomeMeasurement&#34;</span> <span class="p">};</span>
-    <span class="k">const</span> <span class="nx">CORRECTDataFormat</span> <span class="o">=</span> <span class="p">{</span> <span class="nx">body</span><span class="o">:</span> <span class="p">{</span> <span class="nx">DeviceID</span><span class="o">:</span> <span class="s2">&#34;SomeDeviceID&#34;</span><span class="p">,</span> <span class="nx">LocationID</span><span class="o">:</span> <span class="s2">&#34;SomeLocationID&#34;</span><span class="p">,</span> <span class="nx">Measurement</span><span class="o">:</span> <span class="s2">&#34;SomeMeasurement&#34;</span> <span class="p">}</span> <span class="p">};</span>
-    
-    <span class="nx">client</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span><span class="nx">incorrectDataFormat</span><span class="p">);</span> <span class="c1">// won&#39;t get picked up by Stream Analytics
-</span><span class="c1"></span>    <span class="nx">client</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span><span class="nx">CORRECTDataFormat</span><span class="p">);</span> <span class="c1">// WILL get picked up by Stream Analytics
-</span><span class="c1"></span><span class="p">}</span>
-</code></pre></div>
-<p>What&rsquo;s the difference?</p>
-
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">main</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">incorrectDataFormat</span> <span class="o">=</span> <span class="p">{</span> <span class="nx">DeviceID</span><span class="o">:</span> <span class="s2">&#34;SomeDeviceID&#34;</span><span class="p">,</span> <span class="nx">LocationID</span><span class="o">:</span> <span class="s2">&#34;SomeLocationID&#34;</span><span class="p">,</span> <span class="nx">Measurement</span><span class="o">:</span> <span class="s2">&#34;SomeMeasurement&#34;</span> <span class="p">};</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">CORRECTDataFormat</span> <span class="o">=</span> <span class="p">{</span> <span class="nx">body</span><span class="o">:</span> <span class="p">{</span> <span class="nx">DeviceID</span><span class="o">:</span> <span class="s2">&#34;SomeDeviceID&#34;</span><span class="p">,</span> <span class="nx">LocationID</span><span class="o">:</span> <span class="s2">&#34;SomeLocationID&#34;</span><span class="p">,</span> <span class="nx">Measurement</span><span class="o">:</span> <span class="s2">&#34;SomeMeasurement&#34;</span> <span class="p">}</span> <span class="p">};</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="nx">client</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span><span class="nx">incorrectDataFormat</span><span class="p">);</span> <span class="c1">// won&#39;t get picked up by Stream Analytics
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">client</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span><span class="nx">CORRECTDataFormat</span><span class="p">);</span> <span class="c1">// WILL get picked up by Stream Analytics
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span></code></pre></div><p>What&rsquo;s the difference?</p>
 <p>For receiving events from Azure Stream Analytics, you&rsquo;ve got to send Events to an EventHub where the <strong>body</strong> is a JSON object/array&hellip;which means you&rsquo;ve got to have a <code>body</code> property with a <em>value</em>&hellip;an object, or an array&hellip; that contains the data you want to send.</p>
-
 <p><code>const CORRECTDataFormat = { body: { DeviceID: &quot;SomeDeviceID&quot;, LocationID: &quot;SomeLocationID&quot;, Measurement: &quot;SomeMeasurement&quot; } };</code></p>
-
 <p>If you&rsquo;re running into issues with sampling Event Hub data using Stream Analytics, it might be worth the effort to double-check that the structure of your JSON object is in line with the expectation described above. 🙌🏻</p>
 
 
     <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

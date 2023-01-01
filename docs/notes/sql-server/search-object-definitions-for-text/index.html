@@ -50,14 +50,15 @@
 <meta property="og:title" content="Search Database Object Definitions for Text" />
 <meta property="og:description" content="If you need to find some text within a database object definition like a stored procedure, function, view, trigger, etc. this script can be helpful." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.dataday.life/notes/sql-server/search-object-definitions-for-text/" />
-<meta property="article:published_time" content="2018-01-09T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2018-01-09T00:00:00&#43;00:00"/>
+<meta property="og:url" content="https://www.dataday.life/notes/sql-server/search-object-definitions-for-text/" /><meta property="article:section" content="notes" />
+<meta property="article:published_time" content="2018-01-09T00:00:00+00:00" />
+<meta property="article:modified_time" content="2018-01-09T00:00:00+00:00" />
+
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Search Database Object Definitions for Text"/>
 <meta name="twitter:description" content="If you need to find some text within a database object definition like a stored procedure, function, view, trigger, etc. this script can be helpful."/>
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.101.0" />
 
     
 <script type="application/ld+json">
@@ -91,7 +92,7 @@
     <link href="https://www.dataday.life/css/syntax.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli:400,500,700" rel="stylesheet">
 
-    <link href="" rel="alternate" type="application/rss+xml" title="Data-Day Life" />
+    
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
@@ -195,40 +196,38 @@ MathJax.Hub.Config({
     <div class="content">
 
     <p>If you need to find some text within a database object definition, this script can be helpful.</p>
-
 <p>It should allow you to find text within the definitions of the following types of database objects:</p>
-
 <ul>
 <li>Functions (scalar and table-valued)</li>
 <li>Stored Procedures</li>
 <li>Triggers</li>
 <li>Views</li>
 </ul>
-<div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">DECLARE</span> <span class="o">@</span><span class="n">SearchString</span> <span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">255</span><span class="p">)</span>
-<span class="k">SET</span> <span class="o">@</span><span class="n">SearchString</span> <span class="o">=</span> <span class="s1">&#39;TextToFind&#39;</span>
-
-<span class="k">SELECT</span> <span class="k">DISTINCT</span>
-	<span class="n">o</span><span class="p">.</span><span class="n">name</span> <span class="k">AS</span> <span class="n">ObjectName</span><span class="p">,</span>
-	<span class="n">o</span><span class="p">.</span><span class="n">type_desc</span> <span class="k">as</span> <span class="n">TypeDescription</span>
-<span class="k">FROM</span>
-	<span class="n">sys</span><span class="p">.</span><span class="n">sql_modules</span> <span class="n">m</span>
-	<span class="k">INNER</span> <span class="k">JOIN</span> <span class="n">sys</span><span class="p">.</span><span class="n">objects</span> <span class="n">o</span> <span class="k">ON</span> <span class="n">m</span><span class="p">.</span><span class="n">object_id</span> <span class="o">=</span> <span class="n">o</span><span class="p">.</span><span class="n">object_id</span>
-<span class="k">WHERE</span>
-	<span class="n">m</span><span class="p">.[</span><span class="n">definition</span><span class="p">]</span> <span class="k">LIKE</span> <span class="s1">&#39;%&#39;</span> <span class="o">+</span> <span class="o">@</span><span class="n">SearchString</span> <span class="o">+</span> <span class="s1">&#39;%&#39;</span>
-<span class="k">ORDER</span> <span class="k">BY</span>
-	<span class="mi">2</span><span class="p">,</span> <span class="mi">1</span></code></pre></div>
-<p>An alternative script that I&rsquo;ve used for a long time is as follows:</p>
-<div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">DECLARE</span> <span class="o">@</span><span class="n">SearchString</span> <span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">255</span><span class="p">)</span>
-<span class="k">SET</span> <span class="o">@</span><span class="n">SearchString</span> <span class="o">=</span> <span class="s1">&#39;TextToFind&#39;</span>
-
-<span class="k">SELECT</span>
-	<span class="n">OBJECT_NAME</span><span class="p">(</span><span class="n">id</span><span class="p">),</span>
-	<span class="o">*</span>
-<span class="k">FROM</span>
-	<span class="n">SYSCOMMENTS</span>
-<span class="k">WHERE</span>
-	<span class="p">[</span><span class="nb">text</span><span class="p">]</span> <span class="k">LIKE</span> <span class="s1">&#39;%&#39;</span> <span class="o">+</span> <span class="o">@</span><span class="n">SearchString</span> <span class="o">+</span> <span class="s1">&#39;%&#39;</span></code></pre></div>
-<p>Source: <a href="https://stackoverflow.com/questions/674623/how-to-find-a-text-inside-sql-server-procedures-triggers">Stack Overflow</a></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">DECLARE</span><span class="w"> </span><span class="o">@</span><span class="n">SearchString</span><span class="w"> </span><span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">255</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SET</span><span class="w"> </span><span class="o">@</span><span class="n">SearchString</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;TextToFind&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> </span><span class="k">DISTINCT</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">o</span><span class="p">.</span><span class="n">name</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">ObjectName</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">o</span><span class="p">.</span><span class="n">type_desc</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">TypeDescription</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">FROM</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">sys</span><span class="p">.</span><span class="n">sql_modules</span><span class="w"> </span><span class="n">m</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="k">INNER</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">sys</span><span class="p">.</span><span class="n">objects</span><span class="w"> </span><span class="n">o</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">m</span><span class="p">.</span><span class="n">object_id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">o</span><span class="p">.</span><span class="n">object_id</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">WHERE</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">m</span><span class="p">.[</span><span class="n">definition</span><span class="p">]</span><span class="w"> </span><span class="k">LIKE</span><span class="w"> </span><span class="s1">&#39;%&#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="o">@</span><span class="n">SearchString</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39;%&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="w">
+</span></span></span></code></pre></div><p>An alternative script that I&rsquo;ve used for a long time is as follows:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">DECLARE</span><span class="w"> </span><span class="o">@</span><span class="n">SearchString</span><span class="w"> </span><span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">255</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SET</span><span class="w"> </span><span class="o">@</span><span class="n">SearchString</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;TextToFind&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">OBJECT_NAME</span><span class="p">(</span><span class="n">id</span><span class="p">),</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="o">*</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">FROM</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">SYSCOMMENTS</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">WHERE</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="p">[</span><span class="nb">text</span><span class="p">]</span><span class="w"> </span><span class="k">LIKE</span><span class="w"> </span><span class="s1">&#39;%&#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="o">@</span><span class="n">SearchString</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39;%&#39;</span><span class="w">
+</span></span></span></code></pre></div><p>Source: <a href="https://stackoverflow.com/questions/674623/how-to-find-a-text-inside-sql-server-procedures-triggers">Stack Overflow</a></p>
 
 </div>
   <aside>

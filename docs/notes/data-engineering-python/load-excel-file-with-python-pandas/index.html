@@ -50,14 +50,15 @@
 <meta property="og:title" content="Load an Excel File With Python and Pandas" />
 <meta property="og:description" content="Several examples of how to load an excel file into a Pandas dataframe with Python" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.dataday.life/notes/data-engineering-python/load-excel-file-with-python-pandas/" />
-<meta property="article:published_time" content="2019-05-22T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2019-05-22T00:00:00&#43;00:00"/>
+<meta property="og:url" content="https://www.dataday.life/notes/data-engineering-python/load-excel-file-with-python-pandas/" /><meta property="article:section" content="notes" />
+<meta property="article:published_time" content="2019-05-22T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-05-22T00:00:00+00:00" />
+
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Load an Excel File With Python and Pandas"/>
 <meta name="twitter:description" content="Several examples of how to load an excel file into a Pandas dataframe with Python"/>
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.101.0" />
 
     
 <script type="application/ld+json">
@@ -66,7 +67,7 @@
   "@type": "BlogPosting",
   "headline": "Load an Excel File With Python and Pandas",
   "url": "https:\/\/www.dataday.life\/notes\/data-engineering-python\/load-excel-file-with-python-pandas\/",
-  "wordCount": "443",
+  "wordCount": "256",
   "datePublished": "2019-05-22T00:00:00Z",
   "dateModified": "2019-05-22T00:00:00Z",
   "author": {
@@ -91,7 +92,7 @@
     <link href="https://www.dataday.life/css/syntax.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli:400,500,700" rel="stylesheet">
 
-    <link href="" rel="alternate" type="application/rss+xml" title="Data-Day Life" />
+    
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
@@ -194,314 +195,80 @@ MathJax.Hub.Config({
     </header>
     <div class="content">
 
-    
-
-<p><a name="resources" class="jump-target"></a>
-<div class="resources">
-  <div class="resources-header">
-    Resources
-  </div>
-    <div class="resources-download-instructions">
-    Right-click -&gt; Save as&hellip;
-  </div>
-  <ul class="resources-content">
-    <li>
-        <i class="fas fa-file-excel"></i> <a href="https://github.com/andrewcbancroft/datadaylife-blog/raw/master/datasets/Car%20Sales.xlsx">Car Sales.xlsx</a>
-    </li>
-    <li>
-        <i class="fas fa-book"></i> <a href="https://raw.githubusercontent.com/andrewcbancroft/datadaylife-blog/master/content/notes/data-engineering-python/load-excel-file-with-python-pandas.ipynb">load-excel-file-with-python-pandas.ipynb</a>
-    </li>
-  </ul>
-</div></p>
-
+    <p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<!-- raw HTML omitted -->
 <h2 id="prerequisites">Prerequisites</h2>
-
 <ul>
 <li>Install the <a href="https://pandas.pydata.org/">Pandas</a> library for your Python environment</li>
-<li>Cells in this notebook expect the <a href="https://github.com/andrewcbancroft/datadaylife-blog/raw/master/datasets/Car%20Sales.xlsx">Car Sales.xlsx</a> file to be in certain locations; specifics are in the cell itself</li>
+<li>Cells in this notebook expect the <!-- raw HTML omitted -->Car Sales.xlsx<!-- raw HTML omitted --> file to be in certain locations; specifics are in the cell itself</li>
 <li><a href="#resources">Resources</a> to help you practice</li>
 </ul>
-
 <h2 id="first-things-first">First Things First</h2>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span></code></pre></div>
-<h2 id="load-data-from-excel">Load Data From Excel</h2>
-
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</span></span></code></pre></div><h2 id="load-data-from-excel">Load Data From Excel</h2>
 <h3 id="file-is-in-the-same-directory-as-your-jupyter-notebook">File is in the same directory as your Jupyter Notebook</h3>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># Read the Excel file</span>
-<span class="n">car_sales_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s2">&#34;Car Sales.xlsx&#34;</span><span class="p">)</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Read the Excel file</span>
+</span></span><span class="line"><span class="cl"><span class="n">car_sales_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s2">&#34;Car Sales.xlsx&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Show the first 5 rows</span>
+</span></span><span class="line"><span class="cl"><span class="n">car_sales_data</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+</span></span></code></pre></div><!-- raw HTML omitted -->
+<pre><code>.dataframe tbody tr th {
+    vertical-align: top;
+}
 
-<span class="c1"># Show the first 5 rows</span>
-<span class="n">car_sales_data</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span></code></pre></div>
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>DealershipName</th>
-      <th>RedCars</th>
-      <th>SilverCars</th>
-      <th>BlackCars</th>
-      <th>BlueCars</th>
-      <th>MonthSold</th>
-      <th>YearSold</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>Clyde's Clunkers</td>
-      <td>902</td>
-      <td>650</td>
-      <td>754</td>
-      <td>792</td>
-      <td>1</td>
-      <td>2018</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>Clyde's Clunkers</td>
-      <td>710</td>
-      <td>476</td>
-      <td>518</td>
-      <td>492</td>
-      <td>2</td>
-      <td>2018</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>Clyde's Clunkers</td>
-      <td>248</td>
-      <td>912</td>
-      <td>606</td>
-      <td>350</td>
-      <td>3</td>
-      <td>2018</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>Clyde's Clunkers</td>
-      <td>782</td>
-      <td>912</td>
-      <td>858</td>
-      <td>446</td>
-      <td>4</td>
-      <td>2018</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>Clyde's Clunkers</td>
-      <td>278</td>
-      <td>354</td>
-      <td>482</td>
-      <td>752</td>
-      <td>5</td>
-      <td>2018</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
+.dataframe thead th {
+    text-align: right;
+}
+</code></pre>
+<p><!-- raw HTML omitted --></p>
+<!-- raw HTML omitted -->
 <h3 id="file-is-in-a-different-directory-than-your-jupyter-notebook">File is in a different directory than your Jupyter Notebook</h3>
-
 <p>The example will use your &ldquo;home directory&rdquo; to make this example applicable across operating systems, but you can use any path as long as the file exists there&hellip;</p>
-
 <h5 id="find-the-home-directory-using-python">Find the home directory using Python</h5>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">os.path</span> <span class="kn">import</span> <span class="n">expanduser</span> <span class="k">as</span> <span class="n">ospath</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">os.path</span> <span class="kn">import</span> <span class="n">expanduser</span> <span class="k">as</span> <span class="n">ospath</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">user_home_directory</span> <span class="o">=</span> <span class="n">ospath</span><span class="p">(</span><span class="s2">&#34;~&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Make sure to use &#34;/&#34; slashes and not &#34;\&#34; slashes</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># There actually needs to be folders named &#34;Path&#34; and &#34;To&#34; and &#34;Excel&#34; and &#34;File&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># in your home directory (the &#34;~&#34; means &#34;home directory&#34;) for this cell to work</span>
+</span></span><span class="line"><span class="cl"><span class="n">excel_file_path</span> <span class="o">=</span> <span class="n">user_home_directory</span> <span class="o">+</span> <span class="s2">&#34;/Path/To/Excel/File/Car Sales.xlsx&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">other_path_car_sales_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="n">excel_file_path</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Show the first 5 rows</span>
+</span></span><span class="line"><span class="cl"><span class="n">other_path_car_sales_data</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+</span></span></code></pre></div><!-- raw HTML omitted -->
+<pre><code>.dataframe tbody tr th {
+    vertical-align: top;
+}
 
-<span class="n">user_home_directory</span> <span class="o">=</span> <span class="n">ospath</span><span class="p">(</span><span class="s2">&#34;~&#34;</span><span class="p">)</span></code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># Make sure to use &#34;/&#34; slashes and not &#34;\&#34; slashes</span>
-<span class="c1"># There actually needs to be folders named &#34;Path&#34; and &#34;To&#34; and &#34;Excel&#34; and &#34;File&#34;</span>
-<span class="c1"># in your home directory (the &#34;~&#34; means &#34;home directory&#34;) for this cell to work</span>
-<span class="n">excel_file_path</span> <span class="o">=</span> <span class="n">user_home_directory</span> <span class="o">+</span> <span class="s2">&#34;/Path/To/Excel/File/Car Sales.xlsx&#34;</span>
-
-<span class="n">other_path_car_sales_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="n">excel_file_path</span><span class="p">)</span>
-
-<span class="c1"># Show the first 5 rows</span>
-<span class="n">other_path_car_sales_data</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span></code></pre></div>
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>DealershipName</th>
-      <th>RedCars</th>
-      <th>SilverCars</th>
-      <th>BlackCars</th>
-      <th>BlueCars</th>
-      <th>MonthSold</th>
-      <th>YearSold</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>Clyde's Clunkers</td>
-      <td>902</td>
-      <td>650</td>
-      <td>754</td>
-      <td>792</td>
-      <td>1</td>
-      <td>2018</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>Clyde's Clunkers</td>
-      <td>710</td>
-      <td>476</td>
-      <td>518</td>
-      <td>492</td>
-      <td>2</td>
-      <td>2018</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>Clyde's Clunkers</td>
-      <td>248</td>
-      <td>912</td>
-      <td>606</td>
-      <td>350</td>
-      <td>3</td>
-      <td>2018</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>Clyde's Clunkers</td>
-      <td>782</td>
-      <td>912</td>
-      <td>858</td>
-      <td>446</td>
-      <td>4</td>
-      <td>2018</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>Clyde's Clunkers</td>
-      <td>278</td>
-      <td>354</td>
-      <td>482</td>
-      <td>752</td>
-      <td>5</td>
-      <td>2018</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
+.dataframe thead th {
+    text-align: right;
+}
+</code></pre>
+<p><!-- raw HTML omitted --></p>
+<!-- raw HTML omitted -->
 <h3 id="from-a-url">From a URL</h3>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># Note the URL Encoding with &#34;%20&#34; for spaces</span>
-<span class="n">url_to_excel_file</span> <span class="o">=</span> <span class="s2">&#34;https://github.com/andrewcbancroft/datadaylife-blog/raw/master/datasets/Car%20Sales.xlsx&#34;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Note the URL Encoding with &#34;%20&#34; for spaces</span>
+</span></span><span class="line"><span class="cl"><span class="n">url_to_excel_file</span> <span class="o">=</span> <span class="s2">&#34;https://github.com/andrewcbancroft/datadaylife-blog/raw/master/datasets/Car%20Sales.xlsx&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Read the Excel file</span>
+</span></span><span class="line"><span class="cl"><span class="n">url_car_sales_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="n">url_to_excel_file</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Show the first 5 rows</span>
+</span></span><span class="line"><span class="cl"><span class="n">url_car_sales_data</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+</span></span></code></pre></div><!-- raw HTML omitted -->
+<pre><code>.dataframe tbody tr th {
+    vertical-align: top;
+}
 
-<span class="c1"># Read the Excel file</span>
-<span class="n">url_car_sales_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="n">url_to_excel_file</span><span class="p">)</span>
-
-<span class="c1"># Show the first 5 rows</span>
-<span class="n">url_car_sales_data</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span></code></pre></div>
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>DealershipName</th>
-      <th>RedCars</th>
-      <th>SilverCars</th>
-      <th>BlackCars</th>
-      <th>BlueCars</th>
-      <th>MonthSold</th>
-      <th>YearSold</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>Clyde's Clunkers</td>
-      <td>902</td>
-      <td>650</td>
-      <td>754</td>
-      <td>792</td>
-      <td>1</td>
-      <td>2018</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>Clyde's Clunkers</td>
-      <td>710</td>
-      <td>476</td>
-      <td>518</td>
-      <td>492</td>
-      <td>2</td>
-      <td>2018</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>Clyde's Clunkers</td>
-      <td>248</td>
-      <td>912</td>
-      <td>606</td>
-      <td>350</td>
-      <td>3</td>
-      <td>2018</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>Clyde's Clunkers</td>
-      <td>782</td>
-      <td>912</td>
-      <td>858</td>
-      <td>446</td>
-      <td>4</td>
-      <td>2018</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>Clyde's Clunkers</td>
-      <td>278</td>
-      <td>354</td>
-      <td>482</td>
-      <td>752</td>
-      <td>5</td>
-      <td>2018</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+.dataframe thead th {
+    text-align: right;
+}
+</code></pre>
+<p><!-- raw HTML omitted --></p>
+<!-- raw HTML omitted -->
 
 </div>
   <aside>
