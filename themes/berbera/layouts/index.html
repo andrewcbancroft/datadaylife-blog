@@ -27,7 +27,7 @@
                     <h4 class="card-header">Jupyter Notebooks</h4>
                     <div class="card-body note-card-body">
                         <ul>
-                            {{ range (where .Pages "File.Dir" "in" "/notes/jupyter-notebooks/").ByTitle }}
+                            {{ range (where .Site.Pages "File.Dir" "in" "/notes/jupyter-notebooks/").ByTitle }}
                             <li>
                                 <a href="{{.Permalink}}">{{.Title}}</a>
                             </li>
@@ -45,7 +45,7 @@
                     <h4 class="card-header">SQL Server</h4>
                     <div class="card-body note-card-body">
                         <ul>
-                            {{ range (where .Pages "File.Dir" "in" "/notes/sql-server/").ByTitle }}
+                            {{ range (where .Site.Pages "File.Dir" "in" "/notes/sql-server/").ByTitle }}
                             <li>
                                 <a href="{{.Permalink}}">{{.Title}}</a>
                             </li>
@@ -63,7 +63,7 @@
                     <h4 class="card-header">Working With Data in Python</h4>
                     <div class="card-body note-card-body">
                         <ul>
-                            {{ range (where .Pages "File.Dir" "in" "/notes/data-engineering-python/").ByTitle }}
+                            {{ range (where .Site.Pages "File.Dir" "in" "/notes/data-engineering-python/").ByTitle }}
                             <li>
                                 <a href="{{.Permalink}}">{{.Title}}</a>
                             </li>
@@ -87,7 +87,7 @@
                     <h4 class="card-header">Azure</h4>
                     <div class="article_list card-body">
                         <ul>
-                                {{ range (where .Pages "File.Dir" "in" "/blog/azure/").ByTitle }}
+                                {{ range (where .Site.Pages "File.Dir" "in" "/blog/azure/").ByTitle }}
                                 <li><a href="{{.Permalink}}">{{.Title}}</a></li>
                                 <div class="excerpt">{{.Description}}</div>
                                 {{ end }}
@@ -104,7 +104,7 @@
                         <h4 class="card-header">Dimensional Modeling</h4>
                         <div class="article_list card-body">
                             <ul>
-                                    {{ range (where .Pages "File.Dir" "in" "/blog/dimensional-modeling/").ByTitle }}
+                                    {{ range (where .Site.Pages "File.Dir" "in" "/blog/dimensional-modeling/").ByTitle }}
                                     <li><a href="{{.Permalink}}">{{.Title}}</a></li>
                                     <div class="excerpt">{{.Description}}</div>
                                     {{ end }}
@@ -121,7 +121,7 @@
                         <h4 class="card-header">General Data Concepts</h4>
                         <div class="article_list card-body">
                             <ul>
-                                    {{ range (where .Pages "File.Dir" "in" "/blog/general-data-concepts/").ByTitle }}
+                                    {{ range (where .Site.Pages "File.Dir" "in" "/blog/general-data-concepts/").ByTitle }}
                                     <li><a href="{{.Permalink}}">{{.Title}}</a></li>
                                     <div class="excerpt">{{.Description}}</div>
                                     {{ end }}
@@ -138,7 +138,7 @@
                         <h4 class="card-header">Machine Learning</h4>
                         <div class="article_list card-body">
                             <ul>
-                                    {{ range (where .Pages "File.Dir" "in" "/blog/machine-learning/").ByTitle }}
+                                    {{ range (where .Site.Pages "File.Dir" "in" "/blog/machine-learning/").ByTitle }}
                                     <li><a href="{{.Permalink}}">{{.Title}}</a></li>
                                     <div class="excerpt">{{.Description}}</div>
                                     {{ end }}
@@ -154,7 +154,7 @@
                         <h4 class="card-header">R</h4>
                         <div class="article_list card-body">
                             <ul>
-                                    {{ range (where .Pages "File.Dir" "in" "/blog/r/").ByTitle }}
+                                    {{ range (where .Site.Pages "File.Dir" "in" "/blog/r/").ByTitle }}
                                     <li><a href="{{.Permalink}}">{{.Title}}</a></li>
                                     <div class="excerpt">{{.Description}}</div>
                                     {{ end }}
@@ -171,7 +171,7 @@
                         <h4 class="card-header">SQL Server</h4>
                         <div class="article_list card-body">
                             <ul>
-                                    {{ range (where .Pages "File.Dir" "in" "/blog/sql-server/").ByTitle }}
+                                    {{ range (where .Site.Pages "File.Dir" "in" "/blog/sql-server/").ByTitle }}
                                     <li><a href="{{.Permalink}}">{{.Title}}</a></li>
                                     <div class="excerpt">{{.Description}}</div>
                                     {{ end }}
@@ -188,7 +188,7 @@
                         <h4 class="card-header">Statistics</h4>
                         <div class="article_list card-body">
                             <ul>
-                                    {{ range (where .Pages "File.Dir" "in" "/blog/statistics/").ByTitle }}
+                                    {{ range (where .Site.Pages "File.Dir" "in" "/blog/statistics/").ByTitle }}
                                     <li><a href="{{.Permalink}}">{{.Title}}</a></li>
                                     <div class="excerpt">{{.Description}}</div>
                                     {{ end }}
