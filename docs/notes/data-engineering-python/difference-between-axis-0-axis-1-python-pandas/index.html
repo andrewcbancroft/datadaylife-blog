@@ -58,7 +58,7 @@
   "@type": "BlogPosting",
   "headline": "What is the Difference Between axis=0 and axis=1 When Working with Pandas Dataframes?",
   "url": "https:\/\/www.dataday.life\/notes\/data-engineering-python\/difference-between-axis-0-axis-1-python-pandas\/",
-  "wordCount": "602",
+  "wordCount": "647",
   "datePublished": "2019-05-22T00:00:00Z",
   "dateModified": "2019-05-22T00:00:00Z",
   "author": {
@@ -196,13 +196,28 @@ Axis along which the function is applied:
 </blockquote>
 <p>Uuuum&hellip; right.</p>
 <p>So what&rsquo;s the difference?  Here&rsquo;s an example&hellip;</p>
-<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
-<!-- raw HTML omitted -->
+<p><a name="resources" class="jump-target"></a></p>
+<div class="resources">
+  <div class="resources-header">
+    Resources
+  </div>
+    <div class="resources-download-instructions">
+    Right-click -> Save as...
+  </div>
+  <ul class="resources-content">
+    <li>
+        <i class="fas fa-file-csv"></i> <a href="https://github.com/andrewcbancroft/datadaylife-blog/raw/master/datasets/Car%20Sales.csv" download>Car Sales.csv</a>
+    </li>
+    <li>
+        <i class="fas fa-book"></i> <a href="https://raw.githubusercontent.com/andrewcbancroft/datadaylife-blog/master/content/notes/data-engineering-python/difference-between-axis-0-axis-1-python-pandas.ipynb" download>difference-between-axis-0-axis-1-python-pandas.ipynb</a>
+    </li>
+  </ul>
+</div>
 <h2 id="load-a-csv-file-to-play-with">Load a CSV file to play with</h2>
 <h3 id="prerequisites-if-you-want-to-practice">Prerequisites (if you want to practice)</h3>
 <ul>
 <li>Install the <a href="https://pandas.pydata.org/">Pandas</a> library for your Python environment</li>
-<li>Cells in this notebook expect the <!-- raw HTML omitted -->Car Sales.csv<!-- raw HTML omitted --> file to be in the same directory as your notebook</li>
+<li>Cells in this notebook expect the <a href="https://github.com/andrewcbancroft/datadaylife-blog/raw/master/datasets/Car%20Sales.csv">Car Sales.csv</a> file to be in the same directory as your notebook</li>
 <li><a href="#resources">Resources</a> to help you practice</li>
 </ul>
 <h3 id="first-things-first">First Things First</h3>
@@ -214,7 +229,11 @@ Axis along which the function is applied:
 </span></span><span class="line"><span class="cl"><span class="c1"># Show the first 5 rows</span>
 </span></span><span class="line"><span class="cl"><span class="n">first_five</span> <span class="o">=</span> <span class="n">car_sales_data</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">display</span><span class="p">(</span><span class="n">first_five</span><span class="p">)</span>
-</span></span></code></pre></div><!-- raw HTML omitted -->
+</span></span></code></pre></div><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 <pre><code>.dataframe tbody tr th {
     vertical-align: top;
 }
@@ -223,8 +242,74 @@ Axis along which the function is applied:
     text-align: right;
 }
 </code></pre>
-<p><!-- raw HTML omitted --></p>
-<!-- raw HTML omitted -->
+<p></style></p>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>DealershipName</th>
+      <th>RedCars</th>
+      <th>SilverCars</th>
+      <th>BlackCars</th>
+      <th>BlueCars</th>
+      <th>MonthSold</th>
+      <th>YearSold</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Clyde's Clunkers</td>
+      <td>902.0</td>
+      <td>650.0</td>
+      <td>754.0</td>
+      <td>792.0</td>
+      <td>1.0</td>
+      <td>2018.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Clyde's Clunkers</td>
+      <td>710.0</td>
+      <td>476.0</td>
+      <td>518.0</td>
+      <td>492.0</td>
+      <td>2.0</td>
+      <td>2018.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Clyde's Clunkers</td>
+      <td>248.0</td>
+      <td>912.0</td>
+      <td>606.0</td>
+      <td>350.0</td>
+      <td>3.0</td>
+      <td>2018.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Clyde's Clunkers</td>
+      <td>782.0</td>
+      <td>912.0</td>
+      <td>858.0</td>
+      <td>446.0</td>
+      <td>4.0</td>
+      <td>2018.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Clyde's Clunkers</td>
+      <td>278.0</td>
+      <td>354.0</td>
+      <td>482.0</td>
+      <td>752.0</td>
+      <td>5.0</td>
+      <td>2018.0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 <p>The car sales data looks like it contains one row that summarizes the <strong>total sales of each color</strong> of car for a <strong>given dealership</strong>, for <strong>each month</strong> of the <strong>year</strong>.</p>
 <p>To state the &ldquo;grain&rdquo; of the data frame another way, the data frame contains <strong>one row per dealership, month, year</strong> combo and reports the total number of cars sold by color.</p>
 <h3 id="choose-your-scenario">Choose Your Scenario</h3>

@@ -9,3 +9,6 @@ canonifyURLs=true
 publishDir="docs"
 disableKinds = ["section", "taxonomy", "taxonomyTerm"]
 disqusShortname="datadaylife"
+
+[markup.goldmark.renderer]
+unsafe= true

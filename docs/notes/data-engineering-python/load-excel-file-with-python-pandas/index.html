@@ -58,7 +58,7 @@
   "@type": "BlogPosting",
   "headline": "Load an Excel File With Python and Pandas",
   "url": "https:\/\/www.dataday.life\/notes\/data-engineering-python\/load-excel-file-with-python-pandas\/",
-  "wordCount": "256",
+  "wordCount": "375",
   "datePublished": "2019-05-22T00:00:00Z",
   "dateModified": "2019-05-22T00:00:00Z",
   "author": {
@@ -186,12 +186,27 @@ MathJax.Hub.Config({
     </header>
     <div class="content">
 
-    <p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
-<!-- raw HTML omitted -->
+    <p><a name="resources" class="jump-target"></a></p>
+<div class="resources">
+  <div class="resources-header">
+    Resources
+  </div>
+    <div class="resources-download-instructions">
+    Right-click -> Save as...
+  </div>
+  <ul class="resources-content">
+    <li>
+        <i class="fas fa-file-excel"></i> <a href="https://github.com/andrewcbancroft/datadaylife-blog/raw/master/datasets/Car%20Sales.xlsx">Car Sales.xlsx</a>
+    </li>
+    <li>
+        <i class="fas fa-book"></i> <a href="https://raw.githubusercontent.com/andrewcbancroft/datadaylife-blog/master/content/notes/data-engineering-python/load-excel-file-with-python-pandas.ipynb">load-excel-file-with-python-pandas.ipynb</a>
+    </li>
+  </ul>
+</div>
 <h2 id="prerequisites">Prerequisites</h2>
 <ul>
 <li>Install the <a href="https://pandas.pydata.org/">Pandas</a> library for your Python environment</li>
-<li>Cells in this notebook expect the <!-- raw HTML omitted -->Car Sales.xlsx<!-- raw HTML omitted --> file to be in certain locations; specifics are in the cell itself</li>
+<li>Cells in this notebook expect the <a href="https://github.com/andrewcbancroft/datadaylife-blog/raw/master/datasets/Car%20Sales.xlsx">Car Sales.xlsx</a> file to be in certain locations; specifics are in the cell itself</li>
 <li><a href="#resources">Resources</a> to help you practice</li>
 </ul>
 <h2 id="first-things-first">First Things First</h2>
@@ -203,7 +218,11 @@ MathJax.Hub.Config({
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># Show the first 5 rows</span>
 </span></span><span class="line"><span class="cl"><span class="n">car_sales_data</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
-</span></span></code></pre></div><!-- raw HTML omitted -->
+</span></span></code></pre></div><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 <pre><code>.dataframe tbody tr th {
     vertical-align: top;
 }
@@ -212,8 +231,74 @@ MathJax.Hub.Config({
     text-align: right;
 }
 </code></pre>
-<p><!-- raw HTML omitted --></p>
-<!-- raw HTML omitted -->
+<p></style></p>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>DealershipName</th>
+      <th>RedCars</th>
+      <th>SilverCars</th>
+      <th>BlackCars</th>
+      <th>BlueCars</th>
+      <th>MonthSold</th>
+      <th>YearSold</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Clyde's Clunkers</td>
+      <td>902</td>
+      <td>650</td>
+      <td>754</td>
+      <td>792</td>
+      <td>1</td>
+      <td>2018</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Clyde's Clunkers</td>
+      <td>710</td>
+      <td>476</td>
+      <td>518</td>
+      <td>492</td>
+      <td>2</td>
+      <td>2018</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Clyde's Clunkers</td>
+      <td>248</td>
+      <td>912</td>
+      <td>606</td>
+      <td>350</td>
+      <td>3</td>
+      <td>2018</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Clyde's Clunkers</td>
+      <td>782</td>
+      <td>912</td>
+      <td>858</td>
+      <td>446</td>
+      <td>4</td>
+      <td>2018</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Clyde's Clunkers</td>
+      <td>278</td>
+      <td>354</td>
+      <td>482</td>
+      <td>752</td>
+      <td>5</td>
+      <td>2018</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 <h3 id="file-is-in-a-different-directory-than-your-jupyter-notebook">File is in a different directory than your Jupyter Notebook</h3>
 <p>The example will use your &ldquo;home directory&rdquo; to make this example applicable across operating systems, but you can use any path as long as the file exists there&hellip;</p>
 <h5 id="find-the-home-directory-using-python">Find the home directory using Python</h5>
@@ -229,7 +314,11 @@ MathJax.Hub.Config({
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># Show the first 5 rows</span>
 </span></span><span class="line"><span class="cl"><span class="n">other_path_car_sales_data</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
-</span></span></code></pre></div><!-- raw HTML omitted -->
+</span></span></code></pre></div><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 <pre><code>.dataframe tbody tr th {
     vertical-align: top;
 }
@@ -238,8 +327,74 @@ MathJax.Hub.Config({
     text-align: right;
 }
 </code></pre>
-<p><!-- raw HTML omitted --></p>
-<!-- raw HTML omitted -->
+<p></style></p>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>DealershipName</th>
+      <th>RedCars</th>
+      <th>SilverCars</th>
+      <th>BlackCars</th>
+      <th>BlueCars</th>
+      <th>MonthSold</th>
+      <th>YearSold</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Clyde's Clunkers</td>
+      <td>902</td>
+      <td>650</td>
+      <td>754</td>
+      <td>792</td>
+      <td>1</td>
+      <td>2018</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Clyde's Clunkers</td>
+      <td>710</td>
+      <td>476</td>
+      <td>518</td>
+      <td>492</td>
+      <td>2</td>
+      <td>2018</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Clyde's Clunkers</td>
+      <td>248</td>
+      <td>912</td>
+      <td>606</td>
+      <td>350</td>
+      <td>3</td>
+      <td>2018</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Clyde's Clunkers</td>
+      <td>782</td>
+      <td>912</td>
+      <td>858</td>
+      <td>446</td>
+      <td>4</td>
+      <td>2018</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Clyde's Clunkers</td>
+      <td>278</td>
+      <td>354</td>
+      <td>482</td>
+      <td>752</td>
+      <td>5</td>
+      <td>2018</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 <h3 id="from-a-url">From a URL</h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Note the URL Encoding with &#34;%20&#34; for spaces</span>
 </span></span><span class="line"><span class="cl"><span class="n">url_to_excel_file</span> <span class="o">=</span> <span class="s2">&#34;https://github.com/andrewcbancroft/datadaylife-blog/raw/master/datasets/Car%20Sales.xlsx&#34;</span>
@@ -249,7 +404,11 @@ MathJax.Hub.Config({
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># Show the first 5 rows</span>
 </span></span><span class="line"><span class="cl"><span class="n">url_car_sales_data</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
-</span></span></code></pre></div><!-- raw HTML omitted -->
+</span></span></code></pre></div><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 <pre><code>.dataframe tbody tr th {
     vertical-align: top;
 }
@@ -258,8 +417,74 @@ MathJax.Hub.Config({
     text-align: right;
 }
 </code></pre>
-<p><!-- raw HTML omitted --></p>
-<!-- raw HTML omitted -->
+<p></style></p>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>DealershipName</th>
+      <th>RedCars</th>
+      <th>SilverCars</th>
+      <th>BlackCars</th>
+      <th>BlueCars</th>
+      <th>MonthSold</th>
+      <th>YearSold</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Clyde's Clunkers</td>
+      <td>902</td>
+      <td>650</td>
+      <td>754</td>
+      <td>792</td>
+      <td>1</td>
+      <td>2018</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Clyde's Clunkers</td>
+      <td>710</td>
+      <td>476</td>
+      <td>518</td>
+      <td>492</td>
+      <td>2</td>
+      <td>2018</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Clyde's Clunkers</td>
+      <td>248</td>
+      <td>912</td>
+      <td>606</td>
+      <td>350</td>
+      <td>3</td>
+      <td>2018</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Clyde's Clunkers</td>
+      <td>782</td>
+      <td>912</td>
+      <td>858</td>
+      <td>446</td>
+      <td>4</td>
+      <td>2018</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Clyde's Clunkers</td>
+      <td>278</td>
+      <td>354</td>
+      <td>482</td>
+      <td>752</td>
+      <td>5</td>
+      <td>2018</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 </div>
   <aside>

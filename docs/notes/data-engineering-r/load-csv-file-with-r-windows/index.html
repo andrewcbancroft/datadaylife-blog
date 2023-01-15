@@ -58,7 +58,7 @@
   "@type": "BlogPosting",
   "headline": "Load a CSV File With R",
   "url": "https:\/\/www.dataday.life\/notes\/data-engineering-r\/load-csv-file-with-r-windows\/",
-  "wordCount": "253",
+  "wordCount": "329",
   "datePublished": "2019-05-29T00:00:00Z",
   "dateModified": "2019-05-29T00:00:00Z",
   "author": {
@@ -189,7 +189,7 @@ MathJax.Hub.Config({
     <h2 id="prerequisites">Prerequisites</h2>
 <ul>
 <li>No additional R packages are necessary for this notebook to run</li>
-<li>Cells in this notebook expect the <!-- raw HTML omitted -->Car Sales.csv<!-- raw HTML omitted --> file to be in certain locations; specifics are in the cell itself</li>
+<li>Cells in this notebook expect the <a href="https://github.com/andrewcbancroft/datadaylife-blog/raw/master/datasets/Car%20Sales.csv">Car Sales.csv</a> file to be in certain locations; specifics are in the cell itself</li>
 <li><a href="#resources">Resources</a> to help you practice are available at the end</li>
 </ul>
 <h2 id="load-data-from-a-csv-file">Load Data From a CSV File</h2>
@@ -199,7 +199,16 @@ MathJax.Hub.Config({
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># Show the first 5 rows</span>
 </span></span><span class="line"><span class="cl"><span class="nf">head</span><span class="p">(</span><span class="n">car.sales</span><span class="p">,</span> <span class="m">5</span><span class="p">)</span>
-</span></span></code></pre></div><!-- raw HTML omitted -->
+</span></span></code></pre></div><table>
+<thead><tr><th scope=col>DealershipName</th><th scope=col>RedCars</th><th scope=col>SilverCars</th><th scope=col>BlackCars</th><th scope=col>BlueCars</th><th scope=col>MonthSold</th><th scope=col>YearSold</th></tr></thead>
+<tbody>
+	<tr><td>Clyde's Clunkers</td><td>902             </td><td>650             </td><td>754             </td><td>792             </td><td>1               </td><td>2018            </td></tr>
+	<tr><td>Clyde's Clunkers</td><td>710             </td><td>476             </td><td>518             </td><td>492             </td><td>2               </td><td>2018            </td></tr>
+	<tr><td>Clyde's Clunkers</td><td>248             </td><td>912             </td><td>606             </td><td>350             </td><td>3               </td><td>2018            </td></tr>
+	<tr><td>Clyde's Clunkers</td><td>782             </td><td>912             </td><td>858             </td><td>446             </td><td>4               </td><td>2018            </td></tr>
+	<tr><td>Clyde's Clunkers</td><td>278             </td><td>354             </td><td>482             </td><td>752             </td><td>5               </td><td>2018            </td></tr>
+</tbody>
+</table>
 <h3 id="file-is-in-a-different-directory-than-your-jupyter-notebook">File is in a different directory than your Jupyter Notebook</h3>
 <p>The example will use your &ldquo;home directory&rdquo; to make this example applicable across operating systems, but you can use any path as long as the file exists there&hellip;</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-R" data-lang="R"><span class="line"><span class="cl"><span class="c1"># Make sure to use &#34;\&#34; slashes and not &#34;/&#34; slashes (it&#39;s a Windows thing)</span>
@@ -211,7 +220,16 @@ MathJax.Hub.Config({
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># Show the first 5 rows</span>
 </span></span><span class="line"><span class="cl"><span class="nf">head</span><span class="p">(</span><span class="n">other.path.car.sales</span><span class="p">,</span> <span class="m">5</span><span class="p">)</span>
-</span></span></code></pre></div><!-- raw HTML omitted -->
+</span></span></code></pre></div><table>
+<thead><tr><th scope=col>DealershipName</th><th scope=col>RedCars</th><th scope=col>SilverCars</th><th scope=col>BlackCars</th><th scope=col>BlueCars</th><th scope=col>MonthSold</th><th scope=col>YearSold</th></tr></thead>
+<tbody>
+	<tr><td>Clyde's Clunkers</td><td>902             </td><td>650             </td><td>754             </td><td>792             </td><td>1               </td><td>2018            </td></tr>
+	<tr><td>Clyde's Clunkers</td><td>710             </td><td>476             </td><td>518             </td><td>492             </td><td>2               </td><td>2018            </td></tr>
+	<tr><td>Clyde's Clunkers</td><td>248             </td><td>912             </td><td>606             </td><td>350             </td><td>3               </td><td>2018            </td></tr>
+	<tr><td>Clyde's Clunkers</td><td>782             </td><td>912             </td><td>858             </td><td>446             </td><td>4               </td><td>2018            </td></tr>
+	<tr><td>Clyde's Clunkers</td><td>278             </td><td>354             </td><td>482             </td><td>752             </td><td>5               </td><td>2018            </td></tr>
+</tbody>
+</table>
 <h3 id="from-a-url">From a URL</h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-R" data-lang="R"><span class="line"><span class="cl"><span class="c1"># Note the URL Encoding with &#34;%20&#34; for spaces</span>
 </span></span><span class="line"><span class="cl"><span class="n">url.to.csv.file</span> <span class="o">&lt;-</span> <span class="s">&#34;https://github.com/andrewcbancroft/datadaylife-blog/raw/master/datasets/Car%20Sales.csv&#34;</span>
@@ -230,8 +248,20 @@ Traceback:
 2. read.table(file = file, header = header, sep = sep, quote = quote, 
  .     dec = dec, fill = fill, comment.char = comment.char, ...)
 </code></pre>
-<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
-<!-- raw HTML omitted -->
+<p><a name="resources" class="jump-target"></a></p>
+<div class="resources">
+  <div class="resources-header">
+    Resources
+  </div>
+  <ul class="resources-content">
+    <li>
+        <i class="fas fa-file-csv"></i> <a href="https://github.com/andrewcbancroft/datadaylife-blog/raw/master/datasets/Car%20Sales.csv">Car Sales.csv</a>
+    </li>
+    <li>
+        <i class="fas fa-book"></i> <a href="https://raw.githubusercontent.com/andrewcbancroft/datadaylife-blog/master/content/notes/load-csv-file-with-python-pandas.ipynb">load-csv-file-with-python-pandas.ipynb</a>
+    </li>
+  </ul>
+</div>
 
 </div>
   <aside>

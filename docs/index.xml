@@ -22,7 +22,7 @@
       <pubDate>Wed, 22 May 2019 00:00:00 +0000</pubDate>
       
       <guid>https://www.dataday.life/notes/data-engineering-python/load-csv-file-with-python-pandas/</guid>
-      <description>Prerequisites Install the Pandas library for your Python environment Cells in this notebook expect the Car Sales.csv file to be in certain locations; specifics are in the cell itself Resources to help you practice First Things First import pandas as pd Load Data From a CSV File File is in the same directory as your Jupyter Notebook # Read the CSV file car_sales_data = pd.read_csv(&amp;#34;Car Sales.csv&amp;#34;) # Show the first 5 rows car_sales_data.</description>
+      <description>Resources Right-click -&gt; Save as... Car Sales.csv load-csv-file-with-python-pandas.ipynb Prerequisites Install the Pandas library for your Python environment Cells in this notebook expect the Car Sales.csv file to be in certain locations; specifics are in the cell itself Resources to help you practice First Things First import pandas as pd Load Data From a CSV File File is in the same directory as your Jupyter Notebook # Read the CSV file car_sales_data = pd.</description>
     </item>
     
     <item>
@@ -31,7 +31,7 @@
       <pubDate>Wed, 22 May 2019 00:00:00 +0000</pubDate>
       
       <guid>https://www.dataday.life/notes/data-engineering-python/load-excel-file-with-python-pandas/</guid>
-      <description>Prerequisites Install the Pandas library for your Python environment Cells in this notebook expect the Car Sales.xlsx file to be in certain locations; specifics are in the cell itself Resources to help you practice First Things First import pandas as pd Load Data From Excel File is in the same directory as your Jupyter Notebook # Read the Excel file car_sales_data = pd.read_excel(&amp;#34;Car Sales.xlsx&amp;#34;) # Show the first 5 rows car_sales_data.</description>
+      <description>Resources Right-click -&gt; Save as... Car Sales.xlsx load-excel-file-with-python-pandas.ipynb Prerequisites Install the Pandas library for your Python environment Cells in this notebook expect the Car Sales.xlsx file to be in certain locations; specifics are in the cell itself Resources to help you practice First Things First import pandas as pd Load Data From Excel File is in the same directory as your Jupyter Notebook # Read the Excel file car_sales_data = pd.</description>
     </item>
     
     <item>
@@ -45,7 +45,7 @@ For instance, here&amp;rsquo;s a quote from the apply function&amp;rsquo;s docum
 axis : {0 or ‘index’, 1 or ‘columns’}, default 0 Axis along which the function is applied: 0 or ‘index’: apply function to each column. 1 or ‘columns’: apply function to each row.
 Uuuum&amp;hellip; right.
 So what&amp;rsquo;s the difference? Here&amp;rsquo;s an example&amp;hellip;
-Load a CSV file to play with Prerequisites (if you want to practice) Install the Pandas library for your Python environment Cells in this notebook expect the Car Sales.</description>
+Resources Right-click -&gt; Save as.</description>
     </item>
     
     <item>
@@ -54,7 +54,8 @@ Load a CSV file to play with Prerequisites (if you want to practice) Install the
       <pubDate>Tue, 21 May 2019 00:00:00 +0000</pubDate>
       
       <guid>https://www.dataday.life/notes/jupyter-notebooks/cheat-sheet-jupyter-notebook-keyboard-shortcuts/</guid>
-      <description>Command Mode (Blue) Edit Mode (Green) </description>
+      <description>Command Mode (Blue) Shortcut What Happens h Shows a pop-up window listing out all keyboard shortcuts cmd + shift + p (Mac)
+ctrl + shift + p (Win) Shows the Command Palette enter Goes into Edit Mode (green) for the currently selected cell ctrl + enter Runs the selected cell shift + enter Runs the selected cell; Selects the cell below option + shift + enter (Mac) alt + enter (Win) Runs the selected cell; Adds a new cell below; Enters the new cell in Edit Mode A Inserts a new cell above the currently-selected cell B Inserts a new cell below the currently-selected cell C Copies the currently-selected cell(s) V Pastes a cell(s) that have been C Copied as new cell(s) below the currently-selected cell shiftV Pastes a cell(s) that have been C Copied as new cell(s) above the currently-selected cell D D (the &#39;D&#39; key twice) Deletes the currently selected cell(s) Shift + Click Cell Highlights the range of cells between the one that was selected, and the one that you clicked.</description>
     </item>
     
     <item>
@@ -276,12 +277,11 @@ Measurement(s) Descriptions of the measurement(s) It doesn&amp;rsquo;t matter wh
       <pubDate>Wed, 20 Dec 2017 11:53:49 -0700</pubDate>
       
       <guid>https://www.dataday.life/about/andrew_bancroft/</guid>
-      <description>Hey - I&amp;rsquo;m Andrew Bancroft.
+      <description>Data-Day Life Describing Data Discoveries from Day to Day Hey - I&amp;rsquo;m Andrew Bancroft.
 I&amp;rsquo;m a born learner, passionate about discovery and about sharing new insights that come my way.
 Dataday.life is my outlet for writing about all things data.
 At andrewcbancroft.com I nerd out about iOS App development in Swift.
-Teaching is also one of my passions. As an Author for Pluralsight, I&amp;rsquo;ve published a few courses to their library:
-iOS Data Persistence: The BigPicure CloudKit Fundamentals Core Data Fundamentals with Swift Managing Xcode Project Dependencies with CocoaPods Please keep in mind that this website, its content, and opinions are my own.</description>
+Teaching is also one of my passions. As an Author for Pluralsight, I&amp;rsquo;ve published a few courses to their library:</description>
     </item>
     
     <item>
